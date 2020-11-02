@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SignIn from './containers/SignIn'
+import NavBar from './components/NavBar'
+import ResetPass from './containers/ResetPass'
+import { Success } from './components/Modal'
+import './App.scss';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      {/* <Success value='RESET SUCCESSFULLY' /> */}
+      {/* <SignIn /> */}
+      <ResetPass />
     </div>
   );
 }
