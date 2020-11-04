@@ -1,9 +1,9 @@
-import React from 'react';
-import SignIn from './containers/SignIn'
-import NavBar from './components/NavBar'
-import ResetPass from './containers/ResetPass'
-import { Success } from './components/Modal'
-import './App.scss';
+import React from "react";
+import SignIn from "./containers/SignIn";
+import NavBar from "./components/NavBar";
+import ResetPass from "./containers/ResetPass";
+import { Success } from "./components/Modal";
+import "./App.scss";
 
 const App = () => {
   return (
@@ -13,13 +13,13 @@ const App = () => {
       </div>
       <div className="content-holder">
         <div className="main-content-box">
-         {/*<Success value='RESET SUCCESSFULLY' />*/}
-         <SignIn />
-        {/*<ResetPass />*/}
+          {/*<Success value='RESET SUCCESSFULLY' />*/}
+          <SignIn />
+          {/*<ResetPass />*/}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default App;
