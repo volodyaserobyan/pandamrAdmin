@@ -4,16 +4,14 @@ import './Success.scss'
 
 const Success = props => {
     return (
-        <section className='Success'>
-            <div className='Success-Cont'>
+        <div className="status-b-holder">
+            <div className="Success-Cont">
                 <div>
-                    <div>
-                        <img src={successImg} />
-                    </div>
-                    <p>{props.value}</p>
+                    <img src={successImg} />
                 </div>
+                <p>{props.value}</p>
             </div>
-        </section>
+        </div>
     )
 }
 

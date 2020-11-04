@@ -7,11 +7,17 @@ import './App.scss';
 
 const App = () => {
   return (
-    <div className="App">
-      <NavBar />
-      {/* <Success value='RESET SUCCESSFULLY' /> */}
-      {/* <SignIn /> */}
-      <ResetPass />
+    <div className="main-app">
+      <div className="header-holder">
+        <NavBar />
+      </div>
+      <div className="content-holder">
+        <div className="main-content-box">
+         {/*<Success value='RESET SUCCESSFULLY' />*/}
+         <SignIn />
+        {/*<ResetPass />*/}
+        </div>
+      </div>
     </div>
   );
 }

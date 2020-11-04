@@ -4,29 +4,38 @@ import './ResetPass.scss'
 const ResetPass = () => {
 
     return (
-        <section className='ResetPass'>
-            {/* <div className='ResetPass-Wrap'> */}
-            <form className='ResetPass-Cont'>
-                <h1>FORGOT YOUR PASSWORD</h1>
-                <div className='ResetPass-Cont-Wrapper'>
-                    {/* <p className='ResetPass-Cont-Wrapper_error'>Invalid email or password</p> */}
-                    <input
-                        placeholder='Enter new Password'
-                        type='password'
-                        className='ResetPass-Cont-Wrapper-Mail' />
-                    <input
-                        placeholder='Respeat Password'
-                        type='password'
-                        className='ResetPass-Cont-Wrapper-Mail' />
-                    <input className='submit' type='submit' value='RESET' />
-                </div>
-            </form>
-            <p>Made with <img
-                src="https://static.pandamr.com/fs/userFiles/main/media/icon-ionic-ios-heart.png?1602242531369"
-                alt="" /> by PandaMR</p>
-            {/* </div> */}
-        </section>
+      <div className="form-wrapper">
+        <form className="form-content">
+          <div className="title-holder">
+            <h1 className="title-h1-text">FORGOT YOUR PASSWORD</h1>
+          </div>
+          <div className='ResetPass-Cont-Wrapper'>
+            <div className="inp-holder">
+              <input
+                placeholder="Enter new Password"
+                type="password"
+                className="inp-v"/>
+            </div>
+            <div className="inp-holder">
+              <input
+                placeholder="Respeat Password"
+                type="password"
+                className="inp-v"/>
+            </div>
+            <div className="btn-holder">
+              <button className='btn-v' type='submit' value='RESET'>
+                Login
+              </button>
+            </div>
+          </div>
+        </form>
+        <div className="pmr-info-b">
+          <p>Made with <img
+            src="https://static.pandamr.com/fs/userFiles/main/media/icon-ionic-ios-heart.png?1602242531369"
+            alt=""/> by PandaMR</p>
+        </div>
+      </div>
     )
-}
+};
 
 export default ResetPass

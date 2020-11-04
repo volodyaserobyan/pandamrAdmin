@@ -4,7 +4,9 @@ import './NavBar.scss'
 
 const NavBar = () => {
     return (
-        <nav className='NavBar'><img src={Logo} alt='' /> </nav>
+        <div className="NavBar">
+          <img src={Logo} alt="" />
+        </div>
     )
 }
 
