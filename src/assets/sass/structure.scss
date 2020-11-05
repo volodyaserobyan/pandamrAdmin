@@ -5,32 +5,43 @@ html {
   height: 100%;
   background: #f9f9fb;
 }
-body{
+body {
   width: 100%;
   height: 100%;
 }
-#root{
+#root {
   width: 100%;
   height: 100%;
 }
 @media (hover: hover) and(min-width: 1024px) {
   ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-    border-radius: 2px;
+    width: 6px;
+    height: 6px;
     //padding-right: 10px;
   }
   ::-webkit-scrollbar-track {
     background: rgba(#000000, 0.05);
-    border-radius: 2px;
   }
   ::-webkit-scrollbar-thumb {
     background: #c8c7c7;
-    border-radius: 2px;
   }
   ::-webkit-scrollbar-thumb:hover {
     background: #555555;
   }
+}
+.scrollable-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: #c8c7c7 rgba(#000000, 0.05);
+  scrollbar-width: thin;
 }
 .main-app {
   width: 100%;
@@ -39,15 +50,18 @@ body{
   grid-template-rows: auto 10fr;
   grid-template-areas: "header" "content";
 }
-.header-holder{
+.header-holder {
   width: 100%;
   grid-area: header;
+  overflow: hidden;
 }
 .content-holder {
   width: 100%;
   grid-area: content;
+  overflow: hidden;
+  position: relative;
 }
-.main-content-box{
+.main-content-box {
   width: 100%;
   height: 100%;
   position: relative;

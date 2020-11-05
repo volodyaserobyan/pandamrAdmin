@@ -13,9 +13,11 @@ const App = () => {
       </div>
       <div className="content-holder">
         <div className="main-content-box">
-          {/*<Success value='RESET SUCCESSFULLY' />*/}
-          <SignIn />
-          {/* <ResetPass /> */}
+          <div className="scrollable-container">
+            {/*<Success value='RESET SUCCESSFULLY' />*/}
+            <SignIn />
+            {/* <ResetPass /> */}
+          </div>
         </div>
       </div>
     </div>

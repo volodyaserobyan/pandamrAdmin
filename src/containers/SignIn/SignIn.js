@@ -3,12 +3,12 @@ import eyeImgOff from "../../assets/images/eye-off.png";
 import eyeImgOn from "../../assets/images/eye-on.png";
 import Button from "../../components/Form/Button";
 import { Success } from "../../components/Modal";
-import "../../assets/sass/login.scss";
+import Signin from "./SignIn.scss";
 
 const SignIn = () => {
   const [isPassword, setIsPassword] = useState(true);
   return (
-    <div className="form-wrapper">
+    <div className="form-wrapper form-signIn">
       <form className="form-content">
         <div className="title-holder">
           <h1 className="title-h1-text">Log in</h1>

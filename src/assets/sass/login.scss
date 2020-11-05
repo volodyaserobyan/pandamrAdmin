@@ -4,12 +4,17 @@
 .form-wrapper {
   font-size: 14px;
   width: 452px;
-  height: 369px;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  &.form-reset {
+    min-height: 291px;
+  }
+  &.form-signIn {
+    min-height: 369px;
+  }
 }
 
 .form-content {
@@ -91,6 +96,7 @@ input[class="inp-v"]::placeholder {
   span {
     &::before {
       content: "";
+      display: block;
       position: absolute;
       top: -2px;
       left: -30px;
@@ -101,6 +107,7 @@ input[class="inp-v"]::placeholder {
     }
     &::after {
       content: "";
+      display: block;
       position: absolute;
       top: -1px;
       left: -23px;
@@ -143,10 +150,6 @@ input[class="inp-v"]::placeholder {
 }
 
 //LOGIN RESET
-
-.form-wrapper-reset {
-  height: 291px;
-}
 
 .form-content-reset {
   height: 263px;
