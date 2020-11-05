@@ -42,6 +42,9 @@
 input[class="inp-v"]:focus {
   background-color: #e8f0fe;
 }
+input[class="inp-v"]::placeholder {
+  color: #c8c7c7;
+}
 .show-hide {
   cursor: pointer;
 }

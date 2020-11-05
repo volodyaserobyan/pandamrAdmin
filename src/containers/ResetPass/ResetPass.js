@@ -6,30 +6,28 @@ const ResetPass = () => {
     <div className="form-wrapper">
       <form className="form-content">
         <div className="title-holder">
-          <h1 className="title-h1-text">FORGOT YOUR PASSWORD</h1>
+          <h1 className="title-h1-text">Forgot your password?</h1>
         </div>
-        <div className="ResetPass-Cont-Wrapper">
-          <div className="inp-holder">
+        <div className="SignIn-Wrap-Cont-Wrapper">
+          <div className="inp-holder inp-holder-email">
+            <p className="SignIn-Wrap-error">Email not found*</p>
             <input
-              placeholder="Enter new Password"
-              type="password"
+              placeholder="Enter your Email"
+              type="mail"
               className="inp-v"
+              required
+              id="inp-v-id"
             />
           </div>
-          <div className="inp-holder">
-            <input
-              placeholder="Respeat Password"
-              type="password"
-              className="inp-v"
-            />
-          </div>
+
           <div className="btn-holder">
-            <button className="btn-v" type="submit" value="RESET">
-              Login
+            <button className="btn-v" type="submit" value="reset">
+              Reset
             </button>
           </div>
         </div>
       </form>
+
       <div className="pmr-info-b">
         <p>
           Made with{" "}
