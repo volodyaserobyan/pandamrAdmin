@@ -48,7 +48,9 @@ const SignIn = () => {
               </label>
             </div>
             <div className="forgot-pass-t">
-              <span>Forgot password ?</span>
+              <span>
+                <a href="#">Forgot password ?</a>
+              </span>
             </div>
           </div>
           <div className="btn-holder">
