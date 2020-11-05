@@ -1,12 +1,12 @@
 import React from "react";
-import "./ResetPass.scss";
+import "../../assets/sass/login.scss";
 
 const ResetPass = () => {
   return (
-    <div className="form-wrapper">
-      <form className="form-content">
+    <div className="form-wrapper form-wrapper-reset">
+      <form className="form-content form-content-reset">
         <div className="title-holder">
-          <h1 className="title-h1-text">Forgot your password?</h1>
+          <h1 className="title-h1-text-reset">Forgot your password?</h1>
         </div>
         <div className="SignIn-Wrap-Cont-Wrapper">
           <div className="inp-holder inp-holder-email">

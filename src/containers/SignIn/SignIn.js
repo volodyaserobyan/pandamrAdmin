@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import eyeImgOff from "../../assets/images/eye-off.png";
 import eyeImgOn from "../../assets/images/eye-on.png";
+import Button from "../../components/Form/Button";
 import { Success } from "../../components/Modal";
-import "./SignIn.scss";
+import "../../assets/sass/login.scss";
 
 const SignIn = () => {
   const [isPassword, setIsPassword] = useState(true);
@@ -50,6 +51,7 @@ const SignIn = () => {
             <div className="forgot-pass-t">
               <span>
                 <a href="#">Forgot password ?</a>
+                {/* <Button /> */}
               </span>
             </div>
           </div>

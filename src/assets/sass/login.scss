@@ -1,0 +1,165 @@
+//by Sos Petrosyan
+
+// LOGIN
+.form-wrapper {
+  font-size: 14px;
+  width: 452px;
+  height: 369px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.form-content {
+  height: 341px;
+  padding: 41px 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.title-h1-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.inp-v,
+.btn-v {
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+.inp-v {
+  font-size: inherit;
+  padding: 17px 40px 17px 10px;
+  background-color: #f1f1f1;
+  box-sizing: inherit;
+  transition: background-color 0.3s;
+}
+input[class="inp-v"]:focus {
+  background-color: #e8f0fe;
+}
+input[class="inp-v"]::placeholder {
+  color: #c8c7c7;
+}
+.show-hide {
+  cursor: pointer;
+}
+.btn-v {
+  background-color: #2196f3;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.inp-holder-email {
+  margin-bottom: 30px;
+}
+
+.inp-holder-password {
+  position: relative;
+  margin-bottom: 15px;
+}
+.show-hide {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+}
+
+.Signin-Remember-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 0 15px 0 45px;
+  input {
+    display: none;
+  }
+  span {
+    color: #c8c7c7;
+  }
+}
+.checkbox-holder {
+  position: relative;
+  span {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -30px;
+      width: 17px;
+      height: 17px;
+      border: 2px solid #c8c7c7;
+      border-radius: 5px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: -23px;
+      width: 4px;
+      height: 10px;
+      border: 2px solid #2196f3;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-radius: 2px;
+      transform: rotate(45deg);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+  }
+  input[type="checkbox"]:checked + span::after {
+    opacity: 1;
+  }
+  .container {
+    cursor: pointer;
+  }
+}
+.forgot-pass-t {
+  a {
+    color: inherit;
+  }
+}
+.pmr-info-b {
+  margin-top: 5px;
+
+  p {
+    color: #757575;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: 3px 10px 0 10px;
+    }
+  }
+}
+
+//LOGIN RESET
+
+.form-wrapper-reset {
+  height: 291px;
+}
+
+.form-content-reset {
+  height: 263px;
+}
+
+.title-h1-text-reset {
+  margin-bottom: 20px;
+}
+
+.SignIn-Wrap-error {
+  text-align: left;
+  color: #fe4c4c;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  opacity: 1;
+}
