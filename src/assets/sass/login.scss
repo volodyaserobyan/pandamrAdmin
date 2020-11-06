@@ -9,16 +9,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  &.form-reset {
-    min-height: 291px;
-  }
   &.form-signIn {
     min-height: 369px;
+  }
+  &.form-reset,
+  &.success-wrapper {
+    min-height: 291px;
   }
 }
 
 .form-content {
-  height: 341px;
   padding: 41px 30px;
   background-color: #fff;
   border-radius: 5px;
@@ -26,6 +26,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  &.form-content-signIn {
+    min-height: 341px;
+  }
+  &.form-content-reset,
+  &.form-content-success {
+    min-height: 263px;
+  }
 }
 
 .title-h1-text {
@@ -149,11 +156,7 @@ input[class="inp-v"]::placeholder {
   }
 }
 
-//LOGIN RESET
-
-.form-content-reset {
-  height: 263px;
-}
+// PASSWORD RESET
 
 .title-h1-text-reset {
   margin-bottom: 20px;
@@ -165,4 +168,20 @@ input[class="inp-v"]::placeholder {
   padding-left: 10px;
   margin-bottom: 10px;
   opacity: 1;
+}
+
+// PASSWORD RESET EMAIL SENT
+.success-wrapper {
+}
+
+.reset-success-title {
+  color: #27ae60;
+  font-size: 24px;
+  font-weight: bold;
+}
+.success-img {
+  margin-bottom: 10px;
+}
+.reset-success-title {
+  margin-bottom: 10px;
 }

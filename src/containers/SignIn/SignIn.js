@@ -9,7 +9,7 @@ const SignIn = () => {
   const [isPassword, setIsPassword] = useState(true);
   return (
     <div className="form-wrapper form-signIn">
-      <form className="form-content">
+      <form className="form-content form-content-signIn">
         <div className="title-holder">
           <h1 className="title-h1-text">Log in</h1>
         </div>

@@ -14,35 +14,8 @@ body {
   height: 100%;
 }
 @media (hover: hover) and(min-width: 1024px) {
-  ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-    //padding-right: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: rgba(#000000, 0.05);
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #c8c7c7;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555555;
-  }
 }
-.scrollable-container {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  overscroll-behavior: contain;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-color: #c8c7c7 rgba(#000000, 0.05);
-  scrollbar-width: thin;
-}
+
 .main-app {
   width: 100%;
   height: 100%;

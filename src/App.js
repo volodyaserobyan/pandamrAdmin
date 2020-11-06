@@ -2,6 +2,7 @@ import React from "react";
 import SignIn from "./containers/SignIn";
 import NavBar from "./components/NavBar";
 import ResetPass from "./containers/ResetPass";
+import ResetPassSent from "./containers/ResetPassSent";
 import { Success } from "./components/Modal";
 import "./App.scss";
 
@@ -13,11 +14,10 @@ const App = () => {
       </div>
       <div className="content-holder">
         <div className="main-content-box">
-          <div className="scrollable-container">
-            {/*<Success value='RESET SUCCESSFULLY' />*/}
-            <SignIn />
-            {/* <ResetPass /> */}
-          </div>
+          {/* <Success value="RESET SUCCESSFULLY" /> */}
+          {/* <SignIn /> */}
+          {/* <ResetPass /> */}
+          <ResetPassSent />
         </div>
       </div>
     </div>
