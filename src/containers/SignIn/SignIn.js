@@ -14,9 +14,9 @@ const SignIn = () => {
           <h1 className="title-h1-text">Log in</h1>
         </div>
         <div className="SignIn-Wrap-Cont-Wrapper">
-          {/* <p className="SignIn-Wrap-Cont-Wrapper_error">
-            Invalid email or password
-          </p> */}
+          <p className="SignIn-Wrap-error error-visible">
+            Invalid email or password*
+          </p>
           <div className="inp-holder inp-holder-email">
             <input
               placeholder="Enter your Email"
@@ -51,7 +51,6 @@ const SignIn = () => {
             <div className="forgot-pass-t">
               <span>
                 <a href="#">Forgot password ?</a>
-                {/* <Button /> */}
               </span>
             </div>
           </div>
@@ -68,7 +67,7 @@ const SignIn = () => {
           Made with{" "}
           <img
             src="https://static.pandamr.com/fs/userFiles/main/media/icon-ionic-ios-heart.png?1602242531369"
-            alt=""
+            alt="Heart"
           />{" "}
           by PandaMR
         </p>

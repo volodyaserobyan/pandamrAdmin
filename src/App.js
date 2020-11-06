@@ -14,7 +14,7 @@ const App = () => {
       </div>
       <div className="content-holder">
         <div className="main-content-box">
-          {/* <Success value="RESET SUCCESSFULLY" /> */}
+          {/* <Success value="reset successfully" /> */}
           {/* <SignIn /> */}
           {/* <ResetPass /> */}
           <ResetPassSent />

@@ -6,11 +6,13 @@ const ResetPass = () => {
     <div className="form-wrapper form-reset">
       <form className="form-content form-content-reset">
         <div className="title-holder">
-          <h1 className="title-h1-text-reset">Forgot your password?</h1>
+          <h1 className="title-h1-text title-h1-text-reset">
+            Forgot your password?
+          </h1>
         </div>
         <div className="SignIn-Wrap-Cont-Wrapper">
           <div className="inp-holder inp-holder-email">
-            <p className="SignIn-Wrap-error">Email not found*</p>
+            <p className="SignIn-Wrap-error error-visible">Email not found*</p>
             <input
               placeholder="Enter your Email"
               type="mail"

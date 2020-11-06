@@ -7,7 +7,7 @@ const ResetPassSent = () => {
     <div className="form-wrapper success-wrapper">
       <div className="form-content form-content-success">
         <div className="success-img">
-          <img src={successImg} />
+          <img src={successImg} alt="Successfully reset" />
         </div>
         <span className="reset-success-title">Password reset email sent</span>
         <p className="reset-success-text">
@@ -20,7 +20,7 @@ const ResetPassSent = () => {
           Made with{" "}
           <img
             src="https://static.pandamr.com/fs/userFiles/main/media/icon-ionic-ios-heart.png?1602242531369"
-            alt=""
+            alt="Heart"
           />{" "}
           by PandaMR
         </p>
