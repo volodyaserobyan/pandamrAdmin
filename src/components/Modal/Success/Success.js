@@ -7,7 +7,7 @@ const Success = (props) => {
     <div className="status-b-holder status-visible">
       <div className="success-cont">
         <span className="success-cont-close"></span>
-        <div>
+        <div className="success-cont-img">
           <img src={successImg} alt="Successfully reset" />
         </div>
         <p className="success-cont-text">{props.value}</p>
