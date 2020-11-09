@@ -1,4 +1,6 @@
-.status-b-holder {
+// Password reset successful Popup
+.status-b-holder,
+.image-crop-holder {
   width: 100%;
   height: 100%;
   display: flex;
@@ -59,4 +61,77 @@
     font-weight: bold;
     margin-top: 10px;
   }
+}
+
+
+// Branding image cropper UI
+.image-crop-cont {
+  width: 1145px;
+  min-height: 757px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 60px;
+}
+.image-crop-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.image-crop-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.crop-image {
+  width: 1024px;
+  height: 512px;
+  border: 2px solid rgba(0,0,0,.1);
+  img {
+    width: 1024px;
+    height: 512px;
+    object-fit: cover;
+  }
+}
+.image-crop-dimensions {
+  display: flex;
+  align-items: center;
+}
+.dimensions-text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+.dimension-button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.dimension-selected {
+  background-color: #2196f3;
+  border: none;
+  color: #fff;
+  margin-right: 12px;
+}
+.dimension-selectable {
+  border: 1px solid #c8c7c7;
+  color: #757575;
+}
+.cropper-button {
+  padding: 10px 35px;
+  border-radius: 5px;
+  border: none;
+  width: 177px;
+  color: #fff;
+  background-color: #757575;
+  cursor: pointer;
+  transition: background-color .3s;
+
+}
+.cropper-button-reset {
+  margin-right: 12px;
+}
+.cropper-button-save {
+  background-color: #2196f3;
 }
