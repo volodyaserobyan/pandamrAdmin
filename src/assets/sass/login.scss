@@ -143,7 +143,11 @@ input[class="inp-v"]::placeholder {
     }
   }
 }
-
+.icon-heart {
+  font-family: "icomoon";
+  content: attr(data-icon);
+  font-size: 16px;
+}
 // PASSWORD RESET
 
 .SignIn-error-cont {

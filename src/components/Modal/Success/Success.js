@@ -4,7 +4,7 @@ import "./Success.scss";
 
 const Success = (props) => {
   return (
-    <div className="status-b-holder">
+    <div className="status-b-holder status-hidden">
       <div className="success-cont">
         <span className="success-cont-close"></span>
         <div className="success-cont-img">
