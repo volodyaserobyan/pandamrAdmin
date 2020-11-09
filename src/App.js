@@ -14,10 +14,10 @@ const App = () => {
       </div>
       <div className="content-holder">
         <div className="main-content-box">
-          <Success value="reset successfully" />
+          {/* <Success value="reset successfully" /> */}
           {/* <SignIn /> */}
           {/* <ResetPass /> */}
-          {/* <ResetPassSent /> */}
+          <ResetPassSent />
         </div>
       </div>
     </div>

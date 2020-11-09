@@ -12,13 +12,6 @@
   font-size: 14px;
   width: 452px;
   text-align: center;
-  &.form-signIn {
-    min-height: 369px;
-  }
-  &.form-reset,
-  &.success-wrapper {
-    min-height: 291px;
-  }
 }
 
 .form-content {
@@ -27,20 +20,13 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-
-  &.form-content-signIn {
-    min-height: 341px;
-  }
-  &.form-content-reset,
-  &.form-content-success {
-    min-height: 263px;
-  }
 }
-
+.title-holder {
+  margin-bottom: 30px;
+}
 .title-h1-text {
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 30px;
 }
 
 .inp-v,
@@ -145,7 +131,6 @@ input[class="inp-v"]::placeholder {
 }
 .pmr-info-b {
   margin-top: 5px;
-
   p {
     color: #757575;
     display: flex;
@@ -167,19 +152,14 @@ input[class="inp-v"]::placeholder {
   padding-left: 10px;
   margin-bottom: 10px;
   display: none;
-  // visibility: hidden;
-  // opacity: 0;
-  // transition: opacity 0.3s;
 }
 .error-visible {
-  // visibility: visible;
-  // opacity: 1;
   display: block;
 }
 
 // PASSWORD RESET EMAIL SENT
 .form-content-success {
-  justify-content: space-between;
+  align-items: center;
 }
 .reset-success-title {
   color: #27ae60;
@@ -189,4 +169,8 @@ input[class="inp-v"]::placeholder {
 .success-img,
 .reset-success-title {
   margin-bottom: 10px;
+}
+.success-img {
+  width: 84px;
+  height: 84px;
 }
