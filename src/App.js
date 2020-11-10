@@ -5,6 +5,7 @@ import ResetPass from "./containers/ResetPass";
 import ResetPassSent from "./containers/ResetPassSent";
 import { Success } from "./components/Modal";
 import { ImageCropper } from "./components/Modal";
+import { Confirm } from "./components/Modal";
 import "./App.scss";
 
 const App = () => {
@@ -15,11 +16,12 @@ const App = () => {
       </div>
       <div className="content-holder">
         <div className="main-content-box">
-            {<ImageCropper />}
-            {/*<Success value="reset successfully" />*/}
-            {/*<SignIn />*/}
-            {/* <ResetPass />*/}
-            {/* <ResetPassSent /> */}
+          {/* {<ImageCropper />} */}
+          {<Confirm />}
+          {/* <Success value="reset successfully" /> */}
+          {/* <SignIn /> */}
+          {/* <ResetPass />*/}
+          {/* <ResetPassSent /> */}
         </div>
       </div>
     </div>
