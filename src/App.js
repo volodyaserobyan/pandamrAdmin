@@ -1,6 +1,7 @@
 import React from "react";
 import SignIn from "./containers/SignIn";
 import NavBar from "./components/NavBar";
+import NewComponent from "./components/NewComponent";
 import ResetPass from "./containers/ResetPass";
 import ResetPassSent from "./containers/ResetPassSent";
 import { Success } from "./components/Modal";
@@ -17,7 +18,8 @@ const App = () => {
       <div className="content-holder">
         <div className="main-content-box">
           {/* {<ImageCropper />} */}
-          {<Confirm />}
+          {/*{<Confirm />}*/}
+           {<NewComponent/>}
           {/* <Success value="reset successfully" /> */}
           {/* <SignIn /> */}
           {/* <ResetPass />*/}
@@ -29,3 +31,4 @@ const App = () => {
 };
 
 export default App;
+
