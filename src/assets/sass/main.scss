@@ -315,7 +315,9 @@
   padding: 0 10px;
   height: 30px;
   text-transform: capitalize;
+
   &::placeholder {
+    box-sizing: border-box;
     color: rgba(#000000, 0.3);
   }
 }
