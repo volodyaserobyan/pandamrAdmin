@@ -7,7 +7,7 @@
   height: 100%;
   left: 0;
   top: 0;
-  background-color: #F9F9FB;
+  background-color: #f9f9fb;
 }
 
 .content-column-h {
@@ -27,26 +27,26 @@
     grid-row-gap: 20px;
     width: 100%;
     height: 100%;
-    padding: 20px
+    padding: 20px;
   }
 }
-.content-column-grid-h{
+.content-column-grid-h {
   display: grid;
   width: 100%;
   height: 100%;
   grid-template-rows: auto 10fr auto;
   grid-template-areas: "head" "cnt" "bottom";
 }
-.content-column-g-row{
+.content-column-g-row {
   width: 100%;
   overflow: hidden;
-  &.head{
+  &.head {
     grid-area: head;
   }
-  &.center{
+  &.center {
     grid-area: cnt;
   }
-  &.bottom{
+  &.bottom {
     grid-area: bottom;
   }
 }
@@ -70,27 +70,27 @@
   cursor: pointer;
   padding: 0 10px;
   text-transform: capitalize;
-  &.type-1{
-    background-color: #2593F0;
+  &.type-1 {
+    background-color: #2593f0;
     color: #ffffff;
     width: 100%;
   }
-  &.type-2{
-    background-color: #27B065;
+  &.type-2 {
+    background-color: #27b065;
     color: #ffffff;
   }
-  &.type-3{
-    background-color: #FE494D;
+  &.type-3 {
+    background-color: #fe494d;
     color: #ffffff;
   }
 }
-.left-head-component{
+.left-head-component {
   display: flex;
   align-items: center;
   padding: 20px;
   text-transform: uppercase;
   position: relative;
-  &:before{
+  &:before {
     content: "";
     display: block;
     position: absolute;
@@ -100,21 +100,21 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    background-color: #E2E1E1;
+    background-color: #e2e1e1;
   }
 }
-.left-center-component{
+.left-center-component {
   padding: 10px 4px 10px 10px;
   height: 100%;
   p {
     margin: 20px 0;
     padding: 0 10px;
-    &:first-child{
+    &:first-child {
       margin-top: 0;
     }
   }
 }
-.left-bottom-component{
+.left-bottom-component {
   padding: 10px 20px;
   p {
     margin-top: 10px;
@@ -137,38 +137,38 @@
     grid-column-gap: 20px;
   }
 }
-.content-c-row-h-inner{
+.content-c-row-h-inner {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
-.content-c-row-h-i-column{
+.content-c-row-h-i-column {
   display: flex;
   align-items: center;
-  &:first-child{
+  &:first-child {
     flex: 1;
   }
-  &:last-child{
+  &:last-child {
     flex: 0 0 auto;
   }
   > button {
     outline: none;
     border: none;
-    background-color: rgba(#2593F0, 0.2);
+    background-color: rgba(#2593f0, 0.2);
     margin-right: 6px;
     height: 40px;
     padding: 0 30px;
     clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
-    &:first-child{
+    &:first-child {
       clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 50%, 0% 0%);
     }
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
-    &.active{
-      background-color: rgba(#2593F0, 0.8);
+    &.active {
+      background-color: rgba(#2593f0, 0.8);
       color: #ffffff;
     }
   }
@@ -180,6 +180,80 @@
   }
 }
 
+///////////////////////
+.meeting-room-info {
+  margin-top: 20px;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 6px 5px 11px 0 rgba(200, 199, 199, 0.31);
+  border-radius: 12px;
+}
+.m-room-info-table {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+.m-room-info-thead {
+  display: table-header-group;
+  font-weight: bold;
+  color: #2193ed;
+  > .m-room-info-row {
+    border-bottom: 2px solid #2193ed;
+  }
+}
+
+.m-room-info-tbody {
+  display: table-row-group;
+  > .m-room-info-row {
+    border-bottom: 2px solid #c8c7c7;
+    &:nth-child(2n) {
+      background-color: #2193ed;
+      border-radius: 10px;
+      color: #fff;
+    }
+  }
+}
+
+.m-room-info-row {
+  display: table-row;
+}
+
+.m-room-info-cell {
+  display: table-cell;
+  padding: 5px 0;
+  width: calc(100% / 5);
+}
+
+.m-room-info-pagination {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.pagination-items {
+  display: flex;
+  > li {
+    margin: 0 5px;
+  }
+}
+.pagination-arrow {
+  color: #2193ed;
+  font-weight: bold;
+}
+.pagination-link {
+  color: #000;
+}
+.pagination-link-active {
+  background-color: #2193ed;
+  padding: 5px 6px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+////////////////////////
+
 .c-c-r-cnt-column-h {
   height: 100%;
   &:only-child {
@@ -188,44 +262,43 @@
   &.left {
     width: 300px;
     border-radius: 8px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 0 0 10px 1px rgba(#000000, 0.08);
   }
-  &.right{
+  &.right {
     display: grid;
     grid-template-columns: 11fr auto;
     grid-column-gap: 20px;
   }
 }
-.c-c-r-cnt-c-inner-column{
+.c-c-r-cnt-c-inner-column {
   height: 100%;
   border-radius: 8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 0 10px 1px rgba(#000000, 0.08);
-  &:only-child{
+  &:only-child {
     grid-column: span 2;
   }
-  &.left{
-
+  &.left {
   }
-  &.right{
+  &.right {
     width: 300px;
   }
 }
 
-.content-c-g-title{
+.content-c-g-title {
   font-size: 16px;
   color: rgba(#000000, 0.6);
   padding: 10px;
 }
-.common-component-head{
+.common-component-head {
   padding: 10px;
 }
-.content-c-component{
+.content-c-component {
   height: 100%;
   padding-right: 4px;
 }
-.content-column-g-block{
+.content-column-g-block {
   padding: 0 10px;
   margin-bottom: 10px;
   > p {
@@ -242,11 +315,11 @@
   padding: 0 10px;
   height: 30px;
   text-transform: capitalize;
-  &::placeholder{
+  &::placeholder {
     color: rgba(#000000, 0.3);
   }
 }
-.content-column-g-r-item{
+.content-column-g-r-item {
   display: flex;
   align-items: center;
   border: 1px solid rgba(#000000, 0.3);
@@ -258,7 +331,7 @@
   > i {
     flex: 0 0 auto;
   }
-  > p{
+  > p {
     flex: 1;
     padding: 0 10px;
     white-space: nowrap;
@@ -266,23 +339,23 @@
     overflow: hidden;
   }
 }
-.mr-head-component{
+.mr-head-component {
   padding: 20px;
-  background-color: rgba(#FAEBD7, 0.4);
+  background-color: rgba(#faebd7, 0.4);
 }
-.mr-center-component{
+.mr-center-component {
   display: flex;
   width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
-  background-color: rgba(#F0F8FF, 0.4);
+  background-color: rgba(#f0f8ff, 0.4);
 }
-.mr-bottom-component{
+.mr-bottom-component {
   display: flex;
   justify-content: center;
   padding: 10px;
-  > button{
+  > button {
     margin: 0 5px;
     min-width: 200px;
   }
@@ -311,11 +384,10 @@
 
   &::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background: rgba(#000000, 0.3)
+    background: rgba(#000000, 0.3);
   }
 
   &::-webkit-scrollbar-track {
     border-radius: 4px;
   }
 }
-

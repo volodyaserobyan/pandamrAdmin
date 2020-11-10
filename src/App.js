@@ -19,7 +19,7 @@ const App = () => {
         <div className="main-content-box">
           {/* {<ImageCropper />} */}
           {/*{<Confirm />}*/}
-           {<NewComponent/>}
+          {<NewComponent />}
           {/* <Success value="reset successfully" /> */}
           {/* <SignIn /> */}
           {/* <ResetPass />*/}
@@ -31,4 +31,3 @@ const App = () => {
 };
 
 export default App;
-
