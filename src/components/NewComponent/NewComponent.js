@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../assets/images/Logo.png";
-import "../../assets/sass/main.scss";
+// import "../../assets/sass/main.scss";
 
 const NewComponent = () => {
   return (
@@ -19,19 +19,23 @@ const NewComponent = () => {
               <div className="scrollable-holder-h">
                 <div className="scrollable-container-h">
                   <div className="left-c-component-item">
-                    <span>Conferance</span>
+                    <span className="left-c-component-heading">Conferance</span>
                     {/* <span className="left-c-c-value">2</span> */}
                     <i className="_icon-chevron-left-icon"></i>
                   </div>
                   <div className="left-c-component-item">
-                    <span>Panel Talks</span>
+                    <span className="left-c-component-heading">
+                      Panel Talks
+                    </span>
                     <span className="left-c-c-value">2</span>
-                    <i className="_icon-chevron-left-icon"></i>
+                    <i className="_icon-chevron-right-icon"></i>
                   </div>
                   <div className="left-c-component-item left-c-c-item-active">
-                    <span>Meeting room</span>
+                    <span className="left-c-component-heading">
+                      Meeting room
+                    </span>
                     {/* <span className="left-c-c-value">2</span> */}
-                    <i className="_icon-chevron-left-icon"></i>
+                    <i className="_icon-chevron-right-icon"></i>
                   </div>
                 </div>
               </div>
@@ -57,7 +61,9 @@ const NewComponent = () => {
               <button>Meeting room 3</button>
             </div>
             <div className="content-c-row-h-i-column">
-              <p>Expo details: 20/10/2020-20/11/2020</p>
+              <p>
+                <span>Expo details:</span> 20/10/2020-20/11/2020
+              </p>
             </div>
           </div>
 
@@ -79,17 +85,21 @@ const NewComponent = () => {
                   <div class="m-room-info-cell">Room name 1</div>
                   <div class="m-room-info-cell">Name Last name</div>
                   <div class="m-room-info-cell">Company 1</div>
-                  <div class="m-room-info-cell">Private</div>
+                  <div class="m-room-info-cell m-room-info-cell-edit">
+                    Private
+                    <i className="_icon-pencil-icon"></i>
+                    <i className="_icon-chevron-left-icon"></i>
+                  </div>
                 </div>
                 <div class="m-room-info-row">
                   <div class="m-room-info-cell">4:45 pm, 08/10/2020</div>
                   <div class="m-room-info-cell">Room name 2</div>
                   <div class="m-room-info-cell">Name Last name</div>
                   <div class="m-room-info-cell">Company 2</div>
-                  <div class="m-room-info-cell">
-                    Public
-                    {/* <button>d</button>
-                    <button>d</button> */}
+                  <div class="m-room-info-cell m-room-info-cell-edit">
+                    <span>Public</span>
+                    <i className="_icon-pencil-icon"></i>
+                    <i className="_icon-chevron-left-icon"></i>
                   </div>
                 </div>
                 <div class="m-room-info-row">
@@ -97,7 +107,11 @@ const NewComponent = () => {
                   <div class="m-room-info-cell">Room name 3</div>
                   <div class="m-room-info-cell">Name Last name</div>
                   <div class="m-room-info-cell">Company 3</div>
-                  <div class="m-room-info-cell">Private</div>
+                  <div class="m-room-info-cell m-room-info-cell-edit">
+                    Private
+                    <i className="_icon-pencil-icon"></i>
+                    <i className="_icon-chevron-left-icon"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -105,8 +119,8 @@ const NewComponent = () => {
             <div className="m-room-info-pagination">
               <ul className="pagination-items">
                 <li>
-                  <a href="#" className="pagination-arrow">
-                    <span>&lt;</span>
+                  <a href="#">
+                    <i className="_icon-chevron-left-icon"></i>
                   </a>
                 </li>
                 <li>
@@ -138,8 +152,8 @@ const NewComponent = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="pagination-arrow">
-                    <span>&gt;</span>
+                  <a href="#">
+                    <i className="_icon-chevron-right-icon"></i>
                   </a>
                 </li>
               </ul>
@@ -154,10 +168,12 @@ const NewComponent = () => {
                 <div className="common-component-head">
                   <p className="content-c-g-title">
                     Attached files from participants
+                    <a href="#">
+                      <i className="_icon-exclamation-circle-icon"></i>
+                    </a>
                   </p>
                   <input type="text" placeholder="search" className="input" />
                 </div>
-                Name
               </div>
               <div className="content-column-g-row center">
                 <div className="content-c-component">
@@ -168,70 +184,70 @@ const NewComponent = () => {
                       </div>
                       <div className="content-column-g-block">
                         <div className="content-column-g-r-item">
-                          <i>&</i>
-                          <p>lorem ipsum dolor.jpg</p>
-                          <i>$</i>
+                          <i className="_icon-img"></i>
+                          <p>Lorem ipsum dolor.jpg</p>
+                          <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i>&</i>
-                          <p>lorem ipsum dolor.jpg</p>
-                          <i>$</i>
+                          <i className="_icon-img"></i>
+                          <p>Lorem ipsum dolor.jpg</p>
+                          <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i>&</i>
-                          <p>lorem ipsum dolor.jpg</p>
-                          <i>$</i>
+                          <i className="_icon-file-icon"></i>
+                          <p>Lorem ipsum dolor.pdf</p>
+                          <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i>&</i>
-                          <p>lorem ipsum dolor.jpg</p>
-                          <i>$</i>
-                        </div>
-                        <p>Johan deley, CEO of defly inc.</p>
-                      </div>
-                      <div className="content-column-g-block">
-                        <div className="content-column-g-r-item">
-                          <i>&</i>
-                          <p>lorem ipsum dolor.jpg</p>
-                          <i>$</i>
-                        </div>
-                        <div className="content-column-g-r-item">
-                          <i>&</i>
-                          <p>lorem ipsum dolor.jpg</p>
-                          <i>$</i>
-                        </div>
-                        <div className="content-column-g-r-item">
-                          <i>&</i>
-                          <p>lorem ipsum dolor.jpg</p>
-                          <i>$</i>
-                        </div>
-                        <div className="content-column-g-r-item">
-                          <i>&</i>
-                          <p>lorem ipsum dolor.jpg</p>
-                          <i>$</i>
+                          <i className="_icon-img"></i>
+                          <p>Lorem ipsum dolor.jpg</p>
+                          <i className="_icon-trash"></i>
                         </div>
                         <p>Johan deley, CEO of defly inc.</p>
                       </div>
                       <div className="content-column-g-block">
                         <div className="content-column-g-r-item">
-                          <i>&</i>
-                          <p>lorem ipsum dolor.jpg</p>
-                          <i>$</i>
+                          <i className="_icon-img"></i>
+                          <p>Lorem ipsum dolor.jpg</p>
+                          <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i>&</i>
-                          <p>lorem ipsum dolor.jpg</p>
-                          <i>$</i>
+                          <i className="_icon-img"></i>
+                          <p>Lorem ipsum dolor.jpg</p>
+                          <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i>&</i>
-                          <p>lorem ipsum dolor.jpg</p>
-                          <i>$</i>
+                          <i className="_icon-img"></i>
+                          <p>Lorem ipsum dolor.jpg</p>
+                          <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i>&</i>
-                          <p>lorem ipsum dolor.jpg</p>
-                          <i>$</i>
+                          <i className="_icon-img"></i>
+                          <p>Lorem ipsum dolor.jpg</p>
+                          <i className="_icon-trash"></i>
+                        </div>
+                        <p>Johan deley, CEO of defly inc.</p>
+                      </div>
+                      <div className="content-column-g-block">
+                        <div className="content-column-g-r-item">
+                          <i className="_icon-img"></i>
+                          <p>Lorem ipsum dolor.jpg</p>
+                          <i className="_icon-trash"></i>
+                        </div>
+                        <div className="content-column-g-r-item">
+                          <i className="_icon-img"></i>
+                          <p>Lorem ipsum dolor.jpg</p>
+                          <i className="_icon-trash"></i>
+                        </div>
+                        <div className="content-column-g-r-item">
+                          <i className="_icon-img"></i>
+                          <p>Lorem ipsum dolor.jpg</p>
+                          <i className="_icon-trash"></i>
+                        </div>
+                        <div className="content-column-g-r-item">
+                          <i className="_icon-img"></i>
+                          <p>Lorem ipsum dolor.jpg</p>
+                          <i className="_icon-trash"></i>
                         </div>
                         <p>Johan deley, CEO of defly inc.</p>
                       </div>
@@ -250,10 +266,12 @@ const NewComponent = () => {
             <div className="c-c-r-cnt-c-inner-column left">
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
-                  <div className="mr-head-component">HEADER</div>
+                  <div className="mr-head-component">Meeting Room 3</div>
                 </div>
                 <div className="content-column-g-row center">
-                  <div className="mr-center-component">CONTENT</div>
+                  <div className="mr-center-component">
+                    <div className="mr-center-content"></div>
+                  </div>
                 </div>
                 <div className="content-column-g-row bottom">
                   <div className="mr-bottom-component">
@@ -268,7 +286,7 @@ const NewComponent = () => {
                 <div className="content-column-g-row head">
                   <div className="common-component-head">
                     <p className="content-c-g-title">
-                      Attached files from participants
+                      Participants <span>(8)</span>
                     </p>
                     <input type="text" placeholder="search" className="input" />
                   </div>
@@ -277,76 +295,20 @@ const NewComponent = () => {
                   <div className="content-c-component">
                     <div className="scrollable-holder-h">
                       <div className="scrollable-container-h">
-                        <div className="content-column-g-block">
+                        <div className="content-column-g-holder">
                           <p>Johan deley, CEO of defly inc.</p>
-                        </div>
-                        <div className="content-column-g-block">
-                          <div className="content-column-g-r-item">
-                            <i>&</i>
-                            <p>lorem ipsum dolor.jpg</p>
-                            <i>$</i>
-                          </div>
-                          <div className="content-column-g-r-item">
-                            <i>&</i>
-                            <p>lorem ipsum dolor.jpg</p>
-                            <i>$</i>
-                          </div>
-                          <div className="content-column-g-r-item">
-                            <i>&</i>
-                            <p>lorem ipsum dolor.jpg</p>
-                            <i>$</i>
-                          </div>
-                          <div className="content-column-g-r-item">
-                            <i>&</i>
-                            <p>lorem ipsum dolor.jpg</p>
-                            <i>$</i>
-                          </div>
                           <p>Johan deley, CEO of defly inc.</p>
-                        </div>
-                        <div className="content-column-g-block">
-                          <div className="content-column-g-r-item">
-                            <i>&</i>
-                            <p>lorem ipsum dolor.jpg</p>
-                            <i>$</i>
-                          </div>
-                          <div className="content-column-g-r-item">
-                            <i>&</i>
-                            <p>lorem ipsum dolor.jpg</p>
-                            <i>$</i>
-                          </div>
-                          <div className="content-column-g-r-item">
-                            <i>&</i>
-                            <p>lorem ipsum dolor.jpg</p>
-                            <i>$</i>
-                          </div>
-                          <div className="content-column-g-r-item">
-                            <i>&</i>
-                            <p>lorem ipsum dolor.jpg</p>
-                            <i>$</i>
-                          </div>
                           <p>Johan deley, CEO of defly inc.</p>
-                        </div>
-                        <div className="content-column-g-block">
-                          <div className="content-column-g-r-item">
-                            <i>&</i>
-                            <p>lorem ipsum dolor.jpg</p>
-                            <i>$</i>
-                          </div>
-                          <div className="content-column-g-r-item">
-                            <i>&</i>
-                            <p>lorem ipsum dolor.jpg</p>
-                            <i>$</i>
-                          </div>
-                          <div className="content-column-g-r-item">
-                            <i>&</i>
-                            <p>lorem ipsum dolor.jpg</p>
-                            <i>$</i>
-                          </div>
-                          <div className="content-column-g-r-item">
-                            <i>&</i>
-                            <p>lorem ipsum dolor.jpg</p>
-                            <i>$</i>
-                          </div>
+                          <p>Johan deley, CEO of defly inc.</p>
+                          <p>Johan deley, CEO of defly inc.</p>
+                          <p>Johan deley, CEO of defly inc.</p>
+                          <p>Johan deley, CEO of defly inc.</p>
+                          <p>Johan deley, CEO of defly inc.</p>
+                          <p>Johan deley, CEO of defly inc.</p>
+                          <p>Johan deley, CEO of defly inc.</p>
+                          <p>Johan deley, CEO of defly inc.</p>
+                          <p>Johan deley, CEO of defly inc.</p>
+                          <p>Johan deley, CEO of defly inc.</p>
                           <p>Johan deley, CEO of defly inc.</p>
                         </div>
                       </div>

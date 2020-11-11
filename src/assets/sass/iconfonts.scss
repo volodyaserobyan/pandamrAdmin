@@ -26,17 +26,40 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+._icon-search:before {
+  content: "\e90e";
+}
+._icon-img:before {
+  content: "\e90a";
+  vertical-align: middle;
+  font-size: 18px;
+  color: #757575;
+}
+._icon-trash:before {
+  content: "\e90d";
+  vertical-align: middle;
+  font-size: 16px;
+  color: #c8c7c7;
+}
 ._icon-chevron-left-icon:before {
   content: "\e900";
+  vertical-align: middle;
+  font-size: 13px;
 }
 ._icon-chevron-right-icon:before {
   content: "\e901";
+  vertical-align: middle;
+  font-size: 13px;
 }
 ._icon-exclamation-circle-icon:before {
   content: "\e902";
+  vertical-align: middle;
 }
 ._icon-file-icon:before {
   content: "\e903";
+  vertical-align: middle;
+  font-size: 24px;
+  color: #757575;
 }
 ._icon-file-pdf-icon:before {
   content: "\e904";
@@ -56,12 +79,10 @@
 ._icon-sign-out-alt-icon:before {
   content: "\e909";
 }
-._icon-trash-alt-icon:before {
-  content: "\e90a";
-}
 ._icon-user-minus-icon:before {
   content: "\e90b";
 }
 ._icon-pencil-icon:before {
   content: "\e90c";
+  font-size: 12px;
 }
