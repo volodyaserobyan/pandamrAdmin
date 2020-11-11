@@ -90,6 +90,11 @@
   padding: 20px;
   text-transform: uppercase;
   position: relative;
+  font-weight: bold;
+  ._icon-chevron-left-icon {
+    color: #757575;
+    margin-right: 15px;
+  }
   &:before {
     content: "";
     display: block;
@@ -103,12 +108,37 @@
     background-color: #e2e1e1;
   }
 }
+
+._icon-chevron-left-icon {
+  font-size: 13px;
+}
+
 .left-center-component {
   padding: 10px 4px 10px 10px;
   height: 100%;
-  p {
-    margin: 20px 0;
+
+  .left-c-component-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 15px 0;
     padding: 0 10px;
+    > .left-c-c-value {
+      margin-left: auto;
+      margin-right: 10px;
+      font-size: 8px;
+      background-color: #2193ed;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 13px;
+      height: 13px;
+    }
+
     &:first-child {
       margin-top: 0;
     }
@@ -119,6 +149,10 @@
   p {
     margin-top: 10px;
     text-align: center;
+    > ._icon-heart-icon {
+      color: red;
+      font-size: 14px;
+    }
   }
 }
 // left END

@@ -9,39 +9,30 @@ const NewComponent = () => {
         <div className="content-column-grid-h">
           <div className="content-column-g-row head">
             <div className="left-head-component">
-              <p>expo name</p>
+              <p>
+                <i className="_icon-chevron-left-icon"></i>Expo name 3
+              </p>
             </div>
           </div>
           <div className="content-column-g-row center">
             <div className="left-center-component">
               <div className="scrollable-holder-h">
                 <div className="scrollable-container-h">
-                  <p>Conferance</p>
-                  <p>Panel Talks</p>
-                  <p>Meeting room</p>
-                  <p>Conferance</p>
-                  <p>Panel Talks</p>
-                  <p>Meeting room</p>
-                  <p>Conferance</p>
-                  <p>Panel Talks</p>
-                  <p>Meeting room</p>
-                  <p>Conferance</p>
-                  <p>Panel Talks</p>
-                  <p>Meeting room</p>
-                  <p>Conferance</p>
-                  <p>Panel Talks</p>
-                  <p>Meeting room</p>
-                  <p>Panel Talks</p>
-                  <p>Meeting room</p>
-                  <p>Conferance</p>
-                  <p>Panel Talks</p>
-                  <p>Meeting room</p>
-                  <p>Conferance</p>
-                  <p>Panel Talks</p>
-                  <p>Meeting room</p>
-                  <p>Conferance</p>
-                  <p>Panel Talks</p>
-                  <p>Meeting room</p>
+                  <div className="left-c-component-item">
+                    <span>Conferance</span>
+                    {/* <span className="left-c-c-value">2</span> */}
+                    <i className="_icon-chevron-left-icon"></i>
+                  </div>
+                  <div className="left-c-component-item">
+                    <span>Panel Talks</span>
+                    <span className="left-c-c-value">2</span>
+                    <i className="_icon-chevron-left-icon"></i>
+                  </div>
+                  <div className="left-c-component-item left-c-c-item-active">
+                    <span>Meeting room</span>
+                    {/* <span className="left-c-c-value">2</span> */}
+                    <i className="_icon-chevron-left-icon"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -49,7 +40,9 @@ const NewComponent = () => {
           <div className="content-column-g-row bottom">
             <div className="left-bottom-component">
               <button className="btn type-1">Creat room</button>
-              <p>Made with & by PandaMR</p>
+              <p>
+                Made with <i className="_icon-heart-icon"></i> by PandaMR
+              </p>
             </div>
           </div>
         </div>
@@ -95,8 +88,8 @@ const NewComponent = () => {
                   <div class="m-room-info-cell">Company 2</div>
                   <div class="m-room-info-cell">
                     Public
-                    <button>d</button>
-                    <button>d</button>
+                    {/* <button>d</button>
+                    <button>d</button> */}
                   </div>
                 </div>
                 <div class="m-room-info-row">
