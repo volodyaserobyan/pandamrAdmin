@@ -21,21 +21,21 @@ const NewComponent = () => {
                   <div className="left-c-component-item">
                     <span className="left-c-component-heading">Conferance</span>
                     {/* <span className="left-c-c-value">2</span> */}
-                    <i className="_icon-chevron-left-icon"></i>
+                    <i className="_icon-left-arrow"></i>
                   </div>
                   <div className="left-c-component-item">
                     <span className="left-c-component-heading">
                       Panel Talks
                     </span>
                     <span className="left-c-c-value">2</span>
-                    <i className="_icon-chevron-right-icon"></i>
+                    <i className="_icon-arrow-right"></i>
                   </div>
                   <div className="left-c-component-item left-c-c-item-active">
                     <span className="left-c-component-heading">
                       Meeting room
                     </span>
                     {/* <span className="left-c-c-value">2</span> */}
-                    <i className="_icon-chevron-right-icon"></i>
+                    <i className="_icon-arrow-right"></i>
                   </div>
                 </div>
               </div>
@@ -119,42 +119,15 @@ const NewComponent = () => {
             <div className="m-room-info-pagination">
               <ul className="pagination-items">
                 <li>
-                  <a href="#">
-                    <i className="_icon-chevron-left-icon"></i>
-                  </a>
+                  <i className="_icon-left-arrow"></i>
                 </li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
                 <li>
-                  <a href="#" className="pagination-link">
-                    1
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="pagination-link">
-                    2
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="pagination-link pagination-link-active"
-                  >
-                    3
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="pagination-link">
-                    4
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="pagination-link">
-                    5
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="_icon-chevron-right-icon"></i>
-                  </a>
+                  <i className="_icon-arrow-right"></i>
                 </li>
               </ul>
             </div>
@@ -168,9 +141,7 @@ const NewComponent = () => {
                 <div className="common-component-head">
                   <p className="content-c-g-title">
                     Attached files from participants
-                    <a href="#">
-                      <i className="_icon-exclamation-circle-icon"></i>
-                    </a>
+                    <i className="_icon-information-outline"></i>
                   </p>
                   <input type="text" placeholder="search" className="input" />
                 </div>
@@ -184,22 +155,22 @@ const NewComponent = () => {
                       </div>
                       <div className="content-column-g-block">
                         <div className="content-column-g-r-item">
-                          <i className="_icon-img"></i>
+                          <i className="_icon-Icon-material-photo"></i>
                           <p>Lorem ipsum dolor.jpg</p>
                           <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i className="_icon-img"></i>
+                          <i className="_icon-Icon-material-photo"></i>
                           <p>Lorem ipsum dolor.jpg</p>
                           <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i className="_icon-file-icon"></i>
+                          <i className="_icon-Icon-material-photo"></i>
                           <p>Lorem ipsum dolor.pdf</p>
                           <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i className="_icon-img"></i>
+                          <i className="_icon-Icon-material-photo"></i>
                           <p>Lorem ipsum dolor.jpg</p>
                           <i className="_icon-trash"></i>
                         </div>
@@ -207,22 +178,22 @@ const NewComponent = () => {
                       </div>
                       <div className="content-column-g-block">
                         <div className="content-column-g-r-item">
-                          <i className="_icon-img"></i>
+                          <i className="_icon-Icon-material-photo"></i>
                           <p>Lorem ipsum dolor.jpg</p>
                           <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i className="_icon-img"></i>
+                          <i className="_icon-Icon-material-photo"></i>
                           <p>Lorem ipsum dolor.jpg</p>
                           <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i className="_icon-img"></i>
+                          <i className="_icon-Icon-material-photo"></i>
                           <p>Lorem ipsum dolor.jpg</p>
                           <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i className="_icon-img"></i>
+                          <i className="_icon-Icon-material-photo"></i>
                           <p>Lorem ipsum dolor.jpg</p>
                           <i className="_icon-trash"></i>
                         </div>
@@ -230,22 +201,22 @@ const NewComponent = () => {
                       </div>
                       <div className="content-column-g-block">
                         <div className="content-column-g-r-item">
-                          <i className="_icon-img"></i>
+                          <i className="_icon-Icon-material-photo"></i>
                           <p>Lorem ipsum dolor.jpg</p>
                           <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i className="_icon-img"></i>
+                          <i className="_icon-Icon-material-photo"></i>
                           <p>Lorem ipsum dolor.jpg</p>
                           <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i className="_icon-img"></i>
+                          <i className="_icon-Icon-material-photo"></i>
                           <p>Lorem ipsum dolor.jpg</p>
                           <i className="_icon-trash"></i>
                         </div>
                         <div className="content-column-g-r-item">
-                          <i className="_icon-img"></i>
+                          <i className="_icon-Icon-material-photo"></i>
                           <p>Lorem ipsum dolor.jpg</p>
                           <i className="_icon-trash"></i>
                         </div>

@@ -1,10 +1,13 @@
-$delete-cache: '?v=' + random(777);
+$delete-cache: "?v=" + random(777);
 @font-face {
   font-family: ProximaNova;
-  src: local('mardoto-regular'),
-  url('../fonts/arm/mardoto-regular-webfont.woff2#{$delete-cache}') format('woff2'),
-  url('../fonts/arm/mardoto-regular-webfont.woff#{$delete-cache}') format('woff'),
-  url('../fonts/arm/mardoto-regular-webfont.ttf#{$delete-cache}') format('truetype');
+  src: local("mardoto-regular"),
+    url("../fonts/arm/mardoto-regular-webfont.woff2#{$delete-cache}")
+      format("woff2"),
+    url("../fonts/arm/mardoto-regular-webfont.woff#{$delete-cache}")
+      format("woff"),
+    url("../fonts/arm/mardoto-regular-webfont.ttf#{$delete-cache}")
+      format("truetype");
   font-weight: normal;
   font-style: normal;
   unicode-range: U+0530-058F;
@@ -14,46 +17,55 @@ $delete-cache: '?v=' + random(777);
   font-family: ProximaNova;
   font-weight: bold;
   font-style: normal;
-  src: local('mardoto-bold'),
-  url('../fonts/arm/mardoto-bold-webfont.woff2#{$delete-cache}') format('woff2'),
-  url('../fonts/arm/mardoto-bold-webfont.woff#{$delete-cache}') format('woff'),
-  url('../fonts/arm/mardoto-bold-webfont.ttf#{$delete-cache}') format('truetype');
+  src: local("mardoto-bold"),
+    url("../fonts/arm/mardoto-bold-webfont.woff2#{$delete-cache}")
+      format("woff2"),
+    url("../fonts/arm/mardoto-bold-webfont.woff#{$delete-cache}") format("woff"),
+    url("../fonts/arm/mardoto-bold-webfont.ttf#{$delete-cache}")
+      format("truetype");
   unicode-range: U+0530-058F;
   font-display: fallback;
 }
 @font-face {
   font-family: ProximaNova;
-  src: local('Proxima Nova Regular'),
-  url('../fonts/default/ProximaNovaRegular.woff2#{$delete-cache}') format('woff2'),
-  url('../fonts/default/ProximaNovaRegular.woff#{$delete-cache}') format('woff'),
-  url('../fonts/default/ProximaNovaRegular.ttf#{$delete-cache}') format('truetype'),
-  url('../fonts/default/ProximaNovaRegular.eot#{$delete-cache}'),
-  url('../fonts/default/ProximaNovaRegular.eot#{$delete-cache}') format('embedded-opentype'),
-  url('../fonts/default/ProximaNovaRegular.svg#{$delete-cache}') format('svg');
+  src: local("Proxima Nova Regular"),
+    url("../fonts/default/ProximaNovaRegular.woff2#{$delete-cache}")
+      format("woff2"),
+    url("../fonts/default/ProximaNovaRegular.woff#{$delete-cache}")
+      format("woff"),
+    url("../fonts/default/ProximaNovaRegular.ttf#{$delete-cache}")
+      format("truetype"),
+    url("../fonts/default/ProximaNovaRegular.eot#{$delete-cache}"),
+    url("../fonts/default/ProximaNovaRegular.eot#{$delete-cache}")
+      format("embedded-opentype"),
+    url("../fonts/default/ProximaNovaRegular.svg#{$delete-cache}") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
 }
 @font-face {
   font-family: ProximaNova;
-  src: local('Proxima Nova Bold'),
-  url('../fonts/default/ProximaNovaBold.woff2#{$delete-cache}') format('woff2'),
-  url('../fonts/default/ProximaNovaBold.woff#{$delete-cache}') format('woff'),
-  url('../fonts/default/ProximaNovaBold.ttf#{$delete-cache}') format('truetype'),
-  url('../fonts/default/ProximaNovaBold.eot#{$delete-cache}'),
-  url('../fonts/default/ProximaNovaBold.eot#{$delete-cache}') format('embedded-opentype'),
-  url('../fonts/default/ProximaNovaBold.svg#{$delete-cache}') format('svg');
+  src: local("Proxima Nova Bold"),
+    url("../fonts/default/ProximaNovaBold.woff2#{$delete-cache}")
+      format("woff2"),
+    url("../fonts/default/ProximaNovaBold.woff#{$delete-cache}") format("woff"),
+    url("../fonts/default/ProximaNovaBold.ttf#{$delete-cache}")
+      format("truetype"),
+    url("../fonts/default/ProximaNovaBold.eot#{$delete-cache}"),
+    url("../fonts/default/ProximaNovaBold.eot#{$delete-cache}")
+      format("embedded-opentype"),
+    url("../fonts/default/ProximaNovaBold.svg#{$delete-cache}") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: fallback;
 }
 @font-face {
   font-family: ProximaNova;
-  src: local('IRAN_SemiBold'),
-  url('../fonts/farsi/IRAN_SemiBold.woff2#{$delete-cache}') format('woff2'),
-  url('../fonts/farsi/IRAN_SemiBold.woff#{$delete-cache}') format('woff'),
-  url('../fonts/farsi/IRAN_SemiBold.ttf#{$delete-cache}') format('truetype'),
-  url('../fonts/farsi/IRAN_SemiBold.eot#{$delete-cache}');
+  src: local("IRAN_SemiBold"),
+    url("../fonts/farsi/IRAN_SemiBold.woff2#{$delete-cache}") format("woff2"),
+    url("../fonts/farsi/IRAN_SemiBold.woff#{$delete-cache}") format("woff"),
+    url("../fonts/farsi/IRAN_SemiBold.ttf#{$delete-cache}") format("truetype"),
+    url("../fonts/farsi/IRAN_SemiBold.eot#{$delete-cache}");
   font-weight: normal;
   font-style: normal;
   unicode-range: U+0600-06FF;
@@ -61,11 +73,11 @@ $delete-cache: '?v=' + random(777);
 }
 @font-face {
   font-family: ProximaNova;
-  src: local('IRAN_SemiBold'),
-  url('../fonts/farsi/IRAN_SemiBold.woff2#{$delete-cache}') format('woff2'),
-  url('../fonts/farsi/IRAN_SemiBold.woff#{$delete-cache}') format('woff'),
-  url('../fonts/farsi/IRAN_SemiBold.ttf#{$delete-cache}') format('truetype'),
-  url('../fonts/farsi/IRAN_SemiBold.eot#{$delete-cache}');
+  src: local("IRAN_SemiBold"),
+    url("../fonts/farsi/IRAN_SemiBold.woff2#{$delete-cache}") format("woff2"),
+    url("../fonts/farsi/IRAN_SemiBold.woff#{$delete-cache}") format("woff"),
+    url("../fonts/farsi/IRAN_SemiBold.ttf#{$delete-cache}") format("truetype"),
+    url("../fonts/farsi/IRAN_SemiBold.eot#{$delete-cache}");
   font-weight: bold;
   font-style: normal;
   unicode-range: U+0600-06FF;
