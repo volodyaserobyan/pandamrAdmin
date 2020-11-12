@@ -20,7 +20,7 @@ const App = () => {
           {/* {<ImageCropper />} */}
           {/*{<Confirm />}*/}
           {/*{<NewComponent />}*/}
-           <Success value="reset successfully" />
+          <Success value="reset successfully" />
           {/* <SignIn /> */}
           {/* <ResetPass />*/}
           {/* <ResetPassSent /> */}
