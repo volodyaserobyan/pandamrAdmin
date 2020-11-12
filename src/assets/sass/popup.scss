@@ -195,9 +195,6 @@
 .meeting-buttons {
   margin-top: 35px;
 }
-.send-buttons {
-  margin-top: 12px;
-}
 .send-cont-txt {
   font-size: 16px;
   line-height: 20px;
@@ -211,10 +208,14 @@
   height: 198px;
   font-size: 14px;
   line-height: 17px;
-  overflow-x: hidden;
-  overflow-y: auto;
+  padding: 10px;
+  background-color: #ffffff;
+  > p {
+    padding: 10px;
+  }
 }
 .description-cont {
   justify-content: space-around;
   padding: 10px 30px;
+  background-color: #f9f9fb;
 }
