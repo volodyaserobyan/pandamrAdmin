@@ -72,6 +72,7 @@
   text-transform: capitalize;
   transition: background-color 0.3s;
   &.type-1 {
+    position: relative;
     background-color: #2196f3;
     color: #ffffff;
     width: 100%;
@@ -102,6 +103,12 @@
   > p {
     display: flex;
     align-items: center;
+    > i {
+      font-size: 14px;
+      margin-right: 10px;
+      cursor: pointer;
+      color: #757575;
+    }
   }
 
   &:before {
@@ -194,7 +201,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
 .content-c-row-h-i-column {
   display: flex;
   align-items: center;
@@ -205,64 +211,24 @@
     flex: 0 0 auto;
   }
   > button {
-    position: relative;
     outline: none;
-    border: none;
-    background-color: rgba(#2593f0, 0.2);
-    margin-right: 6px;
+    border: 2px solid #757575;
+    background-color: #fff;
+    margin-right: 100px;
     height: 40px;
     padding: 0 30px;
-    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
-    &:after {
-      content: "Expo name 3";
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      top: 2px;
-      left: 4.1px;
-      width: 97.2%;
-      height: 90%;
-      background-color: #fff;
-      clip-path: polygon(
-        89.3% 0%,
-        98.5% 50%,
-        89.3% 100%,
-        0% 100%,
-        9.4% 50%,
-        0% 0%
-      );
-    }
+    cursor: pointer;
+
     &:first-child {
-      clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 50%, 0% 0%);
-      &:after {
-        content: "Expo name 3";
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 2px;
-        left: 2px;
-        width: 98.5%;
-        height: 90%;
-        color: #000;
-        background-color: #fff;
-        clip-path: polygon(
-          89.3% 0%,
-          98.5% 50%,
-          89.3% 100%,
-          0% 100%,
-          0% 50%,
-          0% 0%
-        );
-      }
+      // clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 50%, 0% 0%);
     }
     &:last-child {
       margin-right: 0;
     }
     &.active {
-      background-color: rgba(#2593f0, 0.8);
-      color: #ffffff;
+      background-color: #fff;
+      color: #000;
+      border: 2px solid #2193ed;
     }
   }
   > p {
@@ -287,44 +253,62 @@
   font-size: 14px;
 }
 .m-room-info-table {
-  display: table;
-  border-collapse: collapse;
   width: 100%;
   text-align: center;
 }
 .m-room-info-thead {
-  display: table-header-group;
   font-weight: bold;
   color: #2193ed;
+  padding-right: 23px;
   > .m-room-info-row {
     border-bottom: 2px solid #2193ed;
   }
 }
 
 .m-room-info-tbody {
-  display: table-row-group;
+  padding-right: 20px;
+  display: block;
+  height: 105px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-color: rgba(#000000, 0.3) rgba(gray, 0.1);
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 3px;
+    background: rgba(gray, 0.1);
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: rgba(#000000, 0.3);
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 2px;
+  }
   > .m-room-info-row {
     border-bottom: 2px solid #c8c7c7;
+
     &:nth-child(2n) {
       background-color: #2193ed;
-      border-radius: 10px;
+      // border-radius: 4px;
       color: #fff;
     }
   }
 }
 
-.m-room-info-row {
-  display: table-row;
-}
-
 .m-room-info-cell {
-  display: table-cell;
-  padding: 5px 0;
+  display: inline-block;
   width: calc(100% / 5);
+  padding: 8px 0;
 }
 .m-room-info-cell-edit {
+  display: inline-block;
+  margin-left: 10px;
   > i {
-    margin-left: 15px;
+    cursor: pointer;
+    margin: 0 10px;
   }
 }
 .large-left-arrow {
@@ -333,21 +317,38 @@
 .m-room-info-pagination {
   display: flex;
   justify-content: center;
-  font-size: 12px;
   margin-top: 20px;
+  position: relative;
 }
 .pagination-items {
   display: flex;
-  justify-content: center;
   align-items: center;
-  > li {
-    margin: 0 5px;
-    i {
+  > i {
+    font-size: 14px;
+    color: #2593f0;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  > p {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
       color: #2593f0;
+    }
+    &.pagination-item-active {
+      background-color: #2593f0;
+      color: #fff;
+      border-radius: 5px;
+      padding: 4px 5px;
     }
   }
 }
-.pagination-arrow {
+
+.pagination-item-active {
   color: #2193ed;
 }
 .pagination-link {
@@ -358,6 +359,41 @@
   padding: 5px 6px;
   border-radius: 5px;
   color: #fff;
+}
+
+.small-btn {
+  border-radius: 5px;
+  border: none;
+  padding: 0 6px;
+  min-width: 66px;
+  height: 26px;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 0;
+  cursor: pointer;
+
+  &.small-btn-transp {
+    border: 1px solid #2196f3;
+    color: #2196f3;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #2196f3;
+      color: #fff;
+    }
+  }
+  &.small-btn-blue {
+    background-color: #2196f3;
+    color: #fff;
+    transition: all 0.3s;
+    &:hover {
+      background-color: darken(#2196f3, 10%);
+    }
+  }
+  &.m-room-info-btn {
+    position: absolute;
+    right: 0;
+  }
 }
 
 ////////////////////////
@@ -415,6 +451,17 @@
 .common-component-head {
   padding: 20px 24px 12px 24px;
 }
+
+.input-holder {
+  position: relative;
+  > i {
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    color: #c8c7c7;
+  }
+}
+
 .content-c-component {
   height: 100%;
   padding-right: 24px;
@@ -446,14 +493,18 @@
   border: 1px solid #d4d4d4;
   border-radius: 5px;
   color: rgba(#000000, 0.6);
-  width: 92.5%;
-  padding: 0 10px;
+  width: 85.5%;
+  padding: 0 10px 0 34px;
   height: 30px;
   text-transform: capitalize;
-
+  position: relative;
+  transition: background-color 0.3s;
   &::placeholder {
     box-sizing: border-box;
     color: rgba(#000000, 0.3);
+  }
+  &:focus {
+    background-color: lighten(#c8c7c7, 20%);
   }
 }
 .content-column-g-r-item {
@@ -491,10 +542,15 @@
 }
 .mr-head-component {
   padding: 20px;
-  // background-color: rgba(#faebd7, 0.4);
   text-align: center;
   font-weight: bold;
   text-transform: capitalize;
+  position: relative;
+  .mr-head-btn {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
 }
 .mr-center-component {
   display: flex;

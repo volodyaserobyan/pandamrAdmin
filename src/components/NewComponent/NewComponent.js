@@ -10,7 +10,7 @@ const NewComponent = () => {
           <div className="content-column-g-row head">
             <div className="left-head-component">
               <p>
-                <i className="_icon-chevron-left-icon"></i>Expo name 3
+                <i className="_icon-left-arrow"></i>Expo name 3
               </p>
             </div>
           </div>
@@ -85,10 +85,12 @@ const NewComponent = () => {
                   <div class="m-room-info-cell">Room name 1</div>
                   <div class="m-room-info-cell">Name Last name</div>
                   <div class="m-room-info-cell">Company 1</div>
-                  <div class="m-room-info-cell m-room-info-cell-edit">
+                  <div class="m-room-info-cell">
                     Private
-                    <i className="_icon-pencil-icon"></i>
-                    <i className="_icon-chevron-left-icon"></i>
+                    <div className="m-room-info-cell-edit">
+                      <i className="_icon-Icon-material-edit"></i>
+                      <i className="_icon-left-arrow"></i>
+                    </div>
                   </div>
                 </div>
                 <div class="m-room-info-row">
@@ -96,10 +98,12 @@ const NewComponent = () => {
                   <div class="m-room-info-cell">Room name 2</div>
                   <div class="m-room-info-cell">Name Last name</div>
                   <div class="m-room-info-cell">Company 2</div>
-                  <div class="m-room-info-cell m-room-info-cell-edit">
-                    <span>Public</span>
-                    <i className="_icon-pencil-icon"></i>
-                    <i className="_icon-chevron-left-icon"></i>
+                  <div class="m-room-info-cell">
+                    Public
+                    <div className="m-room-info-cell-edit">
+                      <i className="_icon-Icon-material-edit"></i>
+                      <i className="_icon-left-arrow"></i>
+                    </div>
                   </div>
                 </div>
                 <div class="m-room-info-row">
@@ -107,29 +111,70 @@ const NewComponent = () => {
                   <div class="m-room-info-cell">Room name 3</div>
                   <div class="m-room-info-cell">Name Last name</div>
                   <div class="m-room-info-cell">Company 3</div>
-                  <div class="m-room-info-cell m-room-info-cell-edit">
+                  <div class="m-room-info-cell">
                     Private
-                    <i className="_icon-pencil-icon"></i>
-                    <i className="_icon-chevron-left-icon"></i>
+                    <div className="m-room-info-cell-edit">
+                      <i className="_icon-Icon-material-edit"></i>
+                      <i className="_icon-left-arrow"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-room-info-row">
+                  <div class="m-room-info-cell">Expo period, 28/09/2020</div>
+                  <div class="m-room-info-cell">Room name 4</div>
+                  <div class="m-room-info-cell">Name Last name</div>
+                  <div class="m-room-info-cell">Company 4</div>
+                  <div class="m-room-info-cell ">
+                    Private
+                    <div className="m-room-info-cell-edit">
+                      <i className="_icon-Icon-material-edit"></i>
+                      <i className="_icon-left-arrow"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-room-info-row">
+                  <div class="m-room-info-cell">Expo period, 28/09/2020</div>
+                  <div class="m-room-info-cell">Room name 5</div>
+                  <div class="m-room-info-cell">Name Last name</div>
+                  <div class="m-room-info-cell">Company 5</div>
+                  <div class="m-room-info-cell">
+                    Private
+                    <div className="m-room-info-cell-edit">
+                      <i className="_icon-Icon-material-edit"></i>
+                      <i className="_icon-left-arrow"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-room-info-row">
+                  <div class="m-room-info-cell">Expo period, 28/09/2020</div>
+                  <div class="m-room-info-cell">Room name 6</div>
+                  <div class="m-room-info-cell">Name Last name</div>
+                  <div class="m-room-info-cell">Company 6</div>
+                  <div class="m-room-info-cell">
+                    Private
+                    <div className="m-room-info-cell-edit">
+                      <i className="_icon-Icon-material-edit"></i>
+                      <i className="_icon-left-arrow"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="m-room-info-pagination">
-              <ul className="pagination-items">
-                <li>
-                  <i className="_icon-left-arrow"></i>
-                </li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>
-                  <i className="_icon-arrow-right"></i>
-                </li>
-              </ul>
+              <div className="pagination-items">
+                <i className="_icon-left-arrow"></i>
+                <p>1</p>
+                <p>2</p>
+                <p className="pagination-item-active">3</p>
+                <p>4</p>
+                <p>5</p>
+                <i className="_icon-arrow-right"></i>
+              </div>
+
+              <button className="small-btn small-btn-transp m-room-info-btn">
+                Create
+              </button>
             </div>
           </div>
         </div>
@@ -143,7 +188,10 @@ const NewComponent = () => {
                     Attached files from participants
                     <i className="_icon-information-outline"></i>
                   </p>
-                  <input type="text" placeholder="search" className="input" />
+                  <div className="input-holder">
+                    <input type="text" placeholder="search" className="input" />
+                    <i className="_icon-search"></i>
+                  </div>
                 </div>
               </div>
               <div className="content-column-g-row center">
@@ -237,7 +285,14 @@ const NewComponent = () => {
             <div className="c-c-r-cnt-c-inner-column left">
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
-                  <div className="mr-head-component">Meeting Room 3</div>
+                  <div className="mr-head-component">
+                    Meeting Room 3
+                    <div className="mr-head-buttons">
+                      <button className="small-btn small-btn-blue mr-head-btn">
+                        Create
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <div className="content-column-g-row center">
                   <div className="mr-center-component">
@@ -259,7 +314,15 @@ const NewComponent = () => {
                     <p className="content-c-g-title">
                       Participants <span>(8)</span>
                     </p>
-                    <input type="text" placeholder="search" className="input" />
+
+                    <div className="input-holder">
+                      <input
+                        type="text"
+                        placeholder="search"
+                        className="input"
+                      />
+                      <i className="_icon-search"></i>
+                    </div>
                   </div>
                 </div>
                 <div className="content-column-g-row center">
