@@ -19,7 +19,9 @@
 }
 
 .success-cont,
-.confirm-cont {
+.confirm-cont,
+.meeting-cont,
+.description-cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,8 +64,18 @@
     font-weight: bold;
     margin-top: 10px;
   }
+  &-txt {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 24px;
+    margin-top: 10px;
+     span {
+      font-weight: bold;
+    }
+  }
 }
-.success-cont {
+.success-cont,
+.description-cont {
   min-height: 336px;
 }
 
@@ -109,16 +121,25 @@
 }
 .dimension-button,
 .cropper-button,
-.confirm-btn {
+.confirm-btn,
+.meeting-btn,
+.send-btn {
   border-radius: 5px;
   border: none;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
 }
 .dimension-selected,
 .cropper-button-save,
-.confirm-btn-confirm {
+.confirm-btn-confirm,
+.send-btn-des {
   background-color: #2196f3;
+}
+.meeting-btn-delete {
+  background-color: #fe4c4c;
+}
+.meeting-btn-cancel {
+  background-color: #c8c7c7;
 }
 .image-crop-dimensions {
   > .dimension-selectable {
@@ -156,6 +177,45 @@
 .confirm-cont {
   min-height: 274px;
 }
+.meeting-cont {
+  min-height: 250px;
+}
 .confirm-btn {
   padding: 10px 60px;
+}
+.meeting-btn {
+  min-width: 175px;
+  line-height: 38px;
+  margin-right: 12px;
+}
+.send-btn {
+  min-width: 175px;
+  line-height: 38px;
+}
+.meeting-buttons {
+  margin-top: 35px;
+}
+.send-cont-txt {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.send-text-block {
+  position: relative;
+  width: 100%;
+  height: 198px;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 10px;
+  background-color: #ffffff;
+  > p {
+    padding: 10px;
+  }
+}
+.description-cont {
+  justify-content: space-around;
+  padding: 10px 30px;
+  background-color: #f9f9fb;
 }

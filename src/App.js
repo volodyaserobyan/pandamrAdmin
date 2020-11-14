@@ -19,8 +19,8 @@ const App = () => {
         <div className="main-content-box">
           {/* {<ImageCropper />} */}
           {/*{<Confirm />}*/}
-          {<NewComponent />}
-          {/* <Success value="reset successfully" /> */}
+          {/*{<NewComponent />}*/}
+          <Success value="reset successfully" />
           {/* <SignIn /> */}
           {/* <ResetPass />*/}
           {/* <ResetPassSent /> */}
