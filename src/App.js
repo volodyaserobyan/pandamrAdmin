@@ -4,6 +4,9 @@ import NavBar from "./components/NavBar";
 import NewComponent from "./components/NewComponent";
 import ResetPass from "./containers/ResetPass";
 import ResetPassSent from "./containers/ResetPassSent";
+import { IsDenied } from "./components/Modal";
+import { SendNotification } from "./components/Modal";
+import { Invintation } from "./components/Modal";
 import { Success } from "./components/Modal";
 import { ImageCropper } from "./components/Modal";
 import { Confirm } from "./components/Modal";
@@ -18,9 +21,12 @@ const App = () => {
       <div className="content-holder">
         <div className="main-content-box">
           {/* {<ImageCropper />} */}
-          {/*{<Confirm />}*/}
-          {/*{<NewComponent />}*/}
-          <Success value="reset successfully" />
+          {/* {<Confirm />} */}
+          {/* {<NewComponent />} */}
+          {/* <IsDenied /> */}
+          {/* <SendNotification /> */}
+          <Invintation />
+          {/* <Success /> */}
           {/* <SignIn /> */}
           {/* <ResetPass />*/}
           {/* <ResetPassSent /> */}

@@ -57,8 +57,12 @@ const NewComponent = () => {
           <div className="content-c-row-h-inner">
             <div className="content-c-row-h-i-column">
               <button className="active">Expo name 3</button>
-              <button className="active">Meeting room</button>
-              <button>Meeting room 3</button>
+              <button className="">
+                <i></i>Meeting room
+              </button>
+              <button>
+                <i></i>Meeting room 3
+              </button>
             </div>
             <div className="content-c-row-h-i-column">
               <p>
@@ -329,21 +333,39 @@ const NewComponent = () => {
                   <div className="content-c-component">
                     <div className="scrollable-holder-h">
                       <div className="scrollable-container-h">
-                        <div className="content-column-g-holder">
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
-                          <p>Johan deley, CEO of defly inc.</p>
+                        <div className="content-column-g-block">
+                          <div className="content-col-g-r-item">
+                            <p>Johan Delly, CEO of Delly inc.</p>
+                            <i className="_icon-times"></i>
+                          </div>
+                          <div className="content-col-g-r-item">
+                            <p>Johan Delly, CEO of Delly inc.</p>
+                            <i className="_icon-times"></i>
+                          </div>
+                          <div className="content-col-g-r-item">
+                            <p>Johan Delly, CEO of Delly inc.</p>
+                            <i className="_icon-times"></i>
+                          </div>
+                          <div className="content-col-g-r-item">
+                            <p>Johan Delly, CEO of Delly inc.</p>
+                            <i className="_icon-times"></i>
+                          </div>
+                          <div className="content-col-g-r-item">
+                            <p>Johan Delly, CEO of Delly inc.</p>
+                            <i className="_icon-times"></i>
+                          </div>
+                          <div className="content-col-g-r-item">
+                            <p>Johan Delly, CEO of Delly inc.</p>
+                            <i className="_icon-times"></i>
+                          </div>
+                          <div className="content-col-g-r-item">
+                            <p>Johan Delly, CEO of Delly inc.</p>
+                            <i className="_icon-times"></i>
+                          </div>
+                          <div className="content-col-g-r-item">
+                            <p>Johan Delly, CEO of Delly inc.</p>
+                            <i className="_icon-times"></i>
+                          </div>
                         </div>
                       </div>
                     </div>

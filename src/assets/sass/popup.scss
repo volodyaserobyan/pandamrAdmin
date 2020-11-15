@@ -1,7 +1,5 @@
 // Password reset successful Popup
-.status-b-holder,
-.image-crop-holder,
-.confirm-holder {
+.global-holder {
   width: 100%;
   height: 100%;
   display: flex;
@@ -18,39 +16,29 @@
   display: none;
 }
 
-.success-cont,
+.isdenied-cont,
 .confirm-cont,
 .meeting-cont,
-.description-cont {
+.description-cont,
+.send-notification-cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 596px;
   border-radius: 5px;
   background-color: #fff;
   text-align: center;
-  padding: 40px 30px;
   position: relative;
   &-close {
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 15px;
-    width: 17px;
-    height: 2px;
-    background-color: #c8c7c7;
-    transform: rotate(45deg);
+    font-size: 18px;
+    color: #c8c7c7;
     cursor: pointer;
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 17px;
-      height: 2px;
-      top: 0;
-      right: 0;
-      background-color: #c8c7c7;
-      transform: rotate(90deg);
+    transition: color 0.3s;
+    &:hover {
+      color: darken(#c8c7c7, 10%);
     }
   }
   &-img {
@@ -59,7 +47,6 @@
   }
   &-text {
     text-transform: uppercase;
-    color: #27ae60;
     font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
@@ -69,14 +56,21 @@
     color: #000000;
     font-size: 24px;
     margin-top: 10px;
-     span {
+    span {
       font-weight: bold;
     }
   }
 }
+.isdenied-cont,
 .success-cont,
 .description-cont {
   min-height: 336px;
+}
+
+.success-cont {
+  p {
+    color: #27ae60;
+  }
 }
 
 // Branding image cropper UI
@@ -121,30 +115,48 @@
 }
 .dimension-button,
 .cropper-button,
-.confirm-btn,
+.global-btn,
 .meeting-btn,
-.send-btn {
+.send-btn,
+.invite-btn {
   border-radius: 5px;
   border: none;
   color: #ffffff;
   cursor: pointer;
+  margin: 0 6px;
 }
 .dimension-selected,
 .cropper-button-save,
-.confirm-btn-confirm,
+.global-btn-type-1,
 .send-btn-des {
   background-color: #2196f3;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken(#2196f3, 10%);
+  }
 }
 .meeting-btn-delete {
   background-color: #fe4c4c;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken (#fe4c4c, 10%);
+  }
 }
 .meeting-btn-cancel {
   background-color: #c8c7c7;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken (#c8c7c7, 10%);
+  }
 }
 .image-crop-dimensions {
   > .dimension-selectable {
     border: 1px solid #c8c7c7;
     color: #757575;
+    transition: all 0.3s;
+    &:hover {
+      border-color: #2196f3;
+    }
   }
 }
 
@@ -153,14 +165,12 @@
 }
 
 .cropper-button-reset,
-.confirm-btn-cancel {
-  background-color: #757575;
-}
-
-.dimension-selected,
-.cropper-button-reset,
-.confirm-btn-confirm {
-  margin-right: 12px;
+.global-btn-type-2 {
+  background-color: #c8c7c7;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken(#c8c7c7, 10%);
+  }
 }
 
 // Confirm Popup Template
@@ -175,13 +185,20 @@
   }
 }
 .confirm-cont {
+  padding: 40px 30px;
+  width: 596px;
   min-height: 274px;
 }
 .meeting-cont {
+  padding: 40px 30px;
+  width: 596px;
   min-height: 250px;
 }
-.confirm-btn {
-  padding: 10px 60px;
+.global-btn {
+  min-width: 170px;
+  padding: 10px;
+  height: 38px;
+  line-height: 18px;
 }
 .meeting-btn {
   min-width: 175px;
@@ -189,8 +206,10 @@
   margin-right: 12px;
 }
 .send-btn {
-  min-width: 175px;
+  min-width: 110px;
   line-height: 38px;
+  font-size: 14px;
+  height: 38px;
 }
 .meeting-buttons {
   margin-top: 35px;
@@ -215,7 +234,168 @@
   }
 }
 .description-cont {
+  padding: 40px 30px;
+  width: 596px;
   justify-content: space-around;
-  padding: 10px 30px;
+  padding: 10px 40px;
   background-color: #f9f9fb;
+  .send-text-block {
+    > .scrollable-container-h {
+      padding: 15px;
+    }
+    p {
+      color: #757575;
+    }
+  }
+}
+
+// Is Deined
+.isdenied-cont {
+  padding: 40px 30px;
+  width: 596px;
+  &-img {
+    img {
+      width: 84px;
+      height: 84px;
+    }
+  }
+  &-text {
+    color: #fe4c4c;
+  }
+}
+
+// Send Notification
+.send-notification-cont {
+  padding: 60px;
+  width: 673px;
+  .send-notification-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+  .send-notification-info {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  .send-notification-subtitle {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+
+// Invintation
+.invintation-cont {
+  width: 445px;
+  min-height: 590px;
+  padding: 30px 20px 12px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #fff;
+  text-align: center;
+}
+.inv-cont-text {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.invintation-info-block {
+  position: relative;
+  width: 100%;
+  height: 400px;
+
+  background-color: #ffffff;
+  > p {
+    padding: 10px;
+  }
+}
+
+.info-block-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-right: 15px;
+  &:last-child {
+    margin: 0;
+  }
+  > p {
+    cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+      color: #2196f3;
+    }
+  }
+  > i {
+    color: #c8c7c7;
+    cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+      color: #fe4c4c;
+    }
+  }
+}
+.inv-input-holder {
+  position: relative;
+  width: 100%;
+  > i {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    color: #c8c7c7;
+  }
+}
+.invite-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.invite-btn {
+  width: 100%;
+  padding: 10px;
+  height: 38px;
+  line-height: 18px;
+}
+
+.inv-checkbox-holder {
+  position: relative;
+  span {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -9px;
+      left: -18px;
+      width: 13px;
+      height: 13px;
+      border: 2px solid #c8c7c7;
+      border-radius: 50%;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -11px;
+      left: -11px;
+      width: 5px;
+      height: 12px;
+      border: 3px solid #2196f3;
+      border-left-width: 0;
+      border-top-width: 0;
+      border-radius: 2px;
+      transform: rotate(45deg);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+  }
+  input[type="checkbox"]:checked + span::after {
+    opacity: 1;
+  }
+
+  input {
+    display: none;
+  }
 }

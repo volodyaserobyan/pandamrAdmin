@@ -3,9 +3,9 @@ import "./Confirm.scss";
 
 const Confirm = (props) => {
   return (
-    <div className="confirm-holder">
+    <div className="global-holder confirm-holder">
       <div className="confirm-cont">
-        <span className="success-cont-close"></span>
+        <i className="_icon-times description-cont-close"></i>
         <div className="confirm-text">
           <p>
             By confirming, in all zones within all halls will be used the same
@@ -13,9 +13,9 @@ const Confirm = (props) => {
             <br /> <span>Are you sure?</span>
           </p>
         </div>
-        <div className="confirm-buttons">
-          <button className="confirm-btn confirm-btn-confirm">Confirm</button>
-          <button className="confirm-btn confirm-btn-cancel">Cancel</button>
+        <div className="global-buttons">
+          <button className="global-btn global-btn-type-1">Confirm</button>
+          <button className="global-btn global-btn-type-2">Cancel</button>
         </div>
       </div>
     </div>
