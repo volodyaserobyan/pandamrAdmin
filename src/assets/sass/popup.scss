@@ -362,6 +362,7 @@
 
 .inv-checkbox-holder {
   position: relative;
+
   span {
     &::before {
       content: "";
@@ -373,6 +374,7 @@
       height: 13px;
       border: 2px solid #c8c7c7;
       border-radius: 50%;
+      cursor: pointer;
     }
     &::after {
       content: "";
@@ -389,6 +391,7 @@
       transform: rotate(45deg);
       opacity: 0;
       transition: opacity 0.3s;
+      cursor: pointer;
     }
   }
   input[type="checkbox"]:checked + span::after {

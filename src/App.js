@@ -22,10 +22,10 @@ const App = () => {
         <div className="main-content-box">
           {/* {<ImageCropper />} */}
           {/* {<Confirm />} */}
-          {/* {<NewComponent />} */}
+          {<NewComponent />}
           {/* <IsDenied /> */}
           {/* <SendNotification /> */}
-          <Invintation />
+          {/* <Invintation /> */}
           {/* <Success /> */}
           {/* <SignIn /> */}
           {/* <ResetPass />*/}

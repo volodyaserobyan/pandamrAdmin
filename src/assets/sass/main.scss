@@ -104,7 +104,7 @@
     display: flex;
     align-items: center;
     > i {
-      font-size: 14px;
+      font-size: 10px;
       margin-right: 10px;
       cursor: pointer;
       color: #757575;
@@ -135,7 +135,6 @@
     align-items: center;
     cursor: pointer;
     margin: 15px 0;
-    padding-right: 5px;
     transition: color 0.3s;
     &:hover {
       color: #2196f3;
@@ -158,6 +157,9 @@
       width: 13px;
       height: 13px;
     }
+    > i {
+      font-size: 10px;
+    }
 
     &:first-child {
       margin-top: 0;
@@ -165,7 +167,7 @@
   }
 }
 .left-bottom-component {
-  padding: 12px 24px;
+  padding: 12px 33px;
   p {
     display: flex;
     justify-content: center;
@@ -340,13 +342,19 @@
   &::-webkit-scrollbar-track {
     border-radius: 2px;
   }
+
   > .m-room-info-row {
-    border-bottom: 2px solid #c8c7c7;
+    & .m-room-info-row-wrp {
+      border-bottom: 2px solid #c8c7c7;
+    }
 
     &:nth-child(2n) {
       background-color: #2193ed;
-      // border-radius: 4px;
       color: #fff;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 6px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 6px;
     }
   }
 }
@@ -377,7 +385,7 @@
   display: flex;
   align-items: center;
   > i {
-    font-size: 14px;
+    font-size: 10px;
     color: #2593f0;
     cursor: pointer;
     margin: 0 10px;
@@ -524,7 +532,7 @@
   padding: 0 10px 0 24px;
   margin-bottom: 10px;
   > p {
-    padding: 10px;
+    padding: 0 10px;
     font-weight: bold;
     font-size: 12px;
   }
@@ -566,6 +574,7 @@
     color: #757575;
   }
   > i:last-child {
+    font-size: 15px;
     color: #c8c7c7;
     cursor: pointer;
     &:hover {
@@ -640,7 +649,7 @@
 .mr-bottom-component {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 12px;
   > button {
     margin: 0 5px;
     min-width: 200px;

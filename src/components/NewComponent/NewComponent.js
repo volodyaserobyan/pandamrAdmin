@@ -85,80 +85,92 @@ const NewComponent = () => {
 
               <div class="m-room-info-tbody">
                 <div class="m-room-info-row">
-                  <div class="m-room-info-cell">3:35 pm, 11/10/2020</div>
-                  <div class="m-room-info-cell">Room name 1</div>
-                  <div class="m-room-info-cell">Name Last name</div>
-                  <div class="m-room-info-cell">Company 1</div>
-                  <div class="m-room-info-cell">
-                    Private
-                    <div className="m-room-info-cell-edit">
-                      <i className="_icon-Icon-material-edit"></i>
-                      <i className="_icon-left-arrow"></i>
+                  <div className="m-room-info-row-wrp">
+                    <div class="m-room-info-cell">3:35 pm, 11/10/2020</div>
+                    <div class="m-room-info-cell">Room name 1</div>
+                    <div class="m-room-info-cell">Name Last name</div>
+                    <div class="m-room-info-cell">Company 1</div>
+                    <div class="m-room-info-cell">
+                      Private
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-Icon-material-edit"></i>
+                        <i className="_icon-left-arrow"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="m-room-info-row">
-                  <div class="m-room-info-cell">4:45 pm, 08/10/2020</div>
-                  <div class="m-room-info-cell">Room name 2</div>
-                  <div class="m-room-info-cell">Name Last name</div>
-                  <div class="m-room-info-cell">Company 2</div>
-                  <div class="m-room-info-cell">
-                    Public
-                    <div className="m-room-info-cell-edit">
-                      <i className="_icon-Icon-material-edit"></i>
-                      <i className="_icon-left-arrow"></i>
+                  <div className="m-room-info-row-wrp">
+                    <div class="m-room-info-cell">4:45 pm, 08/10/2020</div>
+                    <div class="m-room-info-cell">Room name 2</div>
+                    <div class="m-room-info-cell">Name Last name</div>
+                    <div class="m-room-info-cell">Company 2</div>
+                    <div class="m-room-info-cell">
+                      Public
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-Icon-material-edit"></i>
+                        <i className="_icon-left-arrow"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="m-room-info-row">
-                  <div class="m-room-info-cell">Expo period, 28/09/2020</div>
-                  <div class="m-room-info-cell">Room name 3</div>
-                  <div class="m-room-info-cell">Name Last name</div>
-                  <div class="m-room-info-cell">Company 3</div>
-                  <div class="m-room-info-cell">
-                    Private
-                    <div className="m-room-info-cell-edit">
-                      <i className="_icon-Icon-material-edit"></i>
-                      <i className="_icon-left-arrow"></i>
+                  <div className="m-room-info-row-wrp">
+                    <div class="m-room-info-cell">Expo period, 28/09/2020</div>
+                    <div class="m-room-info-cell">Room name 3</div>
+                    <div class="m-room-info-cell">Name Last name</div>
+                    <div class="m-room-info-cell">Company 3</div>
+                    <div class="m-room-info-cell">
+                      Private
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-Icon-material-edit"></i>
+                        <i className="_icon-left-arrow"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="m-room-info-row">
-                  <div class="m-room-info-cell">Expo period, 28/09/2020</div>
-                  <div class="m-room-info-cell">Room name 4</div>
-                  <div class="m-room-info-cell">Name Last name</div>
-                  <div class="m-room-info-cell">Company 4</div>
-                  <div class="m-room-info-cell ">
-                    Private
-                    <div className="m-room-info-cell-edit">
-                      <i className="_icon-Icon-material-edit"></i>
-                      <i className="_icon-left-arrow"></i>
+                  <div className="m-room-info-row-wrp">
+                    <div class="m-room-info-cell">Expo period, 28/09/2020</div>
+                    <div class="m-room-info-cell">Room name 4</div>
+                    <div class="m-room-info-cell">Name Last name</div>
+                    <div class="m-room-info-cell">Company 4</div>
+                    <div class="m-room-info-cell ">
+                      Private
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-Icon-material-edit"></i>
+                        <i className="_icon-left-arrow"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="m-room-info-row">
-                  <div class="m-room-info-cell">Expo period, 28/09/2020</div>
-                  <div class="m-room-info-cell">Room name 5</div>
-                  <div class="m-room-info-cell">Name Last name</div>
-                  <div class="m-room-info-cell">Company 5</div>
-                  <div class="m-room-info-cell">
-                    Private
-                    <div className="m-room-info-cell-edit">
-                      <i className="_icon-Icon-material-edit"></i>
-                      <i className="_icon-left-arrow"></i>
+                  <div className="m-room-info-row-wrp">
+                    <div class="m-room-info-cell">Expo period, 28/09/2020</div>
+                    <div class="m-room-info-cell">Room name 5</div>
+                    <div class="m-room-info-cell">Name Last name</div>
+                    <div class="m-room-info-cell">Company 5</div>
+                    <div class="m-room-info-cell">
+                      Private
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-Icon-material-edit"></i>
+                        <i className="_icon-left-arrow"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="m-room-info-row">
-                  <div class="m-room-info-cell">Expo period, 28/09/2020</div>
-                  <div class="m-room-info-cell">Room name 6</div>
-                  <div class="m-room-info-cell">Name Last name</div>
-                  <div class="m-room-info-cell">Company 6</div>
-                  <div class="m-room-info-cell">
-                    Private
-                    <div className="m-room-info-cell-edit">
-                      <i className="_icon-Icon-material-edit"></i>
-                      <i className="_icon-left-arrow"></i>
+                  <div className="m-room-info-row-wrp">
+                    <div class="m-room-info-cell">Expo period, 28/09/2020</div>
+                    <div class="m-room-info-cell">Room name 6</div>
+                    <div class="m-room-info-cell">Name Last name</div>
+                    <div class="m-room-info-cell">Company 6</div>
+                    <div class="m-room-info-cell">
+                      Private
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-Icon-material-edit"></i>
+                        <i className="_icon-left-arrow"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
