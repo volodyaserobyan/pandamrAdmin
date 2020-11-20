@@ -907,7 +907,7 @@
     border-radius: 2px;
   }
 }
-<<<<<<< HEAD
+
 @media (max-width: 1820px) {
   .mr-center-c-info-time {
     display: flex;
@@ -1023,15 +1023,12 @@
     padding: 10px 15px;
   }
 }
-=======
-
-
-.user-info-grid-holder{
+.user-info-grid-holder {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.user-i-grid{
+.user-i-grid {
   position: absolute;
   left: 0;
   top: 0;
@@ -1041,19 +1038,19 @@
   grid-template-areas: "speaker form-list";
   grid-template-columns: auto 10fr;
 }
-.speaker-col-b{
+.speaker-col-b {
   grid-area: speaker;
 }
-.form-col-b{
+.form-col-b {
   grid-area: form-list;
 }
 
-.sp-grid-holder{
+.sp-grid-holder {
   width: 306px;
   height: 100%;
-  position: relative;;
+  position: relative;
 }
-.sp-grid-b{
+.sp-grid-b {
   position: absolute;
   left: 0;
   top: 0;
@@ -1063,11 +1060,11 @@
   grid-template-areas: "title-row" "content-row";
   grid-template-rows: auto 10fr;
 }
-.sp-g-title-row{
+.sp-g-title-row {
   grid-area: title-row;
   padding-bottom: 9px;
 }
-.sp-g-content-row{
+.sp-g-content-row {
   grid-area: content-row;
 }
 .cont-info-user-profile {
@@ -1128,10 +1125,6 @@
   cursor: pointer;
 }
 
-
-
-
-
 .cont-info-user-content {
   width: 100%;
   padding-left: 12px;
@@ -1156,15 +1149,15 @@
   font-weight: bold;
   min-height: 50px;
 }
- .cont-info-user-content .inside-info-user-content > input {
-   width: 100%;
-   padding: 13px;
-   font-size: 14px;
-   border-radius: 5px;
-   border: 2px solid rgba(33, 150, 243, 0.3);
-   resize: none;
-   box-sizing: border-box;
- }
+.cont-info-user-content .inside-info-user-content > input {
+  width: 100%;
+  padding: 13px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 2px solid rgba(33, 150, 243, 0.3);
+  resize: none;
+  box-sizing: border-box;
+}
 .cont-info-user-content .inside-info-user-content {
   position: relative;
   display: flex;
@@ -1179,24 +1172,24 @@
   font-size: 14px;
   padding-bottom: 9px;
   padding-left: 16px;
-  line-height: 17px;
+  line-height: 20px;
 }
 .cont-info-user-content .inside-info-user-content .short {
   min-height: 220px;
 }
- .cont-info-user-content .inside-info-user-content > textarea {
-   outline: none;
-   max-height: 220px;
-   width: 100%;
-   margin-top: 5px;
-   padding: 13px;
-   font-size: 14px;
-   border-radius: 5px;
-   border: 2px solid rgba(33, 150, 243, 0.3);
-   resize: none;
-   box-sizing: border-box;
-   overflow-y: auto;
- }
+.cont-info-user-content .inside-info-user-content > textarea {
+  outline: none;
+  max-height: 220px;
+  width: 100%;
+  margin-top: 5px;
+  padding: 13px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 2px solid rgba(33, 150, 243, 0.3);
+  resize: none;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
 .with-files {
   width: 100%;
   height: 38px;
@@ -1209,4 +1202,3 @@
   border-radius: 5px;
   cursor: pointer;
 }
->>>>>>> 7c98909e3bd22e13f2dd7e4b42df225eb9c3ba55

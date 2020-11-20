@@ -285,10 +285,10 @@ const NewComponent = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
+
         {/* End of right top content */}
-=======
-        <div className='user-info-grid-holder'>
+
+        <div className="user-info-grid-holder">
           <div className="user-i-grid">
             <div className="speaker-col-b">
               <div className="sp-grid-holder">
@@ -297,48 +297,53 @@ const NewComponent = () => {
                     <p className="name-text-v">Speaker</p>
                   </div>
                   <div className="sp-g-content-row">
-                    <div className='cont-info-user-profile'>
+                    <div className="cont-info-user-profile">
                       <div className="scrollable-holder-h">
                         <div className="scrollable-container-h scroll-profile">
-                          <div className='info-user-profile-photo'>
+                          <div className="info-user-profile-photo">
                             <div className="profile-photo-block">
                               <i className="icon-camera"></i>
-                                {/*{_.isEmpty(this.state.pictures) ?*/}
-                                    {/*<label>*/}
-                                      {/*<img src={userIcon} alt='' />*/}
-                                      {/*<input type="file" onChange={this.handleImageChange} />*/}
-                                    {/*</label> :*/}
-                                    {/*<label>*/}
-                                      {/*<img src={this.state.pictures.src} alt='' />*/}
-                                      {/*<input type="file" onChange={this.handleImageChange} />*/}
-                                    {/*</label>}*/}
+                              {/*{_.isEmpty(this.state.pictures) ?*/}
+                              {/*<label>*/}
+                              {/*<img src={userIcon} alt='' />*/}
+                              {/*<input type="file" onChange={this.handleImageChange} />*/}
+                              {/*</label> :*/}
+                              {/*<label>*/}
+                              {/*<img src={this.state.pictures.src} alt='' />*/}
+                              {/*<input type="file" onChange={this.handleImageChange} />*/}
+                              {/*</label>}*/}
                             </div>
-                            <input placeholder='Speaker name and surname' />
-                            <input placeholder='Speaker title/professional degree *' />
-                            <input placeholder='Email' />
+                            <input placeholder="Speaker name and surname" />
+                            <input placeholder="Speaker title/professional degree *" />
+                            <input placeholder="Email" />
                           </div>
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
-
             </div>
             <div className="form-col-b">
               <div className="scrollable-holder-h">
                 <div className="scrollable-container-h">
-                  <div className='cont-info-user-content'>
+                  <div className="cont-info-user-content">
                     <div className="inside-info-user-content">
                       <p>(min 10, max 150 chars)</p>
-                      <input className="subject" placeholder='Subject' />
+                      <input className="subject" placeholder="Subject" />
                     </div>
                     <div className="inside-info-user-content">
                       <p>(min 200, max 1000 chars)</p>
-                      <textarea className="short" placeholder='Short description' />
+                      <textarea
+                        className="short"
+                        placeholder="Short description"
+                      />
                     </div>
-                    <input className="with-files" type="submit" value="Submit without files" />
+                    <input
+                      className="with-files"
+                      type="submit"
+                      value="Submit without files"
+                    />
                   </div>
                 </div>
               </div>
@@ -346,10 +351,7 @@ const NewComponent = () => {
           </div>
         </div>
 
-
->>>>>>> 7c98909e3bd22e13f2dd7e4b42df225eb9c3ba55
-
-        <div className="content-c-row-h center" style={{display: "none"}}>
+        <div className="content-c-row-h center" style={{ display: "none" }}>
           <div className="c-c-r-cnt-column-h left">
             <div className="content-column-grid-h">
               <div className="content-column-g-row head">
