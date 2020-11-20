@@ -285,7 +285,7 @@ const NewComponent = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
+{/*<<<<<<< HEAD*/}
         {/* End of right top content */}
 =======
         <div className='user-info-grid-holder'>
