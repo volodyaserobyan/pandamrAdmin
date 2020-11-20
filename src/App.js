@@ -28,7 +28,7 @@ const App = () => {
           {/* <Invintation /> */}
           {/* <Success /> */}
           {/* <SignIn /> */}
-          {/* <ResetPass />*/}
+          {/* <ResetPass /> */}
           {/* <ResetPassSent /> */}
         </div>
       </div>

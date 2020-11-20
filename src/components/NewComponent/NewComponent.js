@@ -5,6 +5,7 @@ import Logo from "../../assets/images/Logo.png";
 const NewComponent = () => {
   return (
     <div className="content-h">
+      {/* Left Sidebar */}
       <div className="content-column-h left">
         <div className="content-column-grid-h">
           <div className="content-column-g-row head">
@@ -20,7 +21,6 @@ const NewComponent = () => {
                 <div className="scrollable-container-h">
                   <div className="left-c-component-item">
                     <span className="left-c-component-heading">Conferance</span>
-                    {/* <span className="left-c-c-value">2</span> */}
                     <i className="_icon-left-arrow"></i>
                   </div>
                   <div className="left-c-component-item">
@@ -34,7 +34,6 @@ const NewComponent = () => {
                     <span className="left-c-component-heading">
                       Meeting room
                     </span>
-                    {/* <span className="left-c-c-value">2</span> */}
                     <i className="_icon-arrow-right"></i>
                   </div>
                 </div>
@@ -43,7 +42,7 @@ const NewComponent = () => {
           </div>
           <div className="content-column-g-row bottom">
             <div className="left-bottom-component">
-              <button className="btn type-1">Creat room</button>
+              <button className="btn type-1">Create room</button>
               <p>
                 Made with <i className="_icon-heart-icon"></i> by PandaMR
               </p>
@@ -51,8 +50,11 @@ const NewComponent = () => {
           </div>
         </div>
       </div>
+      {/* End of left sidebar */}
 
+      {/* Right main content */}
       <div className="content-column-h right">
+        {/* Right top content */}
         <div className="content-c-row-h head">
           <div className="content-c-row-h-inner">
             <div className="content-c-row-h-i-column">
@@ -70,8 +72,8 @@ const NewComponent = () => {
               </p>
             </div>
           </div>
-
-          <div className="meeting-room-info">
+          {/* Meeting room table 1 */}
+          <div className="meeting-room-info meeting-room-holder">
             <div class="m-room-info-table">
               <div class="m-room-info-thead">
                 <div class="m-room-info-row">
@@ -91,7 +93,7 @@ const NewComponent = () => {
                     <div class="m-room-info-cell">Name Last name</div>
                     <div class="m-room-info-cell">Company 1</div>
                     <div class="m-room-info-cell">
-                      Private
+                      <span className="info-status">Private</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-Icon-material-edit"></i>
                         <i className="_icon-left-arrow"></i>
@@ -99,17 +101,17 @@ const NewComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div class="m-room-info-row">
+                <div class="m-room-info-row row-active">
                   <div className="m-room-info-row-wrp">
                     <div class="m-room-info-cell">4:45 pm, 08/10/2020</div>
                     <div class="m-room-info-cell">Room name 2</div>
                     <div class="m-room-info-cell">Name Last name</div>
                     <div class="m-room-info-cell">Company 2</div>
                     <div class="m-room-info-cell">
-                      Public
+                      <span className="info-status">Public</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-Icon-material-edit"></i>
-                        <i className="_icon-left-arrow"></i>
+                        <i className="_icon-arrow-down"></i>
                       </div>
                     </div>
                   </div>
@@ -121,7 +123,7 @@ const NewComponent = () => {
                     <div class="m-room-info-cell">Name Last name</div>
                     <div class="m-room-info-cell">Company 3</div>
                     <div class="m-room-info-cell">
-                      Private
+                      <span className="info-status">Private</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-Icon-material-edit"></i>
                         <i className="_icon-left-arrow"></i>
@@ -136,37 +138,7 @@ const NewComponent = () => {
                     <div class="m-room-info-cell">Name Last name</div>
                     <div class="m-room-info-cell">Company 4</div>
                     <div class="m-room-info-cell ">
-                      Private
-                      <div className="m-room-info-cell-edit">
-                        <i className="_icon-Icon-material-edit"></i>
-                        <i className="_icon-left-arrow"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="m-room-info-row">
-                  <div className="m-room-info-row-wrp">
-                    <div class="m-room-info-cell">Expo period, 28/09/2020</div>
-                    <div class="m-room-info-cell">Room name 5</div>
-                    <div class="m-room-info-cell">Name Last name</div>
-                    <div class="m-room-info-cell">Company 5</div>
-                    <div class="m-room-info-cell">
-                      Private
-                      <div className="m-room-info-cell-edit">
-                        <i className="_icon-Icon-material-edit"></i>
-                        <i className="_icon-left-arrow"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="m-room-info-row">
-                  <div className="m-room-info-row-wrp">
-                    <div class="m-room-info-cell">Expo period, 28/09/2020</div>
-                    <div class="m-room-info-cell">Room name 6</div>
-                    <div class="m-room-info-cell">Name Last name</div>
-                    <div class="m-room-info-cell">Company 6</div>
-                    <div class="m-room-info-cell">
-                      Private
+                      <span className="info-status">Public</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-Icon-material-edit"></i>
                         <i className="_icon-left-arrow"></i>
@@ -180,20 +152,140 @@ const NewComponent = () => {
             <div className="m-room-info-pagination">
               <div className="pagination-items">
                 <i className="_icon-left-arrow"></i>
-                <p>1</p>
-                <p>2</p>
-                <p className="pagination-item-active">3</p>
-                <p>4</p>
-                <p>5</p>
+                <span>1</span>
+                <span>2</span>
+                <span className="pagination-item-active">3</span>
+                <span>4</span>
+                <span>5</span>
                 <i className="_icon-arrow-right"></i>
               </div>
 
-              <button className="small-btn small-btn-transp m-room-info-btn">
+              <button className="small-btn small-btn-type-1 m-room-info-btn">
                 Create
               </button>
             </div>
           </div>
+
+          {/* Meeting room table 2 - disabled*/}
+          <div
+            className="meeting-room-info meeting-room-holder"
+            style={{ display: "none" }}
+          >
+            <div class="m-room-info-table">
+              <div class="m-room-info-thead">
+                <div class="m-room-info-row">
+                  <div class="m-room-info-cell-2">Date</div>
+                  <div class="m-room-info-cell-2">Partner</div>
+                  <div class="m-room-info-cell-2">Request</div>
+                  <div class="m-room-info-cell-2">Status</div>
+                </div>
+              </div>
+
+              <div class="m-room-info-tbody">
+                <div class="m-room-info-row">
+                  <div className="m-room-info-row-wrp">
+                    <div class="m-room-info-cell-2">3:35 pm, 11/10/2020</div>
+                    <div class="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div class="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div class="m-room-info-cell-2 ">
+                      <span className="info-status approved">Approved</span>
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-left-arrow"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-room-info-row row-active">
+                  <div className="m-room-info-row-wrp">
+                    <div class="m-room-info-cell-2">4:45 pm, 08/10/2020</div>
+                    <div class="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div class="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div class="m-room-info-cell-2">
+                      <span className="info-status pending">
+                        Pending<i className="pending-dot">.</i>
+                        <i className="pending-dot">.</i>
+                        <i className="pending-dot">.</i>
+                      </span>
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-arrow-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-room-info-row">
+                  <div className="m-room-info-row-wrp">
+                    <div class="m-room-info-cell-2">11:30 am, 02/10/2020</div>
+                    <div class="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div class="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div class="m-room-info-cell-2">
+                      <span className="info-status denied">Denied</span>
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-left-arrow"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="m-room-info-row">
+                  <div className="m-room-info-row-wrp">
+                    <div class="m-room-info-cell-2">3:35 pm, 11/10/2020</div>
+                    <div class="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div class="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div class="m-room-info-cell-2 ">
+                      <span className="info-status approved">Approved</span>
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-left-arrow"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="m-room-info-pagination">
+              <div className="pagination-items">
+                <i className="_icon-left-arrow"></i>
+                <span>1</span>
+                <span>2</span>
+                <span className="pagination-item-active">3</span>
+                <span>4</span>
+                <span>5</span>
+                <i className="_icon-arrow-right"></i>
+              </div>
+
+              <button className="small-btn small-btn-type-1 m-room-info-btn">
+                Create
+              </button>
+            </div>
+          </div>
+
+          {/* Current event info details - disabled */}
+          <div className="current-event-details" style={{ display: "none" }}>
+            <div className="current-event-details-text">
+              <p>
+                <span>Current event details:</span> 23/10/2020, 11:00am-1:00pm
+                (GMT+4)
+              </p>
+            </div>
+          </div>
         </div>
+        {/* End of right top content */}
 
         <div className="content-c-row-h center">
           <div className="c-c-r-cnt-column-h left">
@@ -214,77 +306,79 @@ const NewComponent = () => {
                 <div className="content-c-component">
                   <div className="scrollable-holder-h">
                     <div className="scrollable-container-h">
-                      <div className="content-column-g-block">
-                        <p>Johan deley, CEO of defly inc.</p>
-                      </div>
-                      <div className="content-column-g-block">
-                        <div className="content-column-g-r-item">
-                          <i className="_icon-Icon-material-photo"></i>
-                          <p>Lorem ipsum dolor.jpg</p>
-                          <i className="_icon-trash"></i>
+                      <div className="content-column-g-block-info">
+                        <div className="content-column-g-block">
+                          <p>Johan deley, CEO of defly inc.</p>
                         </div>
-                        <div className="content-column-g-r-item">
-                          <i className="_icon-Icon-material-photo"></i>
-                          <p>Lorem ipsum dolor.jpg</p>
-                          <i className="_icon-trash"></i>
+                        <div className="content-column-g-block">
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"></i>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"></i>
+                          </div>
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-file"></i>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"></i>
+                          </div>
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"></i>
+                            <p>Lorem ipsum dolor.pdf</p>
+                            <i className="_icon-trash"></i>
+                          </div>
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"></i>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"></i>
+                          </div>
+                          <p>Johan deley, CEO of defly inc.</p>
                         </div>
-                        <div className="content-column-g-r-item">
-                          <i className="_icon-Icon-material-photo"></i>
-                          <p>Lorem ipsum dolor.pdf</p>
-                          <i className="_icon-trash"></i>
+                        <div className="content-column-g-block">
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"></i>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"></i>
+                          </div>
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"></i>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"></i>
+                          </div>
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"></i>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"></i>
+                          </div>
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"></i>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"></i>
+                          </div>
+                          <p>Johan deley, CEO of defly inc.</p>
                         </div>
-                        <div className="content-column-g-r-item">
-                          <i className="_icon-Icon-material-photo"></i>
-                          <p>Lorem ipsum dolor.jpg</p>
-                          <i className="_icon-trash"></i>
+                        <div className="content-column-g-block">
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"></i>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"></i>
+                          </div>
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"></i>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"></i>
+                          </div>
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"></i>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"></i>
+                          </div>
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"></i>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"></i>
+                          </div>
+                          <p>Johan deley, CEO of defly inc.</p>
                         </div>
-                        <p>Johan deley, CEO of defly inc.</p>
-                      </div>
-                      <div className="content-column-g-block">
-                        <div className="content-column-g-r-item">
-                          <i className="_icon-Icon-material-photo"></i>
-                          <p>Lorem ipsum dolor.jpg</p>
-                          <i className="_icon-trash"></i>
-                        </div>
-                        <div className="content-column-g-r-item">
-                          <i className="_icon-Icon-material-photo"></i>
-                          <p>Lorem ipsum dolor.jpg</p>
-                          <i className="_icon-trash"></i>
-                        </div>
-                        <div className="content-column-g-r-item">
-                          <i className="_icon-Icon-material-photo"></i>
-                          <p>Lorem ipsum dolor.jpg</p>
-                          <i className="_icon-trash"></i>
-                        </div>
-                        <div className="content-column-g-r-item">
-                          <i className="_icon-Icon-material-photo"></i>
-                          <p>Lorem ipsum dolor.jpg</p>
-                          <i className="_icon-trash"></i>
-                        </div>
-                        <p>Johan deley, CEO of defly inc.</p>
-                      </div>
-                      <div className="content-column-g-block">
-                        <div className="content-column-g-r-item">
-                          <i className="_icon-Icon-material-photo"></i>
-                          <p>Lorem ipsum dolor.jpg</p>
-                          <i className="_icon-trash"></i>
-                        </div>
-                        <div className="content-column-g-r-item">
-                          <i className="_icon-Icon-material-photo"></i>
-                          <p>Lorem ipsum dolor.jpg</p>
-                          <i className="_icon-trash"></i>
-                        </div>
-                        <div className="content-column-g-r-item">
-                          <i className="_icon-Icon-material-photo"></i>
-                          <p>Lorem ipsum dolor.jpg</p>
-                          <i className="_icon-trash"></i>
-                        </div>
-                        <div className="content-column-g-r-item">
-                          <i className="_icon-Icon-material-photo"></i>
-                          <p>Lorem ipsum dolor.jpg</p>
-                          <i className="_icon-trash"></i>
-                        </div>
-                        <p>Johan deley, CEO of defly inc.</p>
                       </div>
                     </div>
                   </div>
@@ -292,37 +386,169 @@ const NewComponent = () => {
               </div>
               <div className="content-column-g-row bottom">
                 <div className="left-bottom-component">
-                  <button className="btn type-1">Browse</button>
+                  {/* <button className="btn type-1">Browse</button> */}
+                  <label
+                    className="btn type-1 attache-file-btn"
+                    for="upload-photo"
+                  >
+                    Browse
+                  </label>
+                  <input
+                    type="file"
+                    name="document"
+                    id="upload-file"
+                    className="upload-file"
+                  />
                 </div>
               </div>
             </div>
           </div>
           <div className="c-c-r-cnt-column-h right">
-            <div className="c-c-r-cnt-c-inner-column left">
+            <div
+              className="c-c-r-cnt-c-inner-column left "
+              style={{ display: "none" }}
+            >
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
                   <div className="mr-head-component">
-                    Meeting Room 3
-                    <div className="mr-head-buttons">
-                      <button className="small-btn small-btn-blue mr-head-btn">
-                        Create
-                      </button>
+                    <div className="mr-head-component-cont">
+                      <p className="mr-head-component-title">Meeting Room 3</p>
+                      <div className="mr-head-buttons">
+                        <div className="buttons-holder">
+                          <button className="small-btn mr-head-btn mr-head-btn-active">
+                            Public
+                          </button>
+                          <button className="small-btn mr-head-btn">
+                            Private
+                          </button>
+                          <span className="button-bg"></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="content-column-g-row center">
-                  <div className="mr-center-component">
-                    <div className="mr-center-content"></div>
+
+                <div className="scrollable-holder-h">
+                  <div className="scrollable-container-h">
+                    <div className="content-column-g-row center">
+                      <div className="mr-center-component">
+                        <div className="mr-center-content">
+                          <img
+                            src="https://picsum.photos/seed/picsum/1920/1080"
+                            alt=""
+                          />
+                        </div>
+                        <div className="mr-center-c-info">
+                          <div
+                            className="mr-center-c-info-text"
+                            style={{ display: "none" }}
+                          >
+                            <p className="mr-center-c-text">
+                              <span>Current meeting room details:</span>{" "}
+                              23/10/2020, 11:00am-1:00pm (GMT+4)
+                            </p>
+                            <p className="mr-center-c-text">
+                              <span>Duration:</span> 1 Hour
+                            </p>
+                          </div>
+                          <div className="mr-center-c-info-time">
+                            <div className="mr-center-c-time-start">
+                              <span className="info-time-title">Starts</span>
+                              <div className="mr-center-c-time-btn-group">
+                                <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
+                                  <span>21 Oct 2020 / 4:00 PM</span>
+                                </button>
+                              </div>
+                            </div>
+                            <div className="mr-center-c-time-duration">
+                              <span className="info-time-title">Duration</span>
+                              <div className="mr-center-c-time-btn-group">
+                                <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
+                                  30min.
+                                </button>
+                                <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
+                                  1h.
+                                </button>
+                                <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
+                                  2h
+                                </button>
+                                <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
+                                  Expo period
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="content-column-g-row bottom">
                   <div className="mr-bottom-component">
-                    <button className="btn type-2">save changes</button>
+                    <button className="btn type-2 mr-bottom-btn">
+                      Save changes
+                    </button>
+                    <button className="btn type-3 mr-bottom-btn">
+                      Delete room
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="c-c-r-cnt-c-inner-column left ">
+              <div className="content-column-grid-h">
+                <div className="content-column-g-row head">
+                  <div className="mr-head-component">
+                    <div className="mr-head-component-cont">
+                      <div className="mr-head-component-title">
+                        Meeting Room 3
+                      </div>
+                      <div className="mr-head-buttons">
+                        <div className="buttons-holder">
+                          <button className="small-btn mr-head-btn small-btn-type-2">
+                            Private
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mr-center-component-holder">
+                  <div className="scrollable-holder-h">
+                    <div className="scrollable-container-h">
+                      <div className="content-column-g-row center">
+                        <div className="mr-center-component">
+                          <div className="mr-center-content">
+                            <img
+                              src="https://picsum.photos/seed/picsum/1920/1080"
+                              alt=""
+                            />
+                          </div>
+                          <div className="mr-center-c-info">
+                            <div className="mr-center-c-info-text">
+                              <p className="mr-center-c-text">
+                                <span>Current meeting room details:</span>{" "}
+                                23/10/2020, 11:00am-1:00pm (GMT+4)
+                              </p>
+                              <p className="mr-center-c-text">
+                                <span>Duration:</span> 1 Hour
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="content-column-g-row bottom">
+                  <div className="mr-bottom-component">
                     <button className="btn type-3"> delete room</button>
                   </div>
                 </div>
               </div>
             </div>
+
             <div className="c-c-r-cnt-c-inner-column right">
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
@@ -378,6 +604,14 @@ const NewComponent = () => {
                             <p>Johan Delly, CEO of Delly inc.</p>
                             <i className="_icon-times"></i>
                           </div>
+                          <div className="content-col-g-r-item">
+                            <p>Johan Delly, CEO of Delly inc.</p>
+                            <i className="_icon-times"></i>
+                          </div>
+                          <div className="content-col-g-r-item">
+                            <p>Johan Delly, CEO of Delly inc.</p>
+                            <i className="_icon-times"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -393,6 +627,7 @@ const NewComponent = () => {
           </div>
         </div>
       </div>
+      {/* End of right main content */}
     </div>
   );
 };

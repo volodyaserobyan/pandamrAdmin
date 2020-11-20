@@ -32,100 +32,100 @@ const Invintation = (props) => {
             </div>
             <div className="info-block-item">
               <p>Johan Delly, CEO of Delly inc.</p>
-              <div className="inv-checkbox-holder">
+              <div className="checkbox-cont">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span class="checkmark"></span>
                 </label>
               </div>
             </div>
             <div className="info-block-item">
               <p>Johan Delly, CEO of Delly inc.</p>
-              <div className="inv-checkbox-holder">
+              <div className="checkbox-cont">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span class="checkmark"></span>
                 </label>
               </div>
             </div>
             <div className="info-block-item">
               <p>Johan Delly, CEO of Delly inc.</p>
-              <div className="inv-checkbox-holder">
+              <div className="checkbox-cont">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span class="checkmark"></span>
                 </label>
               </div>
             </div>
             <div className="info-block-item">
               <p>Johan Delly, CEO of Delly inc.</p>
-              <div className="inv-checkbox-holder">
+              <div className="checkbox-cont">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span class="checkmark"></span>
                 </label>
               </div>
             </div>
             <div className="info-block-item">
               <p>Johan Delly, CEO of Delly inc.</p>
-              <div className="inv-checkbox-holder">
+              <div className="checkbox-cont">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span class="checkmark"></span>
                 </label>
               </div>
             </div>
             <div className="info-block-item">
               <p>Johan Delly, CEO of Delly inc.</p>
-              <div className="inv-checkbox-holder">
+              <div className="checkbox-cont">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span class="checkmark"></span>
                 </label>
               </div>
             </div>
             <div className="info-block-item">
               <p>Johan Delly, CEO of Delly inc.</p>
-              <div className="inv-checkbox-holder">
+              <div className="checkbox-cont">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span class="checkmark"></span>
                 </label>
               </div>
             </div>
             <div className="info-block-item">
               <p>Johan Delly, CEO of Delly inc.</p>
-              <div className="inv-checkbox-holder">
+              <div className="checkbox-cont">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span class="checkmark"></span>
                 </label>
               </div>
             </div>
             <div className="info-block-item">
               <p>Johan Delly, CEO of Delly inc.</p>
-              <div className="inv-checkbox-holder">
+              <div className="checkbox-cont">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span class="checkmark"></span>
                 </label>
               </div>
             </div>
             <div className="info-block-item">
               <p>Johan Delly, CEO of Delly inc.</p>
-              <div className="inv-checkbox-holder">
+              <div className="checkbox-cont">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span class="checkmark"></span>
                 </label>
               </div>
             </div>
             <div className="info-block-item">
               <p>Johan Delly, CEO of Delly inc.</p>
-              <div className="inv-checkbox-holder">
+              <div className="checkbox-cont">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span class="checkmark"></span>
                 </label>
               </div>
             </div>

@@ -35,11 +35,7 @@ const ResetPass = () => {
 
         <div className="pmr-info-b">
           <p>
-            Made with{" "}
-            <img
-              src="https://static.pandamr.com/fs/userFiles/main/media/icon-ionic-ios-heart.png?1602242531369"
-              alt=""
-            />{" "}
+            Made with <i className="_icon-heart-icon"></i>
             by PandaMR
           </p>
         </div>
