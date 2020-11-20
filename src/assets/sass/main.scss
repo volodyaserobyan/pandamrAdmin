@@ -860,7 +860,7 @@
   font-size: 14px;
   padding-bottom: 9px;
   padding-left: 16px;
-  line-height: 17px;
+  line-height: 20px;
 }
 .cont-info-user-content .inside-info-user-content .short {
   min-height: 220px;
@@ -1025,6 +1025,10 @@
   }
 }
 
+.mr-head-cont {
+  padding-right: 15px;
+}
+
 .test:hover + span {
   margin-left: 66px;
 }
@@ -1077,6 +1081,7 @@
     align-items: center;
     margin-right: 20px;
   }
+
   .mr-center-c-time-btn {
     font-size: 12px;
     display: flex;
@@ -1097,7 +1102,7 @@
 .mr-bottom-component {
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 12px;
   > button {
     margin: 0 5px;
     min-width: 177px;

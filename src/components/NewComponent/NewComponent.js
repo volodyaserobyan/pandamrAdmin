@@ -74,25 +74,25 @@ const NewComponent = () => {
           </div>
           {/* Meeting room table 1 */}
           <div className="meeting-room-info meeting-room-holder">
-            <div class="m-room-info-table">
-              <div class="m-room-info-thead">
-                <div class="m-room-info-row">
-                  <div class="m-room-info-cell">Date</div>
-                  <div class="m-room-info-cell">Room name</div>
-                  <div class="m-room-info-cell">Creator</div>
-                  <div class="m-room-info-cell">Creator company</div>
-                  <div class="m-room-info-cell">Type</div>
+            <div className="m-room-info-table">
+              <div className="m-room-info-thead">
+                <div className="m-room-info-row">
+                  <div className="m-room-info-cell">Date</div>
+                  <div className="m-room-info-cell">Room name</div>
+                  <div className="m-room-info-cell">Creator</div>
+                  <div className="m-room-info-cell">Creator company</div>
+                  <div className="m-room-info-cell">Type</div>
                 </div>
               </div>
 
-              <div class="m-room-info-tbody">
-                <div class="m-room-info-row">
+              <div className="m-room-info-tbody">
+                <div className="m-room-info-row">
                   <div className="m-room-info-row-wrp">
-                    <div class="m-room-info-cell">3:35 pm, 11/10/2020</div>
-                    <div class="m-room-info-cell">Room name 1</div>
-                    <div class="m-room-info-cell">Name Last name</div>
-                    <div class="m-room-info-cell">Company 1</div>
-                    <div class="m-room-info-cell">
+                    <div className="m-room-info-cell">3:35 pm, 11/10/2020</div>
+                    <div className="m-room-info-cell">Room name 1</div>
+                    <div className="m-room-info-cell">Name Last name</div>
+                    <div className="m-room-info-cell">Company 1</div>
+                    <div className="m-room-info-cell">
                       <span className="info-status">Private</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-Icon-material-edit"></i>
@@ -101,13 +101,13 @@ const NewComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div class="m-room-info-row row-active">
+                <div className="m-room-info-row row-active">
                   <div className="m-room-info-row-wrp">
-                    <div class="m-room-info-cell">4:45 pm, 08/10/2020</div>
-                    <div class="m-room-info-cell">Room name 2</div>
-                    <div class="m-room-info-cell">Name Last name</div>
-                    <div class="m-room-info-cell">Company 2</div>
-                    <div class="m-room-info-cell">
+                    <div className="m-room-info-cell">4:45 pm, 08/10/2020</div>
+                    <div className="m-room-info-cell">Room name 2</div>
+                    <div className="m-room-info-cell">Name Last name</div>
+                    <div className="m-room-info-cell">Company 2</div>
+                    <div className="m-room-info-cell">
                       <span className="info-status">Public</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-Icon-material-edit"></i>
@@ -116,13 +116,15 @@ const NewComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div class="m-room-info-row">
+                <div className="m-room-info-row">
                   <div className="m-room-info-row-wrp">
-                    <div class="m-room-info-cell">Expo period, 28/09/2020</div>
-                    <div class="m-room-info-cell">Room name 3</div>
-                    <div class="m-room-info-cell">Name Last name</div>
-                    <div class="m-room-info-cell">Company 3</div>
-                    <div class="m-room-info-cell">
+                    <div className="m-room-info-cell">
+                      Expo period, 28/09/2020
+                    </div>
+                    <div className="m-room-info-cell">Room name 3</div>
+                    <div className="m-room-info-cell">Name Last name</div>
+                    <div className="m-room-info-cell">Company 3</div>
+                    <div className="m-room-info-cell">
                       <span className="info-status">Private</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-Icon-material-edit"></i>
@@ -131,13 +133,15 @@ const NewComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div class="m-room-info-row">
+                <div className="m-room-info-row">
                   <div className="m-room-info-row-wrp">
-                    <div class="m-room-info-cell">Expo period, 28/09/2020</div>
-                    <div class="m-room-info-cell">Room name 4</div>
-                    <div class="m-room-info-cell">Name Last name</div>
-                    <div class="m-room-info-cell">Company 4</div>
-                    <div class="m-room-info-cell ">
+                    <div className="m-room-info-cell">
+                      Expo period, 28/09/2020
+                    </div>
+                    <div className="m-room-info-cell">Room name 4</div>
+                    <div className="m-room-info-cell">Name Last name</div>
+                    <div className="m-room-info-cell">Company 4</div>
+                    <div className="m-room-info-cell ">
                       <span className="info-status">Public</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-Icon-material-edit"></i>
@@ -171,27 +175,29 @@ const NewComponent = () => {
             className="meeting-room-info meeting-room-holder"
             style={{ display: "none" }}
           >
-            <div class="m-room-info-table">
-              <div class="m-room-info-thead">
-                <div class="m-room-info-row">
-                  <div class="m-room-info-cell-2">Date</div>
-                  <div class="m-room-info-cell-2">Partner</div>
-                  <div class="m-room-info-cell-2">Request</div>
-                  <div class="m-room-info-cell-2">Status</div>
+            <div className="m-room-info-table">
+              <div className="m-room-info-thead">
+                <div className="m-room-info-row">
+                  <div className="m-room-info-cell-2">Date</div>
+                  <div className="m-room-info-cell-2">Partner</div>
+                  <div className="m-room-info-cell-2">Request</div>
+                  <div className="m-room-info-cell-2">Status</div>
                 </div>
               </div>
 
-              <div class="m-room-info-tbody">
-                <div class="m-room-info-row">
+              <div className="m-room-info-tbody">
+                <div className="m-room-info-row">
                   <div className="m-room-info-row-wrp">
-                    <div class="m-room-info-cell-2">3:35 pm, 11/10/2020</div>
-                    <div class="m-room-info-cell-2">
+                    <div className="m-room-info-cell-2">
+                      3:35 pm, 11/10/2020
+                    </div>
+                    <div className="m-room-info-cell-2">
                       Lorem ipsum dolor sit amet inc.
                     </div>
-                    <div class="m-room-info-cell-2">
+                    <div className="m-room-info-cell-2">
                       Lorem ipsum dolor sit amet inc.
                     </div>
-                    <div class="m-room-info-cell-2 ">
+                    <div className="m-room-info-cell-2 ">
                       <span className="info-status approved">Approved</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-left-arrow"></i>
@@ -199,16 +205,18 @@ const NewComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div class="m-room-info-row row-active">
+                <div className="m-room-info-row row-active">
                   <div className="m-room-info-row-wrp">
-                    <div class="m-room-info-cell-2">4:45 pm, 08/10/2020</div>
-                    <div class="m-room-info-cell-2">
+                    <div className="m-room-info-cell-2">
+                      4:45 pm, 08/10/2020
+                    </div>
+                    <div className="m-room-info-cell-2">
                       Lorem ipsum dolor sit amet inc.
                     </div>
-                    <div class="m-room-info-cell-2">
+                    <div className="m-room-info-cell-2">
                       Lorem ipsum dolor sit amet inc.
                     </div>
-                    <div class="m-room-info-cell-2">
+                    <div className="m-room-info-cell-2">
                       <span className="info-status pending">
                         Pending<i className="pending-dot">.</i>
                         <i className="pending-dot">.</i>
@@ -220,16 +228,18 @@ const NewComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div class="m-room-info-row">
+                <div className="m-room-info-row">
                   <div className="m-room-info-row-wrp">
-                    <div class="m-room-info-cell-2">11:30 am, 02/10/2020</div>
-                    <div class="m-room-info-cell-2">
+                    <div className="m-room-info-cell-2">
+                      11:30 am, 02/10/2020
+                    </div>
+                    <div className="m-room-info-cell-2">
                       Lorem ipsum dolor sit amet inc.
                     </div>
-                    <div class="m-room-info-cell-2">
+                    <div className="m-room-info-cell-2">
                       Lorem ipsum dolor sit amet inc.
                     </div>
-                    <div class="m-room-info-cell-2">
+                    <div className="m-room-info-cell-2">
                       <span className="info-status denied">Denied</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-left-arrow"></i>
@@ -238,16 +248,18 @@ const NewComponent = () => {
                   </div>
                 </div>
 
-                <div class="m-room-info-row">
+                <div clasNames="m-room-info-row">
                   <div className="m-room-info-row-wrp">
-                    <div class="m-room-info-cell-2">3:35 pm, 11/10/2020</div>
-                    <div class="m-room-info-cell-2">
+                    <div className="m-room-info-cell-2">
+                      3:35 pm, 11/10/2020
+                    </div>
+                    <div className="m-room-info-cell-2">
                       Lorem ipsum dolor sit amet inc.
                     </div>
-                    <div class="m-room-info-cell-2">
+                    <div className="m-room-info-cell-2">
                       Lorem ipsum dolor sit amet inc.
                     </div>
-                    <div class="m-room-info-cell-2 ">
+                    <div className="m-room-info-cell-2 ">
                       <span className="info-status approved">Approved</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-left-arrow"></i>
@@ -285,10 +297,9 @@ const NewComponent = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         {/* End of right top content */}
-=======
-        <div className='user-info-grid-holder'>
+
+        <div className="user-info-grid-holder" style={{ display: "none" }}>
           <div className="user-i-grid">
             <div className="speaker-col-b">
               <div className="sp-grid-holder">
@@ -297,48 +308,171 @@ const NewComponent = () => {
                     <p className="name-text-v">Speaker</p>
                   </div>
                   <div className="sp-g-content-row">
-                    <div className='cont-info-user-profile'>
+                    <div className="cont-info-user-profile">
                       <div className="scrollable-holder-h">
                         <div className="scrollable-container-h scroll-profile">
-                          <div className='info-user-profile-photo'>
+                          <div className="info-user-profile-photo">
                             <div className="profile-photo-block">
                               <i className="icon-camera"></i>
-                                {/*{_.isEmpty(this.state.pictures) ?*/}
-                                    {/*<label>*/}
-                                      {/*<img src={userIcon} alt='' />*/}
-                                      {/*<input type="file" onChange={this.handleImageChange} />*/}
-                                    {/*</label> :*/}
-                                    {/*<label>*/}
-                                      {/*<img src={this.state.pictures.src} alt='' />*/}
-                                      {/*<input type="file" onChange={this.handleImageChange} />*/}
-                                    {/*</label>}*/}
+                              {/*{_.isEmpty(this.state.pictures) ?*/}
+                              {/*<label>*/}
+                              {/*<img src={userIcon} alt='' />*/}
+                              {/*<input type="file" onChange={this.handleImageChange} />*/}
+                              {/*</label> :*/}
+                              {/*<label>*/}
+                              {/*<img src={this.state.pictures.src} alt='' />*/}
+                              {/*<input type="file" onChange={this.handleImageChange} />*/}
+                              {/*</label>}*/}
                             </div>
-                            <input placeholder='Speaker name and surname' />
-                            <input placeholder='Speaker title/professional degree *' />
-                            <input placeholder='Email' />
+                            <input placeholder="Speaker name and surname" />
+                            <input placeholder="Speaker title/professional degree *" />
+                            <input placeholder="Email" />
                           </div>
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
-
             </div>
             <div className="form-col-b">
               <div className="scrollable-holder-h">
                 <div className="scrollable-container-h">
-                  <div className='cont-info-user-content'>
+                  <div className="cont-info-user-content">
                     <div className="inside-info-user-content">
-                      <p>(min 10, max 150 chars)</p>
-                      <input className="subject" placeholder='Subject' />
+                      <p>Subject</p>
+                      <input className="subject" placeholder="" />
                     </div>
                     <div className="inside-info-user-content">
-                      <p>(min 200, max 1000 chars)</p>
-                      <textarea className="short" placeholder='Short description' />
+                      <p>Short description</p>
+                      <textarea className="short" placeholder="" />
                     </div>
-                    <input className="with-files" type="submit" value="Submit without files" />
+                    <p className="content-c-g-title">
+                      Attached files from participants
+                    </p>
+                    <div className="c-c-r-cnt-column-h left">
+                      <div className="content-column-grid-h">
+                        {/*<div className="content-column-g-row head">*/}
+                        {/*<div className="common-component-head">*/}
+                        {/*<p className="content-c-g-title">Attached files from participants</p>*/}
+                        {/*</div>*/}
+                        {/*</div>*/}
+                        <div className="content-column-g-row center">
+                          <div className="content-c-component">
+                            <div className="scrollable-holder-h">
+                              <div className="scrollable-container-h">
+                                <div className="content-column-g-block">
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                </div>
+                                <div className="content-column-g-block">
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                </div>
+                                <div className="content-column-g-block">
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                </div>
+                                <div className="content-column-g-block">
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button className="btn type-2">approve</button>
+                    <button className="btn type-3">deny</button>
                   </div>
                 </div>
               </div>
@@ -346,10 +480,7 @@ const NewComponent = () => {
           </div>
         </div>
 
-
->>>>>>> 7c98909e3bd22e13f2dd7e4b42df225eb9c3ba55
-
-        <div className="content-c-row-h center" style={{display: "none"}}>
+        <div className="content-c-row-h center">
           <div className="c-c-r-cnt-column-h left">
             <div className="content-column-grid-h">
               <div className="content-column-g-row head">
@@ -466,10 +597,7 @@ const NewComponent = () => {
             </div>
           </div>
           <div className="c-c-r-cnt-column-h right">
-            <div
-              className="c-c-r-cnt-c-inner-column left "
-              style={{ display: "none" }}
-            >
+            <div className="c-c-r-cnt-c-inner-column left ">
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
                   <div className="mr-head-component">
@@ -489,54 +617,58 @@ const NewComponent = () => {
                     </div>
                   </div>
                 </div>
-
-                <div className="scrollable-holder-h">
-                  <div className="scrollable-container-h">
-                    <div className="content-column-g-row center">
-                      <div className="mr-center-component">
-                        <div className="mr-center-content">
-                          <img
-                            src="https://picsum.photos/seed/picsum/1920/1080"
-                            alt=""
-                          />
-                        </div>
-                        <div className="mr-center-c-info">
-                          <div
-                            className="mr-center-c-info-text"
-                            style={{ display: "none" }}
-                          >
-                            <p className="mr-center-c-text">
-                              <span>Current meeting room details:</span>{" "}
-                              23/10/2020, 11:00am-1:00pm (GMT+4)
-                            </p>
-                            <p className="mr-center-c-text">
-                              <span>Duration:</span> 1 Hour
-                            </p>
+                <div className="mr-head-cont">
+                  <div className="scrollable-holder-h">
+                    <div className="scrollable-container-h">
+                      <div className="content-column-g-row center">
+                        <div className="mr-center-component">
+                          <div className="mr-center-content">
+                            <img
+                              src="https://picsum.photos/seed/picsum/1920/1080"
+                              alt=""
+                            />
                           </div>
-                          <div className="mr-center-c-info-time">
-                            <div className="mr-center-c-time-start">
-                              <span className="info-time-title">Starts</span>
-                              <div className="mr-center-c-time-btn-group">
-                                <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
-                                  <span>21 Oct 2020 / 4:00 PM</span>
-                                </button>
-                              </div>
+
+                          <div className="mr-center-c-info">
+                            <div
+                              className="mr-center-c-info-text"
+                              style={{ display: "none" }}
+                            >
+                              <p className="mr-center-c-text">
+                                <span>Current meeting room details:</span>{" "}
+                                23/10/2020, 11:00am-1:00pm (GMT+4)
+                              </p>
+                              <p className="mr-center-c-text">
+                                <span>Duration:</span> 1 Hour
+                              </p>
                             </div>
-                            <div className="mr-center-c-time-duration">
-                              <span className="info-time-title">Duration</span>
-                              <div className="mr-center-c-time-btn-group">
-                                <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
-                                  30min.
-                                </button>
-                                <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
-                                  1h.
-                                </button>
-                                <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
-                                  2h
-                                </button>
-                                <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
-                                  Expo period
-                                </button>
+                            <div className="mr-center-c-info-time">
+                              <div className="mr-center-c-time-start">
+                                <span className="info-time-title">Starts</span>
+                                <div className="mr-center-c-time-btn-group">
+                                  <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
+                                    <span>21 Oct 2020 / 4:00 PM</span>
+                                  </button>
+                                </div>
+                              </div>
+                              <div className="mr-center-c-time-duration">
+                                <span className="info-time-title">
+                                  Duration
+                                </span>
+                                <div className="mr-center-c-time-btn-group">
+                                  <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
+                                    30min.
+                                  </button>
+                                  <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
+                                    1h.
+                                  </button>
+                                  <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
+                                    2h
+                                  </button>
+                                  <button class="small-btn small-btn-type-3 mr-center-c-time-btn">
+                                    Expo period
+                                  </button>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -558,7 +690,10 @@ const NewComponent = () => {
               </div>
             </div>
 
-            <div className="c-c-r-cnt-c-inner-column left ">
+            <div
+              className="c-c-r-cnt-c-inner-column left "
+              style={{ display: "none" }}
+            >
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
                   <div className="mr-head-component">
