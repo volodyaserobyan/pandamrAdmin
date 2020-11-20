@@ -20,9 +20,9 @@ const App = () => {
       </div>
       <div className="content-holder">
         <div className="main-content-box">
-          {/* {<ImageCropper />} */}
+           {<ImageCropper />}
           {/* {<Confirm />} */}
-          {<NewComponent />}
+          {/*{<NewComponent />}*/}
           {/* <IsDenied /> */}
           {/* <SendNotification /> */}
           {/* <Invintation /> */}
