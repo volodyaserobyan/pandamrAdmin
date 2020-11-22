@@ -25,6 +25,7 @@ const SignIn = () => {
                 className="inp-v"
               />
             </div>
+
             <div className="inp-holder inp-holder-password">
               <input
                 className="inp-v"
@@ -45,14 +46,13 @@ const SignIn = () => {
             <div className="Signin-Remember-wrapper">
               <div className="checkbox-holder">
                 <label className="container">
+                  Remember me
                   <input type="checkbox" />
-                  <span>Remember me</span>
+                  <span></span>
                 </label>
               </div>
               <div className="forgot-pass-t">
-                <span>
-                  <a href="#">Forgot password ?</a>
-                </span>
+                <p>Forgot password ?</p>
               </div>
             </div>
             <div className="btn-holder">
@@ -65,11 +65,8 @@ const SignIn = () => {
 
         <div className="pmr-info-b">
           <p>
-            Made with{" "}
-            <img
-              src="https://static.pandamr.com/fs/userFiles/main/media/icon-ionic-ios-heart.png?1602242531369"
-              alt="Heart"
-            />{" "}
+            Made with
+            <i className="_icon-heart-icon"></i>
             by PandaMR
           </p>
         </div>

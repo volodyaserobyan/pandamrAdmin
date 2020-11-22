@@ -18,7 +18,10 @@ const ImageCropper = (props) => {
           </button>
         </div>
         <div className="crop-image">
-          {/*<img  src="" alt="Image to crop"/>*/}
+          <img
+            src="https://picsum.photos/seed/picsum/1920/1080"
+            alt="Image to crop"
+          />
         </div>
         <div className="cropper-buttons">
           <button className="cropper-button cropper-button-reset">Reset</button>

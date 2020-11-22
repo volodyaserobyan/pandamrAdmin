@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7379be51-b2d6-4317-aa00-8b1256e544f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/font-icons/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/font-icons/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/font-icons/fonts/icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/font-icons/fonts/icons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/font-icons/fonts/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/font-icons/fonts/icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/font-icons/fonts/icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/font-icons/fonts/icons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/font-icons/fonts/icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/font-icons/fonts/icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/font-icons/selection.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/font-icons/selection.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/font-icons/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/font-icons/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/sass/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewComponent/NewComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewComponent/NewComponent.js" afterDir="false" />
-    </list>
+    <list default="true" id="7379be51-b2d6-4317-aa00-8b1256e544f5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +72,7 @@
       <workItem from="1605371907224" duration="141000" />
       <workItem from="1605520260355" duration="6167000" />
       <workItem from="1605871701869" duration="87000" />
-      <workItem from="1605874159700" duration="624000" />
+      <workItem from="1605874159700" duration="1220000" />
     </task>
     <servers />
   </component>

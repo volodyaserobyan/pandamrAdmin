@@ -100,6 +100,13 @@
       background-color: darken(#fe494d, 10%);
     }
   }
+  &.type-4 {
+    background-color: #c8c7c7;
+    color: #ffffff;
+    &:hover {
+      background-color: darken(#c8c7c7, 10%);
+    }
+  }
 }
 .left-head-component {
   padding-bottom: 15px;
@@ -234,82 +241,7 @@
   &:last-child {
     flex: 0 0 auto;
   }
-  > button {
-    position: relative;
-    outline: none;
-    border: 2px solid #c8c7c7;
-    border-right-width: 1px;
-    background-color: #fff;
 
-    margin-right: 15px;
-    height: 40px;
-    padding: 0 25px;
-    cursor: pointer;
-    transition: all 0.3s;
-    box-shadow: 6px 5px 11px 0 rgba(200, 199, 199, 0.3);
-    &::before {
-      content: "";
-      position: absolute;
-      right: -13px;
-      top: -2px;
-      width: 0;
-      height: 0;
-      border-top: 20px solid transparent;
-      border-left: 12px solid #c8c7c7;
-      border-bottom: 20px solid transparent;
-      transition: all 0.3s;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      right: -11px;
-      top: 0;
-      width: 0;
-      height: 0;
-      border-top: 18px solid transparent;
-      border-left: 11px solid #fff;
-      border-bottom: 18px solid transparent;
-    }
-    > i {
-      position: absolute;
-      left: 0;
-      top: -2px;
-      width: 0;
-      height: 0;
-      border-top: 20px solid transparent;
-      border-left: 12px solid #c8c7c7;
-      border-bottom: 20px solid transparent;
-      transition: all 0.3s;
-      &::after {
-        content: "";
-        position: absolute;
-        left: -14px;
-        top: -20px;
-        width: 0;
-        height: 0;
-        border-top: 20px solid transparent;
-        border-left: 12px solid #f6f6f8;
-        border-bottom: 20px solid transparent;
-      }
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-    &.active,
-    &:hover {
-      background-color: #fff;
-      color: #000;
-      border: 2px solid #2193ed;
-      border-right-width: 1px;
-      &::before {
-        border-left-color: #2193ed;
-      }
-      > i {
-        border-left-color: #2193ed;
-      }
-    }
-  }
   > p {
     background-color: #ffffff;
     padding: 10px;
@@ -320,6 +252,99 @@
       font-weight: bold;
     }
   }
+
+  //Breadcrumbs buttons
+
+  .breadcrumbs {
+    list-style-type: none;
+    padding: 0;
+    li {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      margin-left: 20px;
+      cursor: pointer;
+
+      &:hover {
+        &::before,
+        &::after {
+          border-color: #2193ed;
+        }
+        .btn-line {
+          background-color: #2193ed;
+        }
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 50%;
+        width: 100%;
+        background: #fff;
+        border-left: 2.5px solid #c8c7c7;
+        border-right: 2.5px solid #c8c7c7;
+        z-index: -2;
+        transition: border-color 0.3s;
+      }
+
+      &::before {
+        top: -2px;
+        transform: skew(30deg);
+        border-top: 2px solid #c8c7c7;
+      }
+
+      &::after {
+        bottom: -2px;
+        transform: skew(-30deg);
+        border-bottom: 2px solid #c8c7c7;
+      }
+      div {
+        display: inline-block;
+        position: relative;
+        line-height: 2.4;
+        padding: 0 20px;
+        color: #000;
+        text-decoration: none;
+        > .btn-line {
+          height: 111%;
+          width: 2px;
+          background-color: #c8c7c7;
+          position: absolute;
+          left: -2px;
+          top: -2px;
+          transition: background-color 0.3s;
+        }
+      }
+      &:first-child {
+        background-color: white;
+        border-left: 2px solid #c8c7c7;
+        left: -5px;
+        box-sizing: content-box;
+        margin-left: 10px;
+        border-left-color: #c8c7c7;
+        &::before,
+        &::after {
+          left: 5px;
+          border-left-width: 0;
+        }
+      }
+      &:nth-child(2) {
+        margin-left: 17px;
+      }
+    }
+    .breadcrumb-btn-active {
+      &::before,
+      &::after {
+        border-color: #2193ed;
+      }
+      .btn-line {
+        background-color: #2193ed;
+      }
+    }
+  }
+  //End of breadcrumbs buttons
 }
 
 ///////////////////////
@@ -986,6 +1011,9 @@
       text-align: center;
       flex: 1 1 0;
       margin-left: 66px;
+    }
+    > .mr-head-component-title-2 {
+      margin-left: 132px;
     }
   }
 }
