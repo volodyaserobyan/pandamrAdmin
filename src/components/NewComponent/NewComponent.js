@@ -392,6 +392,24 @@ const NewComponent = () => {
                                     <i className="_icon-Icon-material-photo"></i>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
+                                </div>
+                                <div className="content-column-g-block">
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
                                   <div className="content-column-g-r-item">
                                     <i className="_icon-Icon-material-photo"></i>
                                     <p>Lorem ipsum dolor.jpg</p>
@@ -418,42 +436,8 @@ const NewComponent = () => {
                                     <i className="_icon-Icon-material-photo"></i>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
                                 </div>
                                 <div className="content-column-g-block">
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                </div>
-                                <div className="content-column-g-block">
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
                                   <div className="content-column-g-r-item">
                                     <i className="_icon-Icon-material-photo"></i>
                                     <p>Lorem ipsum dolor.jpg</p>
