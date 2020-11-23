@@ -58,13 +58,24 @@ const NewComponent = () => {
         <div className="content-c-row-h head">
           <div className="content-c-row-h-inner">
             <div className="content-c-row-h-i-column">
-              <button className="active">Expo name 3</button>
-              <button className="">
-                <i></i>Meeting room
-              </button>
-              <button>
-                <i></i>Meeting room 3
-              </button>
+              <ul class="breadcrumbs">
+                <li className="breadcrumb-btn-active">
+                  <div>
+                    <span className="btn-line"></span>
+                    <span>Expo name 3</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>Meeting room</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>Meeting room 3</span>
+                  </div>
+                </li>
+              </ul>
             </div>
             <div className="content-c-row-h-i-column">
               <p>
@@ -247,11 +258,10 @@ const NewComponent = () => {
                     </div>
                   </div>
                 </div>
-
-                <div clasNames="m-room-info-row">
+                <div className="m-room-info-row">
                   <div className="m-room-info-row-wrp">
                     <div className="m-room-info-cell-2">
-                      3:35 pm, 11/10/2020
+                      11:30 am, 02/10/2020
                     </div>
                     <div className="m-room-info-cell-2">
                       Lorem ipsum dolor sit amet inc.
@@ -259,8 +269,8 @@ const NewComponent = () => {
                     <div className="m-room-info-cell-2">
                       Lorem ipsum dolor sit amet inc.
                     </div>
-                    <div className="m-room-info-cell-2 ">
-                      <span className="info-status approved">Approved</span>
+                    <div className="m-room-info-cell-2">
+                      <span className="info-status denied">Denied</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-left-arrow"></i>
                       </div>
@@ -602,7 +612,9 @@ const NewComponent = () => {
                 <div className="content-column-g-row head">
                   <div className="mr-head-component">
                     <div className="mr-head-component-cont">
-                      <p className="mr-head-component-title">Meeting Room 3</p>
+                      <p className="mr-head-component-title mr-head-component-title-2">
+                        Meeting Room 3
+                      </p>
                       <div className="mr-head-buttons">
                         <div className="buttons-holder">
                           <button className="small-btn mr-head-btn mr-head-btn-active">

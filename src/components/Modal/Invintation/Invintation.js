@@ -35,7 +35,7 @@ const Invintation = (props) => {
               <div className="inv-checkbox-holder">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span className="checkmark"></span>
                 </label>
               </div>
             </div>
@@ -44,7 +44,7 @@ const Invintation = (props) => {
               <div className="inv-checkbox-holder">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span className="checkmark"></span>
                 </label>
               </div>
             </div>
@@ -53,7 +53,7 @@ const Invintation = (props) => {
               <div className="inv-checkbox-holder">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span className="checkmark"></span>
                 </label>
               </div>
             </div>
@@ -62,7 +62,7 @@ const Invintation = (props) => {
               <div className="inv-checkbox-holder">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span className="checkmark"></span>
                 </label>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Invintation = (props) => {
               <div className="inv-checkbox-holder">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span className="checkmark"></span>
                 </label>
               </div>
             </div>
@@ -80,7 +80,7 @@ const Invintation = (props) => {
               <div className="inv-checkbox-holder">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span className="checkmark"></span>
                 </label>
               </div>
             </div>
@@ -89,7 +89,7 @@ const Invintation = (props) => {
               <div className="inv-checkbox-holder">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span className="checkmark"></span>
                 </label>
               </div>
             </div>
@@ -98,7 +98,7 @@ const Invintation = (props) => {
               <div className="inv-checkbox-holder">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span className="checkmark"></span>
                 </label>
               </div>
             </div>
@@ -107,7 +107,7 @@ const Invintation = (props) => {
               <div className="inv-checkbox-holder">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span className="checkmark"></span>
                 </label>
               </div>
             </div>
@@ -116,7 +116,7 @@ const Invintation = (props) => {
               <div className="inv-checkbox-holder">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span className="checkmark"></span>
                 </label>
               </div>
             </div>
@@ -125,7 +125,7 @@ const Invintation = (props) => {
               <div className="inv-checkbox-holder">
                 <label className="inv-container">
                   <input type="checkbox" />
-                  <span></span>
+                  <span className="checkmark"></span>
                 </label>
               </div>
             </div>
