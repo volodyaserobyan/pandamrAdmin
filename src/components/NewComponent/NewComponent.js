@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../assets/images/Logo.png";
+import PickSection from "../../assets/images/pick-section.png";
 // import "../../assets/sass/main.scss";
 
 const NewComponent = () => {
@@ -83,8 +84,12 @@ const NewComponent = () => {
               </p>
             </div>
           </div>
-          {/* Meeting room table 1 */}
-          <div className="meeting-room-info meeting-room-holder">
+
+          {/* Meeting room table 1 - disabled*/}
+          <div
+            className="meeting-room-info meeting-room-holder"
+            style={{ display: "none" }}
+          >
             <div className="m-room-info-table">
               <div className="m-room-info-thead">
                 <div className="m-room-info-row">
@@ -182,10 +187,7 @@ const NewComponent = () => {
           </div>
 
           {/* Meeting room table 2 - disabled*/}
-          <div
-            className="meeting-room-info meeting-room-holder"
-            style={{ display: "none" }}
-          >
+          <div className="meeting-room-info meeting-room-holder">
             <div className="m-room-info-table">
               <div className="m-room-info-thead">
                 <div className="m-room-info-row">
@@ -307,8 +309,17 @@ const NewComponent = () => {
             </div>
           </div>
         </div>
-        {/* End of right top content */}
 
+        {/* Pick the section */}
+        <div className="pick-the-section" style={{ display: "none" }}>
+          <div className="pick-section-img">
+            <img src={PickSection} alt="Pick the section" />
+          </div>
+          <p>Pick the section</p>
+        </div>
+        {/* End of pick the section */}
+
+        {/* End of right top content */}
         <div className="user-info-grid-holder" style={{ display: "none" }}>
           <div className="user-i-grid">
             <div className="speaker-col-b">
@@ -490,6 +501,244 @@ const NewComponent = () => {
           </div>
         </div>
 
+        {/* Branding and file info */}
+        <div className="content-c-row-h center" style={{ display: "none" }}>
+          <div className="c-c-r-cnt-column-h left">
+            <div className="content-column-grid-h">
+              <div className="content-column-g-row head">
+                <div className="common-component-head">
+                  <div className="apply-materials">
+                    <p>Apply these materials to all halls</p>
+                    <div className="inv-checkbox-holder">
+                      <label className="inv-container">
+                        <input type="checkbox" />
+                        <span className="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content-column-g-row center">
+                <div className="content-c-component">
+                  <div className="scrollable-holder-h">
+                    <div className="scrollable-container-h">
+                      <div className="running-row">
+                        <div className="materials-details">
+                          <p>Running row</p>
+                          <i className="_icon-information-outline"></i>
+                          <i className="_icon-arrow-down"></i>
+                        </div>
+                        <div className="running-file">
+                          <div className="banner-info">
+                            <p>Lorem ipsum dolor sit amets.jpg</p>
+                          </div>
+                          <i className="_icon-trash"></i>
+                        </div>
+                      </div>
+
+                      <div className="banners">
+                        <div className="materials-details">
+                          <p>Banners</p>
+                          <i className="_icon-information-outline"></i>
+                          <i className="_icon-arrow-down"></i>
+                        </div>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">1.</p>
+                        <div className="banner-info">
+                          <p className="banner-info-title">
+                            Lorem ipsum dolor.jpg
+                          </p>
+                          <p className="success-uploaded-p banner-info-subtitle">
+                            Successfully uploaded
+                          </p>
+                          <span className="success-uploaded"></span>
+                        </div>
+                        <i className="_icon-trash"></i>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">2.</p>
+                        <div className="banner-info">
+                          <p className="banner-info-title">
+                            Lorem ipsum dolor.jpg
+                          </p>
+                          <p className="error-uploading-p banner-info-subtitle">
+                            Uploading error, <span>try again.</span>
+                          </p>
+                          <span className="error-uploading"></span>
+                        </div>
+                        <i className="_icon-trash"></i>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">3.</p>
+                        <div className="banner-info">
+                          <p className="banner-info-title">
+                            Lorem ipsum dolor.jpg
+                          </p>
+                          <p className="uploading-p banner-info-subtitle">
+                            Uploading... 50%
+                          </p>
+                          <span className="uploading"></span>
+                        </div>
+                        <i className="_icon-trash"></i>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">4.</p>
+                        <label>
+                          Browse
+                          <input type="file" id="banner-info-t" />
+                        </label>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">5.</p>
+                        <label>
+                          Browse
+                          <input type="file" id="banner-info-t" />
+                        </label>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">6.</p>
+                        <label>
+                          Browse
+                          <input type="file" id="banner-info-t" />
+                        </label>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">7.</p>
+                        <label>
+                          Browse
+                          <input type="file" id="banner-info-t" />
+                        </label>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">8.</p>
+                        <label>
+                          Browse
+                          <input type="file" id="banner-info-t" />
+                        </label>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">9.</p>
+                        <label>
+                          Browse
+                          <input type="file" id="banner-info-t" />
+                        </label>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">10.</p>
+                        <label>
+                          Browse
+                          <input type="file" id="banner-info-t" />
+                        </label>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">11.</p>
+                        <label>
+                          Browse
+                          <input type="file" id="banner-info-t" />
+                        </label>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">12.</p>
+                        <label>
+                          Browse
+                          <input type="file" id="banner-info-t" />
+                        </label>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">13.</p>
+                        <label>
+                          Browse
+                          <input type="file" id="banner-info-t" />
+                        </label>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">14.</p>
+                        <label>
+                          Browse
+                          <input type="file" id="banner-info-t" />
+                        </label>
+                      </div>
+                      <div className="running-file">
+                        <p className="banner-num">15.</p>
+                        <label>
+                          Browse
+                          <input type="file" id="banner-info-t" />
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="c-c-r-cnt-column-h right">
+            <div className="c-c-r-cnt-c-inner-column left ">
+              <div className="content-column-grid-h">
+                <div className="content-column-g-row head">
+                  <div className="mr-head-component">
+                    <div className="hall-zone">
+                      <div className="hall-zone-info">
+                        <div className="hall-zone-info-l">
+                          <div className="hall-zone-info-l-btn">
+                            <label for="hall">Hall</label>
+                            <select id="hall" className="hall-select">
+                              <option value="red">Red</option>
+                              <option value="green">Green</option>
+                              <option value="blue">Blue</option>
+                            </select>
+                          </div>
+                          <div className="hall-zone-info-l-btn">
+                            <label for="zone">Zone</label>
+                            <select id="zone" className="hall-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div className="hall-zone-info-r">
+                          <div className="hz-info">
+                            <div className="hz-rr-item"></div>
+                            <p className="hz-title">Running row</p>
+                          </div>
+                          <div className="hz-info">
+                            <div className="hz-banner-num-item">1</div>
+                            <p className="hz-title">Banner number</p>
+                          </div>
+                          <div className="hz-info">
+                            <div className="hz-logo-item"></div>
+                            <p className="hz-title">Logo</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mr-head-cont">
+                  <div className="scrollable-holder-h">
+                    <div className="scrollable-container-h">
+                      <div className="content-column-g-row center">
+                        <div className="mr-center-component">
+                          <div className="hall-zone-cont">
+                            <div className="hz-logo-item"></div>
+                            <div className="hz-logo-item"></div>
+                            <div className="hz-logo-item"></div>
+                            <div className="hz-logo-item"></div>
+                            <div className="hall-zone-cont-rr"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End of branding and file info */}
+
+        {/* Right bottom content */}
         <div className="content-c-row-h center">
           <div className="c-c-r-cnt-column-h left">
             <div className="content-column-grid-h">
@@ -835,6 +1084,7 @@ const NewComponent = () => {
             </div>
           </div>
         </div>
+        {/* End of right bottom content */}
       </div>
       {/* End of right main content */}
     </div>

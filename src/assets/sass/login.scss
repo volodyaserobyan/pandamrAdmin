@@ -134,6 +134,9 @@ input[class="inp-v"]::placeholder {
   .container {
     color: #c8c7c7;
     cursor: pointer;
+    span {
+      font-size: 0;
+    }
   }
 }
 .forgot-pass-t {
