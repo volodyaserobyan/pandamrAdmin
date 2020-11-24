@@ -187,7 +187,10 @@ const NewComponent = () => {
           </div>
 
           {/* Meeting room table 2 - disabled*/}
-          <div className="meeting-room-info meeting-room-holder">
+          <div
+            className="meeting-room-info meeting-room-holder"
+            style={{ display: "none" }}
+          >
             <div className="m-room-info-table">
               <div className="m-room-info-thead">
                 <div className="m-room-info-row">
@@ -403,6 +406,24 @@ const NewComponent = () => {
                                     <i className="_icon-Icon-material-photo"></i>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
+                                </div>
+                                <div className="content-column-g-block">
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"></i>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
                                   <div className="content-column-g-r-item">
                                     <i className="_icon-Icon-material-photo"></i>
                                     <p>Lorem ipsum dolor.jpg</p>
@@ -429,42 +450,8 @@ const NewComponent = () => {
                                     <i className="_icon-Icon-material-photo"></i>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
                                 </div>
                                 <div className="content-column-g-block">
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                </div>
-                                <div className="content-column-g-block">
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
                                   <div className="content-column-g-r-item">
                                     <i className="_icon-Icon-material-photo"></i>
                                     <p>Lorem ipsum dolor.jpg</p>
@@ -502,7 +489,7 @@ const NewComponent = () => {
         </div>
 
         {/* Branding and file info */}
-        <div className="content-c-row-h center" style={{ display: "none" }}>
+        <div className="content-c-row-h center">
           <div className="c-c-r-cnt-column-h left">
             <div className="content-column-grid-h">
               <div className="content-column-g-row head">
@@ -739,7 +726,7 @@ const NewComponent = () => {
         {/* End of branding and file info */}
 
         {/* Right bottom content */}
-        <div className="content-c-row-h center">
+        <div className="content-c-row-h center" style={{ display: "none" }}>
           <div className="c-c-r-cnt-column-h left">
             <div className="content-column-grid-h">
               <div className="content-column-g-row head">

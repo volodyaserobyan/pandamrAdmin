@@ -620,7 +620,6 @@
     border-radius: 12px;
     background-color: #ffffff;
     box-shadow: 6px 5px 11px 0 rgba(200, 199, 199, 0.3);
-    padding: 20px 24px 12px 24px;
   }
   &.right {
     display: grid;
@@ -860,7 +859,7 @@
 
 .cont-info-user-content {
   width: 100%;
-  padding-left: 12px;
+  padding-left: 20px;
 }
 .cont-info-user-content .inside-info-user-content {
   position: relative;
