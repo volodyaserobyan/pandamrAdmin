@@ -20,7 +20,8 @@
 .confirm-cont,
 .meeting-cont,
 .description-cont,
-.send-notification-cont {
+.send-notification-cont,
+.success-cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,6 +69,7 @@
 }
 
 .success-cont {
+  padding: 40px 30px;
   p {
     color: #27ae60;
   }
@@ -193,7 +195,6 @@
 }
 .meeting-cont {
   padding: 40px 30px;
-  width: 596px;
   min-height: 250px;
 }
 .global-btn {
@@ -236,8 +237,6 @@
   }
 }
 .description-cont {
-  padding: 40px 30px;
-  width: 596px;
   justify-content: space-around;
   padding: 10px 40px;
   background-color: #f9f9fb;
@@ -254,7 +253,6 @@
 // Is Deined
 .isdenied-cont {
   padding: 40px 30px;
-  width: 596px;
   &-img {
     img {
       width: 84px;
@@ -267,9 +265,16 @@
 }
 
 // Send Notification
+.send-n-wrapper {
+  width: 673px;
+  max-height: 100%;
+}
+.glob-n-wrapper {
+  width: 596px;
+  max-height: 100%;
+}
 .send-notification-cont {
   padding: 60px;
-  width: 673px;
   .send-notification-title {
     font-size: 20px;
     font-weight: bold;
