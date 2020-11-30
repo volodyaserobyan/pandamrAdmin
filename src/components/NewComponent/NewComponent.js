@@ -940,7 +940,7 @@ const NewComponent = () => {
                   </div>
                 </div>
               </div>
-              <div className="content-column-g-row center">
+              <div className="content-column-g-row center" style={{display: "none"}}>
                 <div className="content-c-component">
                   <div className="scrollable-holder-h">
                     <div className="scrollable-container-h">
@@ -1022,7 +1022,7 @@ const NewComponent = () => {
                   </div>
                 </div>
               </div>
-              <div className="content-column-g-row bottom">
+              <div className="content-column-g-row bottom" style={{display: "none"}}>
                 <div className="left-bottom-component">
                   <div className="running-file">
                     <label className="running-file-lable">
@@ -1065,15 +1065,15 @@ const NewComponent = () => {
                           <div className="mr-center-component">
                             <div className="mr-center-content">
                               <img
-                                src="https://picsum.photos/seed/picsum/1920/1080"
-                                alt=""
+                                  src="https://picsum.photos/seed/picsum/1920/1080"
+                                  alt=""
                               />
                             </div>
 
                             <div className="mr-center-c-info">
                               <div
-                                className="mr-center-c-info-text"
-                                style={{ display: "none" }}
+                                  className="mr-center-c-info-text"
+                                  style={{ display: "none" }}
                               >
                                 <p className="mr-center-c-text">
                                   <span>Current meeting room details:</span>{" "}
@@ -1134,10 +1134,7 @@ const NewComponent = () => {
               </div>
             </div>
 
-            <div
-              className="c-c-r-cnt-c-inner-column left "
-              style={{ display: "none" }}
-            >
+            <div className="c-c-r-cnt-c-inner-column left " style={{ display: "none" }}>
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
                   <div className="mr-head-component">
@@ -1208,7 +1205,7 @@ const NewComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div className="content-column-g-row center">
+                <div className="content-column-g-row center" style={{ display: "none" }}>
                   <div className="content-c-component">
                     <div className="scrollable-holder-h">
                       <div className="scrollable-container-h">
@@ -1258,7 +1255,7 @@ const NewComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div className="content-column-g-row bottom">
+                <div className="content-column-g-row bottom" style={{ display: "none" }}>
                   <div className="left-bottom-component">
                     <button className="btn type-1">invite</button>
                   </div>
