@@ -930,10 +930,26 @@ const NewComponent = () => {
             <div className="content-column-grid-h">
               <div className="content-column-g-row head">
                 <div className="common-component-head">
-                  <p className="content-c-g-title">
-                    Attached files from participants
-                    <i className="_icon-information-outline"></i>
-                  </p>
+                  {/*<p className="content-c-g-title">*/}
+                    {/**/}
+                    {/*<i className="_icon-information-outline"></i>*/}
+                  {/*</p>*/}
+                  <div className="inside-info-user-content">
+                    <div className="inside-info-user-content-inner">
+                      <p className="inside-info-user-txt">Attached files from participants</p>
+                      <i className="_icon-information-outline" />
+                      <div className="add-information">
+                        <div className="add-information-inner">
+                          <p>PDF,Photo,Video accepted</p>
+                          <p>Max 3 files from each type.</p>
+                          <p> Limitations:</p>
+                          <p>+ Video 100mb</p>
+                          <p>+ PDF 100mb</p>
+                          <p>+ Photo 5mb</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div className="input-holder">
                     <input type="text" placeholder="search" className="input" />
                     <i className="_icon-search"></i>
