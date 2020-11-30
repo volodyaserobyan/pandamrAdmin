@@ -6,3 +6,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 1300px) {
+  .NavBar {
+    height: 60px;
+  }
+}

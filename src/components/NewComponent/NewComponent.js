@@ -6,7 +6,7 @@ import PickSection from "../../assets/images/pick-section.png";
 const NewComponent = () => {
   return (
     <div className="content-h">
-      {/* Left Sidebar */}
+      {/* LEFT SIDEBAR */}
       <div className="content-column-h left">
         <div className="content-column-grid-h">
           <div className="content-column-g-row head">
@@ -29,13 +29,13 @@ const NewComponent = () => {
                       Panel Talks
                     </span>
                     <span className="left-c-c-value">2</span>
-                    <i className="_icon-arrow-right"></i>
+                    <i className="_icon-left-arrow"></i>
                   </div>
                   <div className="left-c-component-item left-c-c-item-active">
                     <span className="left-c-component-heading">
                       Meeting room
                     </span>
-                    <i className="_icon-arrow-right"></i>
+                    <i className="_icon-left-arrow"></i>
                   </div>
                 </div>
               </div>
@@ -51,48 +51,29 @@ const NewComponent = () => {
           </div>
         </div>
       </div>
-      {/* End of left sidebar */}
+      {/* END OF LEFT SIDEBAR */}
 
-      {/* Right main content */}
+      {/* RIGHT MAIN CONTAINER */}
       <div className="content-column-h right">
-        {/* Right top content */}
         <div className="content-c-row-h head">
           <div className="content-c-row-h-inner">
             <div className="content-c-row-h-i-column">
-              {/* <ul className="breadcrumbs">
-                <li className="breadcrumb-btn-active">
-                  <div>
-                    <span className="btn-line"></span>
-                    <span>Expo name 3</span>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <span>Meeting room</span>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <span>Meeting room 3</span>
-                  </div>
-                </li>
-              </ul> */}
-
-              <div className="breadcrumb-buttons">
-                <div className="button-back"></div>
+              {/* BREADCRUMBS BUTTONS */}
+              <div className="breadcrumbs breadcrumb-active">
                 <span>Expo name 3</span>
-                <div className="button-front"></div>
+                <div className="breadcrumb-front"></div>
               </div>
-              <div className="breadcrumb-buttons">
-                <div className="button-back"></div>
+              <div className="breadcrumbs">
+                <div className="breadcrumb-back"></div>
                 <span>Meeting room</span>
-                <div className="button-front"></div>
+                <div className="breadcrumb-front"></div>
               </div>
-              <div className="breadcrumb-buttons">
-                <div className="button-back"></div>
-                <span>Meeting room 3</span>
-                <div className="button-front"></div>
+              <div className="breadcrumbs">
+                <div className="breadcrumb-back"></div>
+                <span>Meeting room 2</span>
+                <div className="breadcrumb-front"></div>
               </div>
+              {/* END OF BREADCRUMBS BUTTONS */}
             </div>
             <div className="content-c-row-h-i-column">
               <p>
@@ -101,7 +82,7 @@ const NewComponent = () => {
             </div>
           </div>
 
-          {/* Meeting room table 1 - disabled*/}
+          {/* MEETING ROOM TABLE 1 - disabled*/}
           <div
             className="meeting-room-info meeting-room-holder"
             style={{ display: "none" }}
@@ -202,7 +183,7 @@ const NewComponent = () => {
             </div>
           </div>
 
-          {/* Meeting room table 2 - disabled*/}
+          {/* MEETING ROOM TABLE 2 - disabled*/}
           <div
             className="meeting-room-info meeting-room-holder"
             style={{ display: "none" }}
@@ -329,16 +310,16 @@ const NewComponent = () => {
           </div>
         </div>
 
-        {/* Pick the section */}
+        {/* PICK THE SECTION */}
         <div className="pick-the-section" style={{ display: "none" }}>
           <div className="pick-section-img">
             <img src={PickSection} alt="Pick the section" />
           </div>
           <p>Pick the section</p>
         </div>
-        {/* End of pick the section */}
+        {/* END OF PICK THE SECTION */}
+        {/* END OF RIGHT MAIN CONTAINER */}
 
-        {/* End of right top content */}
         <div className="user-info-grid-holder" style={{ display: "none" }}>
           <div className="user-i-grid">
             <div className="speaker-col-b">
@@ -504,8 +485,8 @@ const NewComponent = () => {
           </div>
         </div>
 
-        {/* Branding and file info */}
-        <div className="content-c-row-h center">
+        {/* BRANDING AND FILE INFO MAIN CONTAINER */}
+        <div className="content-c-row-h center" style={{ display: "none" }}>
           <div className="c-c-r-cnt-column-h left branding-info-column">
             <div className="content-column-grid-h">
               <div className="content-column-g-row head">
@@ -526,7 +507,7 @@ const NewComponent = () => {
                   <div className="scrollable-holder-h">
                     <div className="scrollable-container-h">
                       <div className="file-info-holder">
-                        <div className="running-row">
+                        <div className="file-info-group running-row">
                           <div className="materials-details">
                             <p>Running row</p>
                             <i className="_icon-information-outline"></i>
@@ -546,7 +527,7 @@ const NewComponent = () => {
                           </div>
                         </div>
 
-                        <div className="banners">
+                        <div className="file-info-group banners">
                           <div className="materials-details">
                             <p>Banners</p>
                             <i className="_icon-information-outline"></i>
@@ -554,7 +535,7 @@ const NewComponent = () => {
                           </div>
 
                           <div className="running-file">
-                            <p className="banner-num">1.</p>
+                            <p className="banners-num">1.</p>
                             <div className="banner-info">
                               <p className="banner-info-title">
                                 Lorem ipsum dolor.jpg
@@ -567,7 +548,7 @@ const NewComponent = () => {
                             <i className="_icon-trash"></i>
                           </div>
                           <div className="running-file">
-                            <p className="banner-num">2.</p>
+                            <p className="banners-num">2.</p>
                             <div className="banner-info">
                               <p className="banner-info-title">
                                 Lorem ipsum dolor.jpg
@@ -580,7 +561,7 @@ const NewComponent = () => {
                             <i className="_icon-trash"></i>
                           </div>
                           <div className="running-file">
-                            <p className="banner-num">3.</p>
+                            <p className="banners-num">3.</p>
                             <div className="banner-info">
                               <p className="banner-info-title">
                                 Lorem ipsum dolor.jpg
@@ -593,42 +574,42 @@ const NewComponent = () => {
                             <i className="_icon-trash"></i>
                           </div>
                           <div className="running-file">
-                            <p className="banner-num">4.</p>
+                            <p className="banners-num">4.</p>
                             <label>
                               Browse
                               <input type="file" id="banner-info-t" />
                             </label>
                           </div>
                           <div className="running-file">
-                            <p className="banner-num">5.</p>
+                            <p className="banners-num">5.</p>
                             <label>
                               Browse
                               <input type="file" id="banner-info-t" />
                             </label>
                           </div>
                           <div className="running-file">
-                            <p className="banner-num">6.</p>
+                            <p className="banners-num">6.</p>
                             <label>
                               Browse
                               <input type="file" id="banner-info-t" />
                             </label>
                           </div>
                           <div className="running-file">
-                            <p className="banner-num">7.</p>
+                            <p className="banners-num">7.</p>
                             <label>
                               Browse
                               <input type="file" id="banner-info-t" />
                             </label>
                           </div>
                           <div className="running-file">
-                            <p className="banner-num">8.</p>
+                            <p className="banners-num">8.</p>
                             <label>
                               Browse
                               <input type="file" id="banner-info-t" />
                             </label>
                           </div>
                         </div>
-                        <div className="logo-png">
+                        <div className="file-info-group logo-png">
                           <div className="materials-details">
                             <p>logo (PNG)</p>
                             <i className="_icon-information-outline"></i>
@@ -648,45 +629,43 @@ const NewComponent = () => {
               </div>
             </div>
           </div>
-          {/* Branding and file info right side - 1 */}
+          {/* BRANDING AND FILE INFO RIGHT SIDE - 1 */}
           <div className="c-c-r-cnt-column-h right">
             <div className="c-c-r-cnt-c-inner-column left ">
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
                   <div className="mr-head-component">
-                    <div className="hall-zone">
-                      <div className="hall-zone-info">
-                        <div className="hall-zone-info-l">
-                          <div className="hall-zone-info-l-btn">
-                            <label for="hall">Hall</label>
-                            <select id="hall" className="hall-select">
-                              <option value="red">Red</option>
-                              <option value="green">Green</option>
-                              <option value="blue">Blue</option>
-                            </select>
-                          </div>
-                          <div className="hall-zone-info-l-btn">
-                            <label for="zone">Zone</label>
-                            <select id="zone" className="hall-select">
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                            </select>
-                          </div>
+                    {/* HALL ZONE HEADER */}
+                    <div className="hall-zone-info">
+                      <div className="hall-zone-info-l">
+                        <div className="hall-zone-info-l-btn">
+                          <label htmlFor="hall">Hall</label>
+                          <select id="hall" className="hall-select">
+                            <option value="red">Red</option>
+                            <option value="green">Orange</option>
+                          </select>
                         </div>
-                        <div className="hall-zone-info-r">
-                          <div className="hz-info">
-                            <div className="hz-rr-item"></div>
-                            <p className="hz-title">Running row</p>
-                          </div>
-                          <div className="hz-info">
-                            <div className="hz-banner-num-item">1</div>
-                            <p className="hz-title">Banner number</p>
-                          </div>
-                          <div className="hz-info">
-                            <div className="hz-logo-item"></div>
-                            <p className="hz-title">Logo</p>
-                          </div>
+                        <div className="hall-zone-info-l-btn">
+                          <label htmlFor="zone">Zone</label>
+                          <select id="zone" className="hall-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div className="hall-zone-info-r">
+                        <div className="hz-info">
+                          <div className="hz-rr-item"></div>
+                          <p className="hz-title">Running row</p>
+                        </div>
+                        <div className="hz-info">
+                          <div className="hz-banner-num-item">1</div>
+                          <p className="hz-title">Banner number</p>
+                        </div>
+                        <div className="hz-info">
+                          <div className="hz-logo-item"></div>
+                          <p className="hz-title">Logo</p>
                         </div>
                       </div>
                     </div>
@@ -698,111 +677,108 @@ const NewComponent = () => {
                     <div className="scrollable-holder-h">
                       <div className="scrollable-container-h">
                         <div className="mr-center-component">
+                          {/* HALL ZONE MAIN */}
                           <div className="hall-zone-holder">
                             <div className="hall-zone-inner">
-                              <div className="logo-holder">
-                                <div className="hz-logo-item-inner logo-item-top"></div>
-                                <div className="hz-logo-item-inner logo-item-left"></div>
-                                <div className="hz-logo-item-inner logo-item-bottom"></div>
-                                <div className="hz-logo-item-inner logo-item-right"></div>
-                              </div>
+                              <div className="logo_item logo_item-t"></div>
+                              <div className="logo_item logo_item-b"></div>
+                              <div className="logo_item-v logo_item-l"></div>
+                              <div className="logo_item-v logo_item-r"></div>
+
                               <div className="running-row-holder">
-                                <div className="h-z-top-buttons">
-                                  <div className="h-z-btn-red-zone">
+                                {/* BANNER NUMBERS */}
+                                <div className="banner-top-btns">
+                                  <div className="banner-num">
                                     <span>1</span>
                                   </div>
-                                  <div className="h-z-btn-red-zone">
+                                  <div className="banner-num">
                                     <span>2</span>
                                   </div>
-                                  <div className="h-z-btn-red-zone">
+                                  <div className="banner-num">
                                     <span>3</span>
                                   </div>
-                                  <div className="h-z-btn-red-zone">
+                                  <div className="banner-num">
                                     <span>4</span>
                                   </div>
-                                  <div className="h-z-btn-red-zone">
+                                  <div className="banner-num">
                                     <span>5</span>
                                   </div>
-                                  <div className="h-z-btn-red-zone">
+                                  <div className="banner-num">
                                     <span>6</span>
                                   </div>
                                 </div>
-                                <div className="h-z-bottom-buttons">
-                                  <div className="h-z-btn-red-zone">
+
+                                <div className="banner-num-v banner-num-7">
+                                  <span>7</span>
+                                </div>
+                                <div className="banner-num-v banner-num-8">
+                                  <span>8</span>
+                                </div>
+                                <div className="banner-num-v banner-num-9">
+                                  <span>9</span>
+                                </div>
+                                <div className="banner-num-v banner-num-10">
+                                  <span>10</span>
+                                </div>
+
+                                <div className="banner-bottom-btns">
+                                  <div className="banner-num">
                                     <span>11</span>
                                   </div>
-                                  <div className="h-z-btn-red-zone">
+                                  <div className="banner-num">
                                     <span>12</span>
                                   </div>
-                                  <div className="h-z-btn-red-zone">
+                                  <div className="banner-num">
                                     <span>13</span>
                                   </div>
-                                  <div className="h-z-btn-red-zone">
+                                  <div className="banner-num">
                                     <span>14</span>
                                   </div>
-                                  <div className="h-z-btn-red-zone">
+                                  <div className="banner-num">
                                     <span>15</span>
                                   </div>
-                                  <div className="h-z-btn-red-zone">
+                                  <div className="banner-num">
                                     <span>16</span>
                                   </div>
                                 </div>
 
-                                <div className="h-z-btn-type-2 h-z-btn-7">
-                                  <span>7</span>
-                                </div>
-                                <div className="h-z-btn-type-2 h-z-btn-8">
-                                  <span>8</span>
-                                </div>
-                                <div className="h-z-btn-type-2 h-z-btn-9">
-                                  <span>9</span>
-                                </div>
-                                <div className="h-z-btn-type-2 h-z-btn-10">
-                                  <span>10</span>
-                                </div>
-                                <div className="h-z-btn-type-2 h-z-btn-17">
+                                <div className="banner-num-v banner-num-17">
                                   <span>17</span>
                                 </div>
-                                <div className="h-z-btn-type-2 h-z-btn-18">
+                                <div className="banner-num-v banner-num-18">
                                   <span>18</span>
                                 </div>
-                                <div className="h-z-btn-type-2 h-z-btn-19">
+                                <div className="banner-num-v banner-num-19">
                                   <span>19</span>
                                 </div>
-                                <div className="h-z-btn-type-2 h-z-btn-20">
+                                <div className="banner-num-v banner-num-20">
                                   <span>20</span>
                                 </div>
                               </div>
 
-                              <div className="h-z-btn-type-3 h-z-logo-button-l"></div>
-                              <div className="h-z-btn-type-3 h-z-logo-button-r"></div>
-                              <div className="h-z-logo-button-tt h-z-logo-button-t"></div>
-                              <div className="h-z-logo-button-tt h-z-logo-button-b"></div>
+                              {/* INNER CENTER ITEMS */}
+                              <div className="center-lg-item color-2 center-lg-item-1"></div>
+                              <div className="center-lg-item color-2 center-lg-item-2"></div>
+                              <div className="center-lg-item color-2 center-lg-item-3"></div>
+                              <div className="center-lg-item color-2 center-lg-item-4"></div>
+                              <div className="center-lg-item color-2 center-lg-item-5"></div>
+                              <div className="center-lg-item color-2 center-lg-item-6"></div>
 
-                              <div className="h-z-center-items">
-                                <div className="center-lg-item color-2 center-lg-item-1"></div>
-                                <div className="center-lg-item color-2 center-lg-item-2"></div>
-                                <div className="center-lg-item color-2 center-lg-item-3"></div>
-                                <div className="center-lg-item color-2 center-lg-item-4"></div>
-                                <div className="center-lg-item color-2 center-lg-item-5"></div>
-                                <div className="center-lg-item color-2 center-lg-item-6"></div>
+                              <div className="center-md-item color-2 center-md-item-1"></div>
+                              <div className="center-md-item color-2 center-md-item-2"></div>
+                              <div className="center-md-item color-2 center-md-item-3"></div>
+                              <div className="center-md-item color-2 center-md-item-4"></div>
+                              <div className="center-md-item color-2 center-md-item-5"></div>
+                              <div className="center-md-item color-2 center-md-item-6"></div>
+                              <div className="center-md-item color-2 center-md-item-7"></div>
 
-                                <div className="center-md-item color-2 center-md-item-1"></div>
-                                <div className="center-md-item color-2 center-md-item-2"></div>
-                                <div className="center-md-item color-2 center-md-item-3"></div>
-                                <div className="center-md-item color-2 center-md-item-4"></div>
-                                <div className="center-md-item color-2 center-md-item-5"></div>
-                                <div className="center-md-item color-2 center-md-item-6"></div>
-                                <div className="center-md-item color-2 center-md-item-7"></div>
-
-                                <div className="center-sm-item color-2 center-sm-item-1"></div>
-                                <div className="center-sm-item color-2 center-sm-item-2"></div>
-                                <div className="center-sm-item color-2 center-sm-item-3"></div>
-                                <div className="center-sm-item color-2 center-sm-item-4"></div>
-                                <div className="center-sm-v-item color-2 center-sm-v-item-1"></div>
-                                <div className="center-sm-v-item color-2 center-sm-v-item-2"></div>
-                                <div className="center-sm-v-item color-2 center-sm-v-item-3"></div>
-                              </div>
+                              <div className="center-sm-item color-2 center-sm-item-1"></div>
+                              <div className="center-sm-item color-2 center-sm-item-2"></div>
+                              <div className="center-sm-item color-2 center-sm-item-3"></div>
+                              <div className="center-sm-item color-2 center-sm-item-4"></div>
+                              <div className="center-sm-v-item color-2 center-sm-v-item-1"></div>
+                              <div className="center-sm-v-item color-2 center-sm-v-item-2"></div>
+                              <div className="center-sm-v-item color-2 center-sm-v-item-3"></div>
                             </div>
                           </div>
                         </div>
@@ -813,8 +789,8 @@ const NewComponent = () => {
               </div>
             </div>
           </div>
-          {/* End of branding and file info right side - 1 */}
-          {/* Branding and file info right side - 2 */}
+          {/* END OF BRANDING AND FILE INFO RIGHT SIDE - 1 */}
+          {/* BRANDING AND FILE INFO RIGHT SIDE - 2 */}
           <div className="c-c-r-cnt-column-h right" style={{ display: "none" }}>
             <div className="c-c-r-cnt-c-inner-column left ">
               <div className="content-column-grid-h">
@@ -824,16 +800,21 @@ const NewComponent = () => {
                       <div className="hall-zone-info">
                         <div className="hall-zone-info-l">
                           <div className="hall-zone-info-l-btn">
-                            <label for="hall">Hall</label>
-                            <select id="hall" className="hall-select">
-                              <option value="red">Red</option>
-                              <option value="green">Green</option>
-                              <option value="blue">Blue</option>
+                            <label htmlFor="hall">Hall</label>
+                            <select
+                              id="hall"
+                              className="hall-select hall-select-2"
+                            >
+                              <option value="red">Orange</option>
+                              <option value="green">Red</option>
                             </select>
                           </div>
                           <div className="hall-zone-info-l-btn">
-                            <label for="zone">Zone</label>
-                            <select id="zone" className="hall-select">
+                            <label htmlFor="zone">Zone</label>
+                            <select
+                              id="zone"
+                              className="hall-select hall-select-2"
+                            >
                               <option value="1">1</option>
                               <option value="2">2</option>
                               <option value="3">3</option>
@@ -862,79 +843,73 @@ const NewComponent = () => {
                         <div className="mr-center-component">
                           <div className="hall-zone-holder">
                             <div className="hall-zone-inner orange-zone-inner">
-                              <div className="h-z-top-buttons">
-                                <div className="h-z-btn">
+                              <div className="logo_item-v logo_item-r-2"></div>
+                              <div className="banner-top-btns">
+                                <div className="banner-num banner_num">
                                   <span>1</span>
                                 </div>
-                                <div className="h-z-btn">
+                                <div className="banner-num banner_num">
                                   <span>2</span>
                                 </div>
-                                <div className="h-z-btn">
+                                <div className="banner-num banner_num">
                                   <span>3</span>
                                 </div>
-                                <div className="h-z-btn">
+                                <div className="banner-num banner_num">
                                   <span>4</span>
                                 </div>
-                                <div className="h-z-btn">
+                                <div className="banner-num banner_num">
                                   <span>5</span>
                                 </div>
                               </div>
-                              <div className="h-z-bottom-buttons">
-                                <div className="h-z-btn">
+
+                              <div className="banner-bottom-btns">
+                                <div className="banner-num banner_num">
                                   <span>6</span>
                                 </div>
-                                <div className="h-z-btn">
+                                <div className="banner-num banner_num">
                                   <span>7</span>
                                 </div>
-                                <div className="h-z-btn">
+                                <div className="banner-num banner_num">
                                   <span>8</span>
                                 </div>
-                                <div className="h-z-btn">
+                                <div className="banner-num banner_num">
                                   <span>9</span>
                                 </div>
-                                <div className="h-z-btn">
+                                <div className="banner-num banner_num">
                                   <span>10</span>
                                 </div>
                               </div>
 
-                              <div className="h-z-btn-type-4 h-z-logo-button-1"></div>
-
-                              <div className="h-z-btn-type-4 h-z-btn-1">
+                              <div className="banner-num-v banner_num-v banner_num-11">
                                 <span>11</span>
                               </div>
-                              <div className="h-z-btn-type-4 h-z-btn-2">
+                              <div className="banner-num-v banner_num-v banner_num-12">
                                 <span>12</span>
                               </div>
 
-                              <div className="h-z-center-items">
-                                <div className="center-logo-item center-logo-item-1"></div>
+                              <div className="center-lg-item center-lg-item-1"></div>
+                              <div className="center-lg-item center-lg-item-2"></div>
+                              <div className="center-lg-item center-lg-item-3"></div>
+                              <div className="center-lg-item center-lg-item-4"></div>
+                              <div className="center-lg-item center-lg-item-5"></div>
+                              <div className="center-lg-item center-lg-item-6"></div>
 
-                                <div className="center-lg-item center-lg-item-1"></div>
+                              <div className="center-md-item center-md-item-1"></div>
+                              <div className="center-md-item center-md-item-2"></div>
+                              <div className="center-md-item center-md-item-3"></div>
+                              <div className="center-md-item center-md-item-4"></div>
+                              <div className="center-md-item center-md-item-5"></div>
+                              <div className="center-md-item center-md-item-6"></div>
+                              <div className="center-md-item center-md-item-7"></div>
 
-                                <div className="center-lg-item center-lg-item-1"></div>
-                                <div className="center-lg-item center-lg-item-2"></div>
-                                <div className="center-lg-item center-lg-item-3"></div>
-                                <div className="center-lg-item center-lg-item-4"></div>
-                                <div className="center-lg-item center-lg-item-5"></div>
-                                <div className="center-lg-item center-lg-item-6"></div>
+                              <div className="center-sm-item center-sm-item-1"></div>
+                              <div className="center-sm-item center-sm-item-2"></div>
+                              <div className="center-sm-item center-sm-item-3"></div>
+                              <div className="center-sm-item center-sm-item-4"></div>
 
-                                <div className="center-md-item center-md-item-1"></div>
-                                <div className="center-md-item center-md-item-2"></div>
-                                <div className="center-md-item center-md-item-3"></div>
-                                <div className="center-md-item center-md-item-4"></div>
-                                <div className="center-md-item center-md-item-5"></div>
-                                <div className="center-md-item center-md-item-6"></div>
-                                <div className="center-md-item center-md-item-7"></div>
-
-                                <div className="center-sm-item center-sm-item-1"></div>
-                                <div className="center-sm-item center-sm-item-2"></div>
-                                <div className="center-sm-item center-sm-item-3"></div>
-                                <div className="center-sm-item center-sm-item-4"></div>
-
-                                <div className="center-sm-v-item center-sm-v-item-1"></div>
-                                <div className="center-sm-v-item center-sm-v-item-2"></div>
-                                <div className="center-sm-v-item center-sm-v-item-3"></div>
-                              </div>
+                              <div className="center-sm-v-item center-sm-v-item-1"></div>
+                              <div className="center-sm-v-item center-sm-v-item-2"></div>
+                              <div className="center-sm-v-item center-sm-v-item-3"></div>
                             </div>
                           </div>
                         </div>
@@ -945,12 +920,12 @@ const NewComponent = () => {
               </div>
             </div>
           </div>
-          {/* End of branding and file info right side - 2 */}
+          {/* END OF BRANDING AND FILE INFO RIGHT SIDE - 2 */}
         </div>
-        {/* End of branding and file info */}
+        {/* END OF BRANDING AND FILE INFO MAIN CONTAINER */}
 
-        {/* Right bottom content */}
-        <div className="content-c-row-h center" style={{ display: "none" }}>
+        {/* RIGHT BOTTOM CONTENT */}
+        <div className="content-c-row-h center">
           <div className="c-c-r-cnt-column-h left">
             <div className="content-column-grid-h">
               <div className="content-column-g-row head">
@@ -1292,9 +1267,9 @@ const NewComponent = () => {
             </div>
           </div>
         </div>
-        {/* End of right bottom content */}
+        {/* END OF RIGHT BOTTOM CONTENT */}
       </div>
-      {/* End of right main content */}
+      {/* END OF RIGHT MAIN CONTAINER */}
     </div>
   );
 };
