@@ -934,6 +934,7 @@ const NewComponent = () => {
                     {/**/}
                     {/*<i className="_icon-information-outline"></i>*/}
                   {/*</p>*/}
+
                   <div className="inside-info-user-content">
                     <div className="inside-info-user-content-inner">
                       <p className="inside-info-user-txt">Attached files from participants</p>
