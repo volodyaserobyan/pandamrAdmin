@@ -26,7 +26,7 @@ const NewComponent = () => {
                   </div>
                   <div className="left-c-component-item">
                     <span className="left-c-component-heading">
-                      Panel Talks
+                      Panel talks
                     </span>
                     <span className="left-c-c-value">2</span>
                     <i className="_icon-left-arrow"></i>
@@ -183,7 +183,7 @@ const NewComponent = () => {
             </div>
           </div>
 
-          {/* MEETING ROOM TABLE 2 - disabled*/}
+          {/* MEETING ROOM TABLE 2 - disabled */}
           <div
             className="meeting-room-info meeting-room-holder"
             style={{ display: "none" }}
@@ -299,7 +299,114 @@ const NewComponent = () => {
             </div>
           </div>
 
-          {/* Current event info details - disabled */}
+          {/* MEETING ROOM TABLE 3  */}
+          <div className="meeting-room-info meeting-room-holder">
+            <div className="m-room-info-table">
+              <div className="m-room-info-thead">
+                <div className="m-room-info-row">
+                  <div className="m-room-info-cell-2">Date</div>
+                  <div className="m-room-info-cell-2">Title</div>
+                  <div className="m-room-info-cell-2">Audience</div>
+                  <div className="m-room-info-cell-2">Status</div>
+                </div>
+              </div>
+
+              <div className="m-room-info-tbody">
+                <div className="m-room-info-row">
+                  <div className="m-room-info-row-wrp">
+                    <div className="m-room-info-cell-2">
+                      3:35 pm, 11/10/2020
+                    </div>
+                    <div className="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div className="m-room-info-cell-2">Visitors only</div>
+                    <div className="m-room-info-cell-2 ">
+                      <span className="info-status">Draft</span>
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-files"></i>
+                        <i className="_icon-left-arrow"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="m-room-info-row row-active">
+                  <div className="m-room-info-row-wrp">
+                    <div className="m-room-info-cell-2">
+                      4:45 pm, 08/10/2020
+                    </div>
+                    <div className="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div className="m-room-info-cell-2">Exhibitors only</div>
+                    <div className="m-room-info-cell-2">
+                      <span className="info-status">Draft</span>
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-files"></i>
+                        <i className="_icon-left-arrow"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="m-room-info-row">
+                  <div className="m-room-info-row-wrp">
+                    <div className="m-room-info-cell-2">
+                      11:30 am, 02/10/2020
+                    </div>
+                    <div className="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div className="m-room-info-cell-2">All users</div>
+                    <div className="m-room-info-cell-2">
+                      <span className="info-status sent">Sent</span>
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-files"></i>
+                        <i className="_icon-left-arrow"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="m-room-info-row">
+                  <div className="m-room-info-row-wrp">
+                    <div className="m-room-info-cell-2">
+                      11:30 am, 02/10/2020
+                    </div>
+                    <div className="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div className="m-room-info-cell-2">
+                      Lorem ipsum dolor sit amet inc.
+                    </div>
+                    <div className="m-room-info-cell-2">
+                      <span className="info-status">Sent</span>
+                      <div className="m-room-info-cell-edit">
+                        <i className="_icon-files"></i>
+                        <i className="_icon-left-arrow"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="m-room-info-pagination">
+              <div className="pagination-items">
+                <i className="_icon-left-arrow"></i>
+                <span>1</span>
+                <span>2</span>
+                <span className="pagination-item-active">3</span>
+                <span>4</span>
+                <span>5</span>
+                <i className="_icon-arrow-right"></i>
+              </div>
+
+              <button className="small-btn small-btn-type-1 m-room-info-btn">
+                Create
+              </button>
+            </div>
+          </div>
+
+          {/* CURRENT EVENT INFO DETAILS - disabled */}
           <div className="current-event-details" style={{ display: "none" }}>
             <div className="current-event-details-text">
               <p>
@@ -317,9 +424,8 @@ const NewComponent = () => {
           </div>
           <p>Pick the section</p>
         </div>
-        {/* END OF PICK THE SECTION */}
-        {/* END OF RIGHT MAIN CONTAINER */}
 
+        {/* END OF RIGHT MAIN CONTAINER */}
         <div className="user-info-grid-holder" style={{ display: "none" }}>
           <div className="user-i-grid">
             <div className="speaker-col-b">
