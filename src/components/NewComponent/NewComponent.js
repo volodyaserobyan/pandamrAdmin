@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../../assets/images/Logo.png";
 import PickSection from "../../assets/images/pick-section.png";
 // import "../../assets/sass/main.scss";
 
@@ -12,7 +11,7 @@ const NewComponent = () => {
           <div className="content-column-g-row head">
             <div className="left-head-component">
               <p>
-                <i className="_icon-left-arrow"></i>Expo name 3
+                <i className="_icon-left-arrow"/>Expo name 3
               </p>
             </div>
           </div>
@@ -21,21 +20,21 @@ const NewComponent = () => {
               <div className="scrollable-holder-h">
                 <div className="scrollable-container-h">
                   <div className="left-c-component-item">
-                    <span className="left-c-component-heading">Conferance</span>
-                    <i className="_icon-left-arrow"></i>
+                    <span className="left-c-component-heading">Conference</span>
+                    <i className="_icon-left-arrow"/>
                   </div>
                   <div className="left-c-component-item">
                     <span className="left-c-component-heading">
                       Panel talks
                     </span>
                     <span className="left-c-c-value">2</span>
-                    <i className="_icon-left-arrow"></i>
+                    <i className="_icon-left-arrow"/>
                   </div>
                   <div className="left-c-component-item left-c-c-item-active">
                     <span className="left-c-component-heading">
                       Meeting room
                     </span>
-                    <i className="_icon-left-arrow"></i>
+                    <i className="_icon-left-arrow"/>
                   </div>
                 </div>
               </div>
@@ -45,7 +44,7 @@ const NewComponent = () => {
             <div className="left-bottom-component">
               <button className="btn type-1">Create room</button>
               <p>
-                Made with <i className="_icon-heart-icon"></i> by PandaMR
+                Made with <i className="_icon-heart-icon"/> by PandaMR
               </p>
             </div>
           </div>
@@ -61,17 +60,17 @@ const NewComponent = () => {
               {/* BREADCRUMBS BUTTONS */}
               <div className="breadcrumbs breadcrumb-active">
                 <span>Expo name 3</span>
-                <div className="breadcrumb-front"></div>
+                <div className="breadcrumb-front"/>
               </div>
               <div className="breadcrumbs">
-                <div className="breadcrumb-back"></div>
+                <div className="breadcrumb-back"/>
                 <span>Meeting room</span>
-                <div className="breadcrumb-front"></div>
+                <div className="breadcrumb-front"/>
               </div>
               <div className="breadcrumbs">
-                <div className="breadcrumb-back"></div>
+                <div className="breadcrumb-back"/>
                 <span>Meeting room 2</span>
-                <div className="breadcrumb-front"></div>
+                <div className="breadcrumb-front"/>
               </div>
               {/* END OF BREADCRUMBS BUTTONS */}
             </div>
@@ -84,9 +83,7 @@ const NewComponent = () => {
 
           {/* MEETING ROOM TABLE 1 - disabled*/}
           <div
-            className="meeting-room-info meeting-room-holder"
-            style={{ display: "none" }}
-          >
+            className="meeting-room-info meeting-room-holder">
             <div className="m-room-info-table">
               <div className="m-room-info-thead">
                 <div className="m-room-info-row">
@@ -108,8 +105,8 @@ const NewComponent = () => {
                     <div className="m-room-info-cell">
                       <span className="info-status">Private</span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-Icon-material-edit"></i>
-                        <i className="_icon-left-arrow"></i>
+                        <i className="_icon-Icon-material-edit"/>
+                        <i className="_icon-left-arrow"/>
                       </div>
                     </div>
                   </div>
@@ -123,8 +120,8 @@ const NewComponent = () => {
                     <div className="m-room-info-cell">
                       <span className="info-status">Public</span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-Icon-material-edit"></i>
-                        <i className="_icon-arrow-down"></i>
+                        <i className="_icon-Icon-material-edit"/>
+                        <i className="_icon-arrow-down"/>
                       </div>
                     </div>
                   </div>
@@ -140,8 +137,8 @@ const NewComponent = () => {
                     <div className="m-room-info-cell">
                       <span className="info-status">Private</span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-Icon-material-edit"></i>
-                        <i className="_icon-left-arrow"></i>
+                        <i className="_icon-Icon-material-edit"/>
+                        <i className="_icon-left-arrow"/>
                       </div>
                     </div>
                   </div>
@@ -157,8 +154,8 @@ const NewComponent = () => {
                     <div className="m-room-info-cell ">
                       <span className="info-status">Public</span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-Icon-material-edit"></i>
-                        <i className="_icon-left-arrow"></i>
+                        <i className="_icon-Icon-material-edit"/>
+                        <i className="_icon-left-arrow"/>
                       </div>
                     </div>
                   </div>
@@ -168,13 +165,13 @@ const NewComponent = () => {
 
             <div className="m-room-info-pagination">
               <div className="pagination-items">
-                <i className="_icon-left-arrow"></i>
+                <i className="_icon-left-arrow"/>
                 <span>1</span>
                 <span>2</span>
                 <span className="pagination-item-active">3</span>
                 <span>4</span>
                 <span>5</span>
-                <i className="_icon-arrow-right"></i>
+                <i className="_icon-arrow-right"/>
               </div>
 
               <button className="small-btn small-btn-type-1 m-room-info-btn">
@@ -213,7 +210,7 @@ const NewComponent = () => {
                     <div className="m-room-info-cell-2 ">
                       <span className="info-status approved">Approved</span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-left-arrow"></i>
+                        <i className="_icon-left-arrow"/>
                       </div>
                     </div>
                   </div>
@@ -236,7 +233,7 @@ const NewComponent = () => {
                         <i className="pending-dot">.</i>
                       </span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-arrow-down"></i>
+                        <i className="_icon-arrow-down"/>
                       </div>
                     </div>
                   </div>
@@ -255,7 +252,7 @@ const NewComponent = () => {
                     <div className="m-room-info-cell-2">
                       <span className="info-status denied">Denied</span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-left-arrow"></i>
+                        <i className="_icon-left-arrow"/>
                       </div>
                     </div>
                   </div>
@@ -274,7 +271,7 @@ const NewComponent = () => {
                     <div className="m-room-info-cell-2">
                       <span className="info-status denied">Denied</span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-left-arrow"></i>
+                        <i className="_icon-left-arrow"/>
                       </div>
                     </div>
                   </div>
@@ -284,13 +281,13 @@ const NewComponent = () => {
 
             <div className="m-room-info-pagination">
               <div className="pagination-items">
-                <i className="_icon-left-arrow"></i>
+                <i className="_icon-left-arrow"/>
                 <span>1</span>
                 <span>2</span>
                 <span className="pagination-item-active">3</span>
                 <span>4</span>
                 <span>5</span>
-                <i className="_icon-arrow-right"></i>
+                <i className="_icon-arrow-right"/>
               </div>
 
               <button className="small-btn small-btn-type-1 m-room-info-btn">
@@ -300,7 +297,7 @@ const NewComponent = () => {
           </div>
 
           {/* MEETING ROOM TABLE 3  */}
-          <div className="meeting-room-info meeting-room-holder">
+          <div className="meeting-room-info meeting-room-holder" style={{ display: "none" }}>
             <div className="m-room-info-table">
               <div className="m-room-info-thead">
                 <div className="m-room-info-row">
@@ -324,8 +321,8 @@ const NewComponent = () => {
                     <div className="m-room-info-cell-2 ">
                       <span className="info-status">Draft</span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-files"></i>
-                        <i className="_icon-left-arrow"></i>
+                        <i className="_icon-files"/>
+                        <i className="_icon-left-arrow"/>
                       </div>
                     </div>
                   </div>
@@ -342,8 +339,8 @@ const NewComponent = () => {
                     <div className="m-room-info-cell-2">
                       <span className="info-status">Draft</span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-files"></i>
-                        <i className="_icon-left-arrow"></i>
+                        <i className="_icon-files"/>
+                        <i className="_icon-left-arrow"/>
                       </div>
                     </div>
                   </div>
@@ -360,8 +357,8 @@ const NewComponent = () => {
                     <div className="m-room-info-cell-2">
                       <span className="info-status sent">Sent</span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-files"></i>
-                        <i className="_icon-left-arrow"></i>
+                        <i className="_icon-files"/>
+                        <i className="_icon-left-arrow"/>
                       </div>
                     </div>
                   </div>
@@ -380,8 +377,8 @@ const NewComponent = () => {
                     <div className="m-room-info-cell-2">
                       <span className="info-status">Sent</span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-files"></i>
-                        <i className="_icon-left-arrow"></i>
+                        <i className="_icon-files"/>
+                        <i className="_icon-left-arrow"/>
                       </div>
                     </div>
                   </div>
@@ -391,13 +388,13 @@ const NewComponent = () => {
 
             <div className="m-room-info-pagination">
               <div className="pagination-items">
-                <i className="_icon-left-arrow"></i>
+                <i className="_icon-left-arrow"/>
                 <span>1</span>
                 <span>2</span>
                 <span className="pagination-item-active">3</span>
                 <span>4</span>
                 <span>5</span>
-                <i className="_icon-arrow-right"></i>
+                <i className="_icon-arrow-right"/>
               </div>
 
               <button className="small-btn small-btn-type-1 m-room-info-btn">
@@ -440,7 +437,7 @@ const NewComponent = () => {
                         <div className="scrollable-container-h scroll-profile">
                           <div className="info-user-profile-photo">
                             <div className="profile-photo-block">
-                              <i className="icon-camera"></i>
+                              <i className="icon-camera"/>
                               {/*{_.isEmpty(this.state.pictures) ?*/}
                               {/*<label>*/}
                               {/*<img src={userIcon} alt='' />*/}
@@ -490,89 +487,89 @@ const NewComponent = () => {
                               <div className="scrollable-container-h">
                                 <div className="content-column-g-block">
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                </div>
-                                <div className="content-column-g-block">
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
-                                    <p>Lorem ipsum dolor.jpg</p>
-                                  </div>
-                                  <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                 </div>
                                 <div className="content-column-g-block">
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                 </div>
                                 <div className="content-column-g-block">
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                   <div className="content-column-g-r-item">
-                                    <i className="_icon-Icon-material-photo"></i>
+                                    <i className="_icon-Icon-material-photo"/>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                </div>
+                                <div className="content-column-g-block">
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"/>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"/>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"/>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"/>
+                                    <p>Lorem ipsum dolor.jpg</p>
+                                  </div>
+                                  <div className="content-column-g-r-item">
+                                    <i className="_icon-Icon-material-photo"/>
                                     <p>Lorem ipsum dolor.jpg</p>
                                   </div>
                                 </div>
@@ -602,7 +599,7 @@ const NewComponent = () => {
                     <div className="inv-checkbox-holder">
                       <label className="inv-container">
                         <input type="checkbox" />
-                        <span className="checkmark"></span>
+                        <span className="checkmark"/>
                       </label>
                     </div>
                   </div>
@@ -616,14 +613,14 @@ const NewComponent = () => {
                         <div className="file-info-group running-row">
                           <div className="materials-details">
                             <p>Running row</p>
-                            <i className="_icon-information-outline"></i>
-                            <i className="_icon-arrow-down"></i>
+                            <i className="_icon-information-outline"/>
+                            <i className="_icon-arrow-down"/>
                           </div>
                           <div className="running-file">
                             <div className="banner-info">
                               <p>Lorem ipsum dolor sit amets.jpg</p>
                             </div>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
                           </div>
                           <div className="running-file">
                             <label>
@@ -636,8 +633,8 @@ const NewComponent = () => {
                         <div className="file-info-group banners">
                           <div className="materials-details">
                             <p>Banners</p>
-                            <i className="_icon-information-outline"></i>
-                            <i className="_icon-arrow-down"></i>
+                            <i className="_icon-information-outline"/>
+                            <i className="_icon-arrow-down"/>
                           </div>
 
                           <div className="running-file">
@@ -649,9 +646,9 @@ const NewComponent = () => {
                               <p className="success-uploaded-p banner-info-subtitle">
                                 Successfully uploaded
                               </p>
-                              <span className="success-uploaded"></span>
+                              <span className="success-uploaded"/>
                             </div>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
                           </div>
                           <div className="running-file">
                             <p className="banners-num">2.</p>
@@ -662,9 +659,9 @@ const NewComponent = () => {
                               <p className="error-uploading-p banner-info-subtitle">
                                 Uploading error, <span>try again.</span>
                               </p>
-                              <span className="error-uploading"></span>
+                              <span className="error-uploading"/>
                             </div>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
                           </div>
                           <div className="running-file">
                             <p className="banners-num">3.</p>
@@ -675,9 +672,9 @@ const NewComponent = () => {
                               <p className="uploading-p banner-info-subtitle">
                                 Uploading... 50%
                               </p>
-                              <span className="uploading"></span>
+                              <span className="uploading"/>
                             </div>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
                           </div>
                           <div className="running-file">
                             <p className="banners-num">4.</p>
@@ -718,14 +715,14 @@ const NewComponent = () => {
                         <div className="file-info-group logo-png">
                           <div className="materials-details">
                             <p>logo (PNG)</p>
-                            <i className="_icon-information-outline"></i>
-                            <i className="_icon-arrow-down"></i>
+                            <i className="_icon-information-outline"/>
+                            <i className="_icon-arrow-down"/>
                           </div>
                           <div className="running-file">
                             <div className="banner-info">
                               <p>Lorem ipsum dolor sit amets.jpg</p>
                             </div>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
                           </div>
                         </div>
                       </div>
@@ -762,7 +759,7 @@ const NewComponent = () => {
                       </div>
                       <div className="hall-zone-info-r">
                         <div className="hz-info">
-                          <div className="hz-rr-item"></div>
+                          <div className="hz-rr-item"/>
                           <p className="hz-title">Running row</p>
                         </div>
                         <div className="hz-info">
@@ -770,7 +767,7 @@ const NewComponent = () => {
                           <p className="hz-title">Banner number</p>
                         </div>
                         <div className="hz-info">
-                          <div className="hz-logo-item"></div>
+                          <div className="hz-logo-item"/>
                           <p className="hz-title">Logo</p>
                         </div>
                       </div>
@@ -786,10 +783,10 @@ const NewComponent = () => {
                           {/* HALL ZONE MAIN */}
                           <div className="hall-zone-holder">
                             <div className="hall-zone-inner">
-                              <div className="logo_item logo_item-t"></div>
-                              <div className="logo_item logo_item-b"></div>
-                              <div className="logo_item-v logo_item-l"></div>
-                              <div className="logo_item-v logo_item-r"></div>
+                              <div className="logo_item logo_item-t"/>
+                              <div className="logo_item logo_item-b"/>
+                              <div className="logo_item-v logo_item-l"/>
+                              <div className="logo_item-v logo_item-r"/>
 
                               <div className="running-row-holder">
                                 {/* BANNER NUMBERS */}
@@ -863,28 +860,28 @@ const NewComponent = () => {
                               </div>
 
                               {/* INNER CENTER ITEMS */}
-                              <div className="center-lg-item color-2 center-lg-item-1"></div>
-                              <div className="center-lg-item color-2 center-lg-item-2"></div>
-                              <div className="center-lg-item color-2 center-lg-item-3"></div>
-                              <div className="center-lg-item color-2 center-lg-item-4"></div>
-                              <div className="center-lg-item color-2 center-lg-item-5"></div>
-                              <div className="center-lg-item color-2 center-lg-item-6"></div>
+                              <div className="center-lg-item color-2 center-lg-item-1"/>
+                              <div className="center-lg-item color-2 center-lg-item-2"/>
+                              <div className="center-lg-item color-2 center-lg-item-3"/>
+                              <div className="center-lg-item color-2 center-lg-item-4"/>
+                              <div className="center-lg-item color-2 center-lg-item-5"/>
+                              <div className="center-lg-item color-2 center-lg-item-6"/>
 
-                              <div className="center-md-item color-2 center-md-item-1"></div>
-                              <div className="center-md-item color-2 center-md-item-2"></div>
-                              <div className="center-md-item color-2 center-md-item-3"></div>
-                              <div className="center-md-item color-2 center-md-item-4"></div>
-                              <div className="center-md-item color-2 center-md-item-5"></div>
-                              <div className="center-md-item color-2 center-md-item-6"></div>
-                              <div className="center-md-item color-2 center-md-item-7"></div>
+                              <div className="center-md-item color-2 center-md-item-1"/>
+                              <div className="center-md-item color-2 center-md-item-2"/>
+                              <div className="center-md-item color-2 center-md-item-3"/>
+                              <div className="center-md-item color-2 center-md-item-4"/>
+                              <div className="center-md-item color-2 center-md-item-5"/>
+                              <div className="center-md-item color-2 center-md-item-6"/>
+                              <div className="center-md-item color-2 center-md-item-7"/>
 
-                              <div className="center-sm-item color-2 center-sm-item-1"></div>
-                              <div className="center-sm-item color-2 center-sm-item-2"></div>
-                              <div className="center-sm-item color-2 center-sm-item-3"></div>
-                              <div className="center-sm-item color-2 center-sm-item-4"></div>
-                              <div className="center-sm-v-item color-2 center-sm-v-item-1"></div>
-                              <div className="center-sm-v-item color-2 center-sm-v-item-2"></div>
-                              <div className="center-sm-v-item color-2 center-sm-v-item-3"></div>
+                              <div className="center-sm-item color-2 center-sm-item-1"/>
+                              <div className="center-sm-item color-2 center-sm-item-2"/>
+                              <div className="center-sm-item color-2 center-sm-item-3"/>
+                              <div className="center-sm-item color-2 center-sm-item-4"/>
+                              <div className="center-sm-v-item color-2 center-sm-v-item-1"/>
+                              <div className="center-sm-v-item color-2 center-sm-v-item-2"/>
+                              <div className="center-sm-v-item color-2 center-sm-v-item-3"/>
                             </div>
                           </div>
                         </div>
@@ -933,7 +930,7 @@ const NewComponent = () => {
                             <p className="hz-title">Banner number</p>
                           </div>
                           <div className="hz-info">
-                            <div className="hz-logo-item"></div>
+                            <div className="hz-logo-item"/>
                             <p className="hz-title">Logo</p>
                           </div>
                         </div>
@@ -949,7 +946,7 @@ const NewComponent = () => {
                         <div className="mr-center-component">
                           <div className="hall-zone-holder">
                             <div className="hall-zone-inner orange-zone-inner">
-                              <div className="logo_item-v logo_item-r-2"></div>
+                              <div className="logo_item-v logo_item-r-2"/>
                               <div className="banner-top-btns">
                                 <div className="banner-num banner_num">
                                   <span>1</span>
@@ -993,29 +990,29 @@ const NewComponent = () => {
                                 <span>12</span>
                               </div>
 
-                              <div className="center-lg-item center-lg-item-1"></div>
-                              <div className="center-lg-item center-lg-item-2"></div>
-                              <div className="center-lg-item center-lg-item-3"></div>
-                              <div className="center-lg-item center-lg-item-4"></div>
-                              <div className="center-lg-item center-lg-item-5"></div>
-                              <div className="center-lg-item center-lg-item-6"></div>
+                              <div className="center-lg-item center-lg-item-1"/>
+                              <div className="center-lg-item center-lg-item-2"/>
+                              <div className="center-lg-item center-lg-item-3"/>
+                              <div className="center-lg-item center-lg-item-4"/>
+                              <div className="center-lg-item center-lg-item-5"/>
+                              <div className="center-lg-item center-lg-item-6"/>
 
-                              <div className="center-md-item center-md-item-1"></div>
-                              <div className="center-md-item center-md-item-2"></div>
-                              <div className="center-md-item center-md-item-3"></div>
-                              <div className="center-md-item center-md-item-4"></div>
-                              <div className="center-md-item center-md-item-5"></div>
-                              <div className="center-md-item center-md-item-6"></div>
-                              <div className="center-md-item center-md-item-7"></div>
+                              <div className="center-md-item center-md-item-1"/>
+                              <div className="center-md-item center-md-item-2"/>
+                              <div className="center-md-item center-md-item-3"/>
+                              <div className="center-md-item center-md-item-4"/>
+                              <div className="center-md-item center-md-item-5"/>
+                              <div className="center-md-item center-md-item-6"/>
+                              <div className="center-md-item center-md-item-7"/>
 
-                              <div className="center-sm-item center-sm-item-1"></div>
-                              <div className="center-sm-item center-sm-item-2"></div>
-                              <div className="center-sm-item center-sm-item-3"></div>
-                              <div className="center-sm-item center-sm-item-4"></div>
+                              <div className="center-sm-item center-sm-item-1"/>
+                              <div className="center-sm-item center-sm-item-2"/>
+                              <div className="center-sm-item center-sm-item-3"/>
+                              <div className="center-sm-item center-sm-item-4"/>
 
-                              <div className="center-sm-v-item center-sm-v-item-1"></div>
-                              <div className="center-sm-v-item center-sm-v-item-2"></div>
-                              <div className="center-sm-v-item center-sm-v-item-3"></div>
+                              <div className="center-sm-v-item center-sm-v-item-1"/>
+                              <div className="center-sm-v-item center-sm-v-item-2"/>
+                              <div className="center-sm-v-item center-sm-v-item-3"/>
                             </div>
                           </div>
                         </div>
@@ -1060,7 +1057,7 @@ const NewComponent = () => {
                   </div>
                   <div className="input-holder">
                     <input type="text" placeholder="search" className="input" />
-                    <i className="_icon-search"></i>
+                    <i className="_icon-search"/>
                   </div>
                 </div>
               </div>
@@ -1077,70 +1074,70 @@ const NewComponent = () => {
                         </div>
                         <div className="content-column-g-block">
                           <div className="content-column-g-r-item">
-                            <i className="_icon-Icon-material-photo"></i>
+                            <i className="_icon-Icon-material-photo"/>
                             <p>Lorem ipsum dolor.jpg</p>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
                           </div>
                           <div className="content-column-g-r-item">
-                            <i className="_icon-file"></i>
+                            <i className="_icon-file"/>
                             <p>Lorem ipsum dolor.jpg</p>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
                           </div>
                           <div className="content-column-g-r-item">
-                            <i className="_icon-Icon-material-photo"></i>
+                            <i className="_icon-Icon-material-photo"/>
                             <p>Lorem ipsum dolor.pdf</p>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
                           </div>
                           <div className="content-column-g-r-item">
-                            <i className="_icon-Icon-material-photo"></i>
+                            <i className="_icon-Icon-material-photo"/>
                             <p>Lorem ipsum dolor.jpg</p>
-                            <i className="_icon-trash"></i>
-                          </div>
-                          <p>Johan deley, CEO of defly inc.</p>
-                        </div>
-                        <div className="content-column-g-block">
-                          <div className="content-column-g-r-item">
-                            <i className="_icon-Icon-material-photo"></i>
-                            <p>Lorem ipsum dolor.jpg</p>
-                            <i className="_icon-trash"></i>
-                          </div>
-                          <div className="content-column-g-r-item">
-                            <i className="_icon-Icon-material-photo"></i>
-                            <p>Lorem ipsum dolor.jpg</p>
-                            <i className="_icon-trash"></i>
-                          </div>
-                          <div className="content-column-g-r-item">
-                            <i className="_icon-Icon-material-photo"></i>
-                            <p>Lorem ipsum dolor.jpg</p>
-                            <i className="_icon-trash"></i>
-                          </div>
-                          <div className="content-column-g-r-item">
-                            <i className="_icon-Icon-material-photo"></i>
-                            <p>Lorem ipsum dolor.jpg</p>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
                           </div>
                           <p>Johan deley, CEO of defly inc.</p>
                         </div>
                         <div className="content-column-g-block">
                           <div className="content-column-g-r-item">
-                            <i className="_icon-Icon-material-photo"></i>
+                            <i className="_icon-Icon-material-photo"/>
                             <p>Lorem ipsum dolor.jpg</p>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
                           </div>
                           <div className="content-column-g-r-item">
-                            <i className="_icon-Icon-material-photo"></i>
+                            <i className="_icon-Icon-material-photo"/>
                             <p>Lorem ipsum dolor.jpg</p>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
                           </div>
                           <div className="content-column-g-r-item">
-                            <i className="_icon-Icon-material-photo"></i>
+                            <i className="_icon-Icon-material-photo"/>
                             <p>Lorem ipsum dolor.jpg</p>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
                           </div>
                           <div className="content-column-g-r-item">
-                            <i className="_icon-Icon-material-photo"></i>
+                            <i className="_icon-Icon-material-photo"/>
                             <p>Lorem ipsum dolor.jpg</p>
-                            <i className="_icon-trash"></i>
+                            <i className="_icon-trash"/>
+                          </div>
+                          <p>Johan deley, CEO of defly inc.</p>
+                        </div>
+                        <div className="content-column-g-block">
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"/>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"/>
+                          </div>
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"/>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"/>
+                          </div>
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"/>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"/>
+                          </div>
+                          <div className="content-column-g-r-item">
+                            <i className="_icon-Icon-material-photo"/>
+                            <p>Lorem ipsum dolor.jpg</p>
+                            <i className="_icon-trash"/>
                           </div>
                           <p>Johan deley, CEO of defly inc.</p>
                         </div>
@@ -1164,8 +1161,8 @@ const NewComponent = () => {
               </div>
             </div>
           </div>
-          <div className="c-c-r-cnt-column-h right">
-            <div className="c-c-r-cnt-c-inner-column left ">
+          <div className="c-c-r-cnt-column-h right" >
+            <div className="c-c-r-cnt-c-inner-column left " style={{ display: "none" }}>
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
                   <div className="mr-head-component">
@@ -1181,7 +1178,7 @@ const NewComponent = () => {
                           <button className="small-btn mr-head-btn">
                             Private
                           </button>
-                          <span className="button-bg"></span>
+                          <span className="button-bg"/>
                         </div>
                       </div>
                     </div>
@@ -1265,9 +1262,7 @@ const NewComponent = () => {
             </div>
 
             <div
-              className="c-c-r-cnt-c-inner-column left "
-              style={{ display: "none" }}
-            >
+              className="c-c-r-cnt-c-inner-column left" >
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
                   <div className="mr-head-component">
@@ -1334,7 +1329,7 @@ const NewComponent = () => {
                         placeholder="search"
                         className="input"
                       />
-                      <i className="_icon-search"></i>
+                      <i className="_icon-search"/>
                     </div>
                   </div>
                 </div>
@@ -1348,43 +1343,43 @@ const NewComponent = () => {
                         <div className="content-column-g-block">
                           <div className="content-col-g-r-item">
                             <p>Johan Delly, CEO of Delly inc.</p>
-                            <i className="_icon-times"></i>
+                            <i className="_icon-times"/>
                           </div>
                           <div className="content-col-g-r-item">
                             <p>Johan Delly, CEO of Delly inc.</p>
-                            <i className="_icon-times"></i>
+                            <i className="_icon-times"/>
                           </div>
                           <div className="content-col-g-r-item">
                             <p>Johan Delly, CEO of Delly inc.</p>
-                            <i className="_icon-times"></i>
+                            <i className="_icon-times"/>
                           </div>
                           <div className="content-col-g-r-item">
                             <p>Johan Delly, CEO of Delly inc.</p>
-                            <i className="_icon-times"></i>
+                            <i className="_icon-times"/>
                           </div>
                           <div className="content-col-g-r-item">
                             <p>Johan Delly, CEO of Delly inc.</p>
-                            <i className="_icon-times"></i>
+                            <i className="_icon-times"/>
                           </div>
                           <div className="content-col-g-r-item">
                             <p>Johan Delly, CEO of Delly inc.</p>
-                            <i className="_icon-times"></i>
+                            <i className="_icon-times"/>
                           </div>
                           <div className="content-col-g-r-item">
                             <p>Johan Delly, CEO of Delly inc.</p>
-                            <i className="_icon-times"></i>
+                            <i className="_icon-times"/>
                           </div>
                           <div className="content-col-g-r-item">
                             <p>Johan Delly, CEO of Delly inc.</p>
-                            <i className="_icon-times"></i>
+                            <i className="_icon-times"/>
                           </div>
                           <div className="content-col-g-r-item">
                             <p>Johan Delly, CEO of Delly inc.</p>
-                            <i className="_icon-times"></i>
+                            <i className="_icon-times"/>
                           </div>
                           <div className="content-col-g-r-item">
                             <p>Johan Delly, CEO of Delly inc.</p>
-                            <i className="_icon-times"></i>
+                            <i className="_icon-times"/>
                           </div>
                         </div>
                       </div>
