@@ -9,8 +9,8 @@ const Success = (props) => {
         <div className="scrollable-container-h">
           <div className="scroll-wrapper">
             <div className="glob-n-wrapper">
-              <div className="success-cont">
-                <i className="_icon-times success-cont-close"></i>
+              <div className="success-cont" style={{ display: "none" }}>
+                <i className="_icon-times success-cont-close"/>
                 <div className="success-cont-img">
                   <img src={successImg} alt="Successfully reset" />
                 </div>
@@ -19,8 +19,8 @@ const Success = (props) => {
                 </p>
               </div>
 
-              <div className="meeting-cont" style={{ display: "none" }}>
-                <div className="meeting-cont-close"></div>
+              <div className="meeting-cont" >
+                <div className="meeting-cont-close"/>
                 <div className="meeting-cont-txt">
                   <p>
                     You are about to delete the room
@@ -38,7 +38,7 @@ const Success = (props) => {
                 </div>
               </div>
               <div className="description-cont" style={{ display: "none" }}>
-                <i className="_icon-times description-cont-close"></i>
+                <i className="_icon-times description-cont-close"/>
                 <p className="send-cont-txt">
                   Please leave comment on why the request is denied
                 </p>

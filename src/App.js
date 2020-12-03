@@ -21,15 +21,15 @@ const App = () => {
       <div className="content-holder">
         <div className="main-content-box">
           {/*{<ImageCropper />}*/}
-          {/* {<Confirm />} */}
+          {/* {<Confirm />}*/}
           {<NewComponent />}
-          {/* <IsDenied /> */}
-          {/* <SendNotification /> */}
-          {/* <Invintation /> */}
-          {/* <Success /> */}
-          {/* <SignIn /> */}
-          {/* <ResetPass /> */}
-          {/* <ResetPassSent /> */}
+          {/* <IsDenied />*/}
+          {/* <SendNotification />*/}
+          {/* <Invintation />*/}
+          {/* <Success />*/}
+          {/* <SignIn />*/}
+          {/* <ResetPass />*/}
+          {/* <ResetPassSent />*/}
         </div>
       </div>
     </div>
