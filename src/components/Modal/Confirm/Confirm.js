@@ -17,9 +17,13 @@ const Confirm = (props) => {
                     <br /> <span>Are you sure?</span>
                   </p>
                 </div>
-                <div className="global-buttons">
-                  <button className="global-btn global-btn-type-1">Confirm</button>
-                  <button className="global-btn global-btn-type-2">Cancel</button>
+                <div className="mr-bottom-component confirm-btn">
+                  <button className="btn type-1">
+                    Confirm
+                  </button>
+                  <button className="btn type-4">
+                    Cancel
+                  </button>
                 </div>
               </div>
             </div>

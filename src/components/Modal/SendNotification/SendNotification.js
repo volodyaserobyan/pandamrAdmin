@@ -9,7 +9,7 @@ const SendNotification = (props) => {
           <div className="scroll-wrapper">
             <div className="send-n-wrapper">
               <div className="send-notification-cont">
-                <i className="_icon-times send-notification-cont-close"></i>
+                <i className="_icon-times send-notification-cont-close"/>
 
                 <div>
                   <h1 className="send-notification-title">
@@ -27,9 +27,11 @@ const SendNotification = (props) => {
                     aliquyam erat, sed diam volu
                   </p>
                 </div>
-                <div className="global-buttons">
-                  <button className="global-btn global-btn-type-1">Send</button>
-                  <button className="global-btn global-btn-type-2">
+                <div className="mr-bottom-component send-notification-btn">
+                  <button className="btn type-1">
+                    Send
+                  </button>
+                  <button className="btn type-4">
                     Cancel
                   </button>
                 </div>

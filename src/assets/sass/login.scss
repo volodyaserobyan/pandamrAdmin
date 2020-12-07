@@ -134,6 +134,10 @@ input[class="inp-v"]::placeholder {
   .container {
     color: #c8c7c7;
     cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+      color: darken(#c8c7c7, 10%);
+    }
     span {
       font-size: 0;
     }

@@ -83,7 +83,7 @@ const NewComponent = () => {
 
           {/* MEETING ROOM TABLE 1 - disabled*/}
           <div
-            className="meeting-room-info meeting-room-holder">
+            className="meeting-room-info meeting-room-holder" style={{ display: "none" }}>
             <div className="m-room-info-table">
               <div className="m-room-info-thead">
                 <div className="m-room-info-row">
@@ -121,7 +121,7 @@ const NewComponent = () => {
                       <span className="info-status">Public</span>
                       <div className="m-room-info-cell-edit">
                         <i className="_icon-Icon-material-edit"/>
-                        <i className="_icon-arrow-down"/>
+                        <i className="_icon-left-arrow"/>
                       </div>
                     </div>
                   </div>
@@ -182,9 +182,7 @@ const NewComponent = () => {
 
           {/* MEETING ROOM TABLE 2 - disabled */}
           <div
-            className="meeting-room-info meeting-room-holder"
-            style={{ display: "none" }}
-          >
+            className="meeting-room-info meeting-room-holder" style={{ display: "none" }}>
             <div className="m-room-info-table">
               <div className="m-room-info-thead">
                 <div className="m-room-info-row">
@@ -233,7 +231,7 @@ const NewComponent = () => {
                         <i className="pending-dot">.</i>
                       </span>
                       <div className="m-room-info-cell-edit">
-                        <i className="_icon-arrow-down"/>
+                        <i className="_icon-left-arrow"/>
                       </div>
                     </div>
                   </div>
@@ -422,7 +420,6 @@ const NewComponent = () => {
           <p>Pick the section</p>
         </div>
 
-        {/* END OF RIGHT MAIN CONTAINER */}
         <div className="user-info-grid-holder" style={{ display: "none" }}>
           <div className="user-i-grid">
             <div className="speaker-col-b">
@@ -595,12 +592,9 @@ const NewComponent = () => {
               <div className="content-column-g-row head">
                 <div className="common-component-head">
                   <div className="apply-materials">
-                    <p>Apply these materials to all halls</p>
                     <div className="inv-checkbox-holder">
-                      <label className="inv-container">
-                        <input type="checkbox" />
-                        <span className="checkmark"/>
-                      </label>
+                      <label htmlFor="input" className="label-info-block">Apply these materials to all halls</label>
+                      <input type="checkbox" id="input"/>
                     </div>
                   </div>
                 </div>
@@ -632,11 +626,19 @@ const NewComponent = () => {
 
                         <div className="file-info-group banners">
                           <div className="materials-details">
+                            <div className="add-information">
+                              <div className="add-information-inner">
+                                <p>Image dimensions</p>
+                                <p>1200x628px</p>
+                                <p>1200x600px</p>
+                              </div>
+                            </div>
                             <p>Banners</p>
-                            <i className="_icon-information-outline"/>
+                            <i className="_icon-information-outline info"/>
                             <i className="_icon-arrow-down"/>
-                          </div>
 
+                          </div>
+                          <div className="running-file-holder">
                           <div className="running-file">
                             <p className="banners-num">1.</p>
                             <div className="banner-info">
@@ -712,6 +714,7 @@ const NewComponent = () => {
                             </label>
                           </div>
                         </div>
+                        </div>
                         <div className="file-info-group logo-png">
                           <div className="materials-details">
                             <p>logo (PNG)</p>
@@ -733,8 +736,9 @@ const NewComponent = () => {
             </div>
           </div>
           {/* BRANDING AND FILE INFO RIGHT SIDE - 1 */}
-          <div className="c-c-r-cnt-column-h right">
-            <div className="c-c-r-cnt-c-inner-column left ">
+          <div className="c-c-r-cnt-column-h right" style={{ display: "none" }}>
+            <div className="c-c-r-cnt-c-inner-column left file-info">
+
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
                   <div className="mr-head-component">
@@ -894,8 +898,8 @@ const NewComponent = () => {
           </div>
           {/* END OF BRANDING AND FILE INFO RIGHT SIDE - 1 */}
           {/* BRANDING AND FILE INFO RIGHT SIDE - 2 */}
-          <div className="c-c-r-cnt-column-h right" style={{ display: "none" }}>
-            <div className="c-c-r-cnt-c-inner-column left ">
+          <div className="c-c-r-cnt-column-h right"  >
+            <div className="c-c-r-cnt-c-inner-column left file-info">
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
                   <div className="mr-head-component">
@@ -1063,9 +1067,7 @@ const NewComponent = () => {
                 </div>
               </div>
               <div
-                className="content-column-g-row center"
-                style={{ display: "none" }}
-              >
+                className="content-column-g-row center">
                 <div className="content-c-component">
                   <div className="scrollable-holder-h">
                     <div className="scrollable-container-h">
@@ -1148,9 +1150,7 @@ const NewComponent = () => {
                 </div>
               </div>
               <div
-                className="content-column-g-row bottom"
-                style={{ display: "none" }}
-              >
+                className="content-column-g-row bottom">
                 <div className="left-bottom-component">
                   <div className="running-file">
                     <label className="running-file-lable">
@@ -1163,7 +1163,7 @@ const NewComponent = () => {
             </div>
           </div>
           <div className="c-c-r-cnt-column-h right" >
-            <div className="c-c-r-cnt-c-inner-column left " style={{ display: "none" }}>
+            <div className="c-c-r-cnt-c-inner-column left" >
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
                   <div className="mr-head-component">
@@ -1263,7 +1263,7 @@ const NewComponent = () => {
             </div>
 
             <div
-              className="c-c-r-cnt-c-inner-column left" >
+              className="c-c-r-cnt-c-inner-column left" style={{ display: "none" }}>
               <div className="content-column-grid-h">
                 <div className="content-column-g-row head">
                   <div className="mr-head-component">
@@ -1335,9 +1335,7 @@ const NewComponent = () => {
                   </div>
                 </div>
                 <div
-                  className="content-column-g-row center"
-                  style={{ display: "none" }}
-                >
+                  className="content-column-g-row center">
                   <div className="content-c-component">
                     <div className="scrollable-holder-h">
                       <div className="scrollable-container-h">
@@ -1388,9 +1386,7 @@ const NewComponent = () => {
                   </div>
                 </div>
                 <div
-                  className="content-column-g-row bottom"
-                  style={{ display: "none" }}
-                >
+                  className="content-column-g-row bottom">
                   <div className="left-bottom-component">
                     <button className="btn type-1">invite</button>
                   </div>

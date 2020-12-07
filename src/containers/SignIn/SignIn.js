@@ -71,7 +71,7 @@ const SignIn = () => {
               <div className="pmr-info-b">
                 <p>
                   Made with
-                  <i className="_icon-heart-icon"></i>
+                  <i className="_icon-heart-icon"/>
                   by PandaMR
                 </p>
               </div>

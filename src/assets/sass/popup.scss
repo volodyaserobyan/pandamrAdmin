@@ -119,9 +119,7 @@
 }
 .dimension-button,
 .cropper-button,
-.global-btn,
 .meeting-btn,
-.send-btn,
 .invite-btn {
   border-radius: 5px;
   border: none;
@@ -130,9 +128,7 @@
   margin: 0 6px;
 }
 .dimension-selected,
-.cropper-button-save,
-.global-btn-type-1,
-.send-btn-des {
+.cropper-button-save {
   background-color: #2196f3;
   transition: background-color 0.3s;
   &:hover {
@@ -188,34 +184,23 @@
     }
   }
 }
+.mr-bottom-component {
+  &.confirm-btn {
+    padding: 0;
+  }
+}
+
 .confirm-cont {
   padding: 40px 30px;
-  width: 596px;
   min-height: 274px;
 }
 .meeting-cont {
   padding: 40px 30px;
   min-height: 250px;
-}
-.global-btn {
-  min-width: 170px;
-  padding: 10px;
-  height: 38px;
-  line-height: 18px;
-}
-.meeting-btn {
-  min-width: 175px;
-  line-height: 38px;
-  margin-right: 12px;
-}
-.send-btn {
-  min-width: 110px;
-  line-height: 38px;
-  font-size: 14px;
-  height: 38px;
-}
-.meeting-buttons {
-  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .send-cont-txt {
   font-size: 16px;
@@ -230,7 +215,7 @@
   height: 198px;
   font-size: 14px;
   line-height: 17px;
-  padding: 10px;
+  border-radius: 5px;
   background-color: #ffffff;
   > p {
     padding: 10px;
@@ -241,12 +226,20 @@
   padding: 10px 40px;
   background-color: #f9f9fb;
   .send-text-block {
-    > .scrollable-container-h {
+    > .desc-scroll-cont {
       padding: 15px;
     }
     p {
       color: #757575;
     }
+  }
+}
+.send-buttons {
+  min-width: 112px;
+  display: flex;
+  > button {
+      min-width: 112px;
+      margin: 0 5px;
   }
 }
 
@@ -274,7 +267,7 @@
   max-height: 100%;
 }
 .send-notification-cont {
-  padding: 60px;
+  padding: 50px;
   .send-notification-title {
     font-size: 20px;
     font-weight: bold;
@@ -283,7 +276,7 @@
   }
   .send-notification-info {
     font-size: 18px;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
   }
   .send-notification-subtitle {
     font-weight: bold;
@@ -291,11 +284,12 @@
   }
 }
 
+
 // Invintation
 .invintation-cont {
   width: 445px;
   max-height: 100%;
-  padding: 30px 20px 12px 20px;
+  padding: 30px 23px 12px 23px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -351,6 +345,13 @@
     }
   }
 }
+.invintation-cont {
+  .inv-input-holder {
+    > input {
+      width: 88%;
+    }
+  }
+}
 .inv-input-holder {
   position: relative;
   width: 100%;
@@ -363,62 +364,56 @@
 }
 .invite-buttons {
   width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.invite-btn {
-  width: 100%;
-  padding: 10px;
-  height: 38px;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 // Invintation checkbox
 .inv-checkbox-holder {
-  width: 13px;
-  height: 13px;
-  margin: 0 3px;
-}
-.inv-container {
+  width: 100%;
   display: flex;
-  position: relative;
-  cursor: pointer;
-  width: 13px;
-  height: 13px;
-  font-size: 0;
-}
-.inv-container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-.inv-container .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 13px;
-  width: 13px;
-  border: 1px solid #c8c7c7;
-  border-radius: 50%;
-  font-size: 0;
-}
-.inv-container .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.inv-container input:checked ~ .checkmark:after {
-  display: block;
-}
-.inv-container .checkmark:after {
-  left: 4px;
-  top: -2px;
-  width: 4px;
-  height: 9px;
-  border: solid #2196f3;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  justify-content: space-between;
+  align-items: center;
+
+  .label-info-block {
+    transition: color .3s;
+    cursor: pointer;
+    &:hover {
+      color: #2196f3;
+    }
+  }
+  input {
+    position: relative;
+    transform: scale(.8);
+    margin: 0 3px;
+    cursor: pointer;
+    font-size: 0;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      height: 15px;
+      width: 15px;
+      border: 1px solid #c8c7c7;
+      border-radius: 50%;
+      font-size: 0;
+      z-index: 2;
+      background: #fff;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: -1px;
+      width: 5px;
+      height: 10px;
+      border: solid #2196f3;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      z-index: 3;
+      opacity: 0;
+    }
+    &:checked:before {
+      opacity: 1;
+    }
+  }
 }
