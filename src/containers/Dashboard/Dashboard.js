@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../assets/images/Logo.png";
 // import "../../assets/sass/main.scss";
 
-const NewComponent = () => {
+const Dashboard = () => {
   return (
     <div className="content-h">
       <div className="content-column-h left">
@@ -329,4 +329,4 @@ const NewComponent = () => {
   );
 };
 
-export default NewComponent;
+export default Dashboard;

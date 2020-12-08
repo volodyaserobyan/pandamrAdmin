@@ -1,7 +1,8 @@
 import React from "react";
 import SignIn from "./containers/SignIn";
 import NavBar from "./components/NavBar";
-import NewComponent from "./components/NewComponent";
+import Dashboard from "./containers/Dashboard";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ResetPass from "./containers/ResetPass";
 import ResetPassSent from "./containers/ResetPassSent";
 import { Success } from "./components/Modal";
@@ -16,15 +17,17 @@ const App = () => {
         <NavBar />
       </div>
       <div className="content-holder">
-        <div className="main-content-box">
-          {/* {<ImageCropper />} */}
-          {/*{<Confirm />}*/}
-          {/*{<NewComponent />}*/}
-          <Success value="reset successfully" />
-          {/* <SignIn /> */}
-          {/* <ResetPass />*/}
-          {/* <ResetPassSent /> */}
-        </div>
+        <BrowserRouter>
+          <div className="main-content-box">
+            {/* {<ImageCropper />} */}
+            {/* {<Confirm />} */}
+            {<Dashboard />}
+            {/* <Success value="reset successfully" /> */}
+            {/* <SignIn /> */}
+            {/* <ResetPass />*/}
+            {/* <ResetPassSent /> */}
+          </div>
+        </BrowserRouter>
       </div>
     </div>
   );
