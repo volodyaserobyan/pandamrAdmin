@@ -1,7 +1,5 @@
 // Password reset successful Popup
-.status-b-holder,
-.image-crop-holder,
-.confirm-holder {
+.global-holder {
   width: 100%;
   height: 100%;
   display: flex;
@@ -18,39 +16,30 @@
   display: none;
 }
 
-.success-cont,
+.isdenied-cont,
 .confirm-cont,
 .meeting-cont,
-.description-cont {
+.description-cont,
+.send-notification-cont,
+.success-cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 596px;
   border-radius: 5px;
   background-color: #fff;
   text-align: center;
-  padding: 40px 30px;
   position: relative;
   &-close {
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 15px;
-    width: 17px;
-    height: 2px;
-    background-color: #c8c7c7;
-    transform: rotate(45deg);
+    font-size: 18px;
+    color: #c8c7c7;
     cursor: pointer;
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 17px;
-      height: 2px;
-      top: 0;
-      right: 0;
-      background-color: #c8c7c7;
-      transform: rotate(90deg);
+    transition: color 0.3s;
+    &:hover {
+      color: darken(#c8c7c7, 10%);
     }
   }
   &-img {
@@ -59,7 +48,6 @@
   }
   &-text {
     text-transform: uppercase;
-    color: #27ae60;
     font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
@@ -69,20 +57,29 @@
     color: #000000;
     font-size: 24px;
     margin-top: 10px;
-     span {
+    span {
       font-weight: bold;
     }
   }
 }
+.isdenied-cont,
 .success-cont,
 .description-cont {
   min-height: 336px;
 }
 
+.success-cont {
+  padding: 40px 30px;
+  p {
+    color: #27ae60;
+  }
+}
+
 // Branding image cropper UI
 .image-crop-cont {
   width: 1145px;
-  min-height: 757px;
+  height: 757px;
+  max-height: 100%;
   background-color: #fff;
   border-radius: 12px;
   padding: 30px 60px;
@@ -98,8 +95,9 @@
   font-weight: bold;
 }
 .crop-image {
-  width: 1024px;
+  width: 100%;
   height: 512px;
+  max-height: 100%;
   border: 2px solid rgba(0, 0, 0, 0.1);
   img {
     width: 1024px;
@@ -121,30 +119,44 @@
 }
 .dimension-button,
 .cropper-button,
-.confirm-btn,
 .meeting-btn,
-.send-btn {
+.invite-btn {
   border-radius: 5px;
   border: none;
   color: #ffffff;
   cursor: pointer;
+  margin: 0 6px;
 }
 .dimension-selected,
-.cropper-button-save,
-.confirm-btn-confirm,
-.send-btn-des {
+.cropper-button-save {
   background-color: #2196f3;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken(#2196f3, 10%);
+  }
 }
 .meeting-btn-delete {
   background-color: #fe4c4c;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken (#fe4c4c, 10%);
+  }
 }
 .meeting-btn-cancel {
   background-color: #c8c7c7;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken (#c8c7c7, 10%);
+  }
 }
 .image-crop-dimensions {
   > .dimension-selectable {
     border: 1px solid #c8c7c7;
     color: #757575;
+    transition: all 0.3s;
+    &:hover {
+      border-color: #2196f3;
+    }
   }
 }
 
@@ -153,14 +165,12 @@
 }
 
 .cropper-button-reset,
-.confirm-btn-cancel {
-  background-color: #757575;
-}
-
-.dimension-selected,
-.cropper-button-reset,
-.confirm-btn-confirm {
-  margin-right: 12px;
+.global-btn-type-2 {
+  background-color: #c8c7c7;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken(#c8c7c7, 10%);
+  }
 }
 
 // Confirm Popup Template
@@ -174,26 +184,23 @@
     }
   }
 }
+.mr-bottom-component {
+  &.confirm-btn {
+    padding: 0;
+  }
+}
+
 .confirm-cont {
+  padding: 40px 30px;
   min-height: 274px;
 }
 .meeting-cont {
+  padding: 40px 30px;
   min-height: 250px;
-}
-.confirm-btn {
-  padding: 10px 60px;
-}
-.meeting-btn {
-  min-width: 175px;
-  line-height: 38px;
-  margin-right: 12px;
-}
-.send-btn {
-  min-width: 175px;
-  line-height: 38px;
-}
-.meeting-buttons {
-  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .send-cont-txt {
   font-size: 16px;
@@ -208,7 +215,7 @@
   height: 198px;
   font-size: 14px;
   line-height: 17px;
-  padding: 10px;
+  border-radius: 5px;
   background-color: #ffffff;
   > p {
     padding: 10px;
@@ -216,6 +223,197 @@
 }
 .description-cont {
   justify-content: space-around;
-  padding: 10px 30px;
+  padding: 10px 40px;
   background-color: #f9f9fb;
+  .send-text-block {
+    > .desc-scroll-cont {
+      padding: 15px;
+    }
+    p {
+      color: #757575;
+    }
+  }
+}
+.send-buttons {
+  min-width: 112px;
+  display: flex;
+  > button {
+      min-width: 112px;
+      margin: 0 5px;
+  }
+}
+
+// Is Deined
+.isdenied-cont {
+  padding: 40px 30px;
+  &-img {
+    img {
+      width: 84px;
+      height: 84px;
+    }
+  }
+  &-text {
+    color: #fe4c4c;
+  }
+}
+
+// Send Notification
+.send-n-wrapper {
+  width: 673px;
+  max-height: 100%;
+}
+.glob-n-wrapper {
+  width: 596px;
+  max-height: 100%;
+}
+.send-notification-cont {
+  padding: 50px;
+  .send-notification-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+  .send-notification-info {
+    font-size: 18px;
+    margin-bottom: 38px;
+  }
+  .send-notification-subtitle {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+
+
+// Invintation
+.invintation-cont {
+  width: 445px;
+  max-height: 100%;
+  padding: 30px 23px 12px 23px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #fff;
+  text-align: center;
+}
+.inv-cont-text {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.invintation-info-block {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 12px 0;
+
+  background-color: #ffffff;
+  > p {
+    padding: 10px;
+  }
+}
+
+.info-block-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-right: 15px;
+  &:last-child {
+    margin: 0;
+  }
+  > p {
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: color 0.3s;
+    &:hover {
+      color: #2196f3;
+    }
+  }
+  > i {
+    color: #c8c7c7;
+    cursor: pointer;
+    margin-left: 3px;
+    transition: color 0.3s;
+    &:hover {
+      color: #fe4c4c;
+    }
+  }
+}
+.invintation-cont {
+  .inv-input-holder {
+    > input {
+      width: 88%;
+    }
+  }
+}
+.inv-input-holder {
+  position: relative;
+  width: 100%;
+  > i {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    color: #c8c7c7;
+  }
+}
+.invite-buttons {
+  width: 100%;
+}
+
+// Invintation checkbox
+.inv-checkbox-holder {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .label-info-block {
+    transition: color .3s;
+    cursor: pointer;
+    &:hover {
+      color: #2196f3;
+    }
+  }
+  input {
+    position: relative;
+    transform: scale(.8);
+    margin: 0 3px;
+    cursor: pointer;
+    font-size: 0;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      height: 15px;
+      width: 15px;
+      border: 1px solid #c8c7c7;
+      border-radius: 50%;
+      font-size: 0;
+      z-index: 2;
+      background: #fff;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: -1px;
+      width: 5px;
+      height: 10px;
+      border: solid #2196f3;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      z-index: 3;
+      opacity: 0;
+    }
+    &:checked:before {
+      opacity: 1;
+    }
+  }
 }

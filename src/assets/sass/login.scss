@@ -11,6 +11,7 @@
 .form-wrapper {
   font-size: 14px;
   width: 452px;
+  max-height: 100%;
   text-align: center;
 }
 
@@ -35,6 +36,7 @@
   border: none;
   width: 100%;
 }
+
 .inp-v {
   font-size: inherit;
   padding: 17px 40px 17px 10px;
@@ -56,7 +58,15 @@ input[class="inp-v"]::placeholder {
   color: #ffffff;
   text-transform: uppercase;
   padding: 10px;
+  height: 38px;
   cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken(#2196f3, 10%);
+  }
 }
 
 .inp-holder-email {
@@ -78,25 +88,26 @@ input[class="inp-v"]::placeholder {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
-  padding: 0 15px 0 45px;
+  padding: 0 10px;
   input {
     display: none;
   }
-  span {
-    color: #c8c7c7;
-  }
 }
+// Sign in checkbox
 .checkbox-holder {
   position: relative;
+  text-align: left;
+  padding-left: 30px;
+  flex: 1;
   span {
     &::before {
       content: "";
       display: block;
       position: absolute;
-      top: -2px;
-      left: -30px;
-      width: 17px;
-      height: 17px;
+      top: -1px;
+      left: 0;
+      width: 14px;
+      height: 14px;
       border: 2px solid #c8c7c7;
       border-radius: 5px;
     }
@@ -104,14 +115,14 @@ input[class="inp-v"]::placeholder {
       content: "";
       display: block;
       position: absolute;
-      top: -1px;
-      left: -24px;
+      top: 1px;
+      left: 6px;
       width: 4px;
-      height: 10px;
-      border: 2px solid #2196f3;
-      border-left-color: transparent;
-      border-top-color: transparent;
-      border-radius: 2px;
+      height: 9px;
+      border: solid #2196f3;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
       transform: rotate(45deg);
       opacity: 0;
       transition: opacity 0.3s;
@@ -121,12 +132,27 @@ input[class="inp-v"]::placeholder {
     opacity: 1;
   }
   .container {
+    color: #c8c7c7;
     cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+      color: darken(#c8c7c7, 10%);
+    }
+    span {
+      font-size: 0;
+    }
   }
 }
 .forgot-pass-t {
-  a {
-    color: inherit;
+  flex: 1;
+  text-align: right;
+  p {
+    color: #c8c7c7;
+    cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+      color: darken(#c8c7c7, 10%);
+    }
   }
 }
 .pmr-info-b {
@@ -136,10 +162,10 @@ input[class="inp-v"]::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    img {
-      width: 13px;
-      height: 12px;
-      margin: 2px 10px 0 10px;
+    i {
+      color: #f93b3b;
+      font-size: 14px;
+      padding: 0 5px;
     }
   }
 }
